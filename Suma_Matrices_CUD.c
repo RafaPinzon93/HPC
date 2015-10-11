@@ -15,54 +15,50 @@ __global__ void vecAdd(int *A, int *B, int *C, int n){
 	//int i = threadIdx.x;
 
 			//blockIdx.x;
-  if (i < n){
+	if (i < n){
 		C[i] = A[i] + B[i];
-	    // printf("%d. %d + %d = %d\n",i, A[i], B[i], C[i]);
-  }
+		// printf("%d. %d + %d = %d\n",i, A[i], B[i], C[i]);
+	}
 }
 
-__global__ void scan(float *g_odata, float *g_idata, int n)
+__global__ void MatrixSumKernel(int *d_M, int *d_N, int *d_P, int Width){
+	int Row = blockIdx.x * blockDim.x + threadIdx.x;
+	int Col = blockIdx.y * blockDim.y + threadIdx.y;
+	d_P[Row*Width + Col] = d_M[Row*Width +  Col] + d_N[Row*Width +  Col];
+	// if (Row < Width) && (Col < Width){
+	// 	int Pvalue = 0;
+	// 	int k;
+	// 	for (k =0; k<Width; ++k){
+	// 		Pvalue += d_M[Row*Width +]
+	// 	}
+}
 
-	__shared__ float temp[]; // allocated on invocation
-	 int thid = threadIdx.x;
-	int1 pout = 0, pin = 1;
-	// Load input into shared memory.
-	 // This is exclusive scan, so shift right by one
-	 // and set first element to 0
-	temp[pout*n + thid] = (thid > 0) ? g_idata[thid-1] : 0;
-	__syncthreads();
-	for (int offset = 1; offset < n; offset *= 2)
+// __global__ void MatrixMulKernel(float *d_M, float *d_N, float *d_P, int Width){
+// 	int Row = blockIdx.x * blockDim.x + threadIdx.x;
+// 	int Col = blockIdx.y * blockDim.y + threadIdx.y;
+// 	if (Row < Width) && (Col < Width){
+// 		float Pvalue = 0;
+// 		int k;
+// 		for (k =0; k<Width; ++k){
+// 			Pvalue += d_M[Row*Width +]
+// 		}
+// 	}
+// }
+void MatrixSum(int *d_M, int *d_N, int *d_P, int Width){
+	int i;
+  int n = sqrt(Width);
+	for (i = 0; i < n; ++i)
 	{
-	  pout = 1 - pout; // swap double buffer indices
-	  pin = 1 - pout;
-	  if (thid >= offset)
-	    temp[pout*n+thid] += temp[pin*n+thid - offset];
-	  else
-	    temp[pout*n+thid] = temp[pin*n+thid];
-	  __syncthreads();
-	}
-	g_odata[thid] = temp[pout*n+thid1]; // write output
-}
-
-__global__ void sumaCurrency(int *g_idata, int *g_odata){
-	extern __shared__ int sdata[];
-	unsigned int tid = threadIdx.x;
-	unsigned int i = blockIdx.x * blockDim.x + threadIdx.x;
-
-	sdata[tid] = g_idata[i];
-	__syncthreads();
-	// do reduction in shared mem
-	for (unsigned int s=1; s < blockDim.x; s *= 2) {
-		if (tid % (2*s) == 0)
+		/* code */
+		int j;
+		for (j = 0; j < n; ++j)
 		{
-			sdata[tid] += sdata[tid + s];
+			/* code */
+			d_P[i*n + j] = d_M[i*n +  j] + d_N[i*n +  j];
 		}
-		__syncthreads();
 	}
-		// write result for this block to global mem
-	if
-	(tid == 0) g_odata[blockIdx.x] = sdata[0];
 }
+
 
 
 int vectorAddGPU( int *A, int *B, int *C, int n){
@@ -86,7 +82,8 @@ int vectorAddGPU( int *A, int *B, int *C, int n){
 	cudaFree(d_C);
 	return 0;
 }
-int vectorAddGPUCurrency( int *A, int *B, int *C, int n){
+
+int matrixAddGPU( int *A, int *B, int *C, int n){
 	int size = n*sizeof(int);
 	int *d_A, *d_B, *d_C;
 	//Reservo Memoria en el dispositivo
@@ -99,9 +96,8 @@ int vectorAddGPUCurrency( int *A, int *B, int *C, int n){
 	// Ejecuto el Kernel (del dispositivo)
 	int dimGrid = ceil(SIZE/BLOCKSIZE);
 	printf(" DimGrid %d\n", dimGrid);
-	sumaCurrency<<< 1, BLOCKSIZE >>>(d_A, d_C);
-	// scan<<< 1, BLOCKSIZE >>>(d_A, d_C, 4);
-	// vecAdd<<< HILOS, BLOCKES >>>
+	MatrixSumKernel<<< dimGrid, BLOCKSIZE >>>(d_A, d_B, d_C, n);
+	// vecAdd<<< DIMGRID, HILOS >>>
 	cudaMemcpy(C, d_C, size, cudaMemcpyDeviceToHost);
 	cudaFree(d_A);
 	cudaFree(d_B);
@@ -122,12 +118,13 @@ int vectorAddCPU( int *A, int *B, int *C, int n){
 
 int main(){
 	int j;
-	int SIZES[] = {512, 1024, 3000, 5000, 1000000, 5000000};
+	int SIZES[] = {16, 25, 36, 49, 1024, 2500, 10000, 40000, 250000};
 	for (j = 0; j < sizeof(SIZES)/sizeof(SIZES[0]); ++j)
 	{
 		int *A=(int *) malloc(SIZES[j]*sizeof(int));
 		int *B=(int *) malloc(SIZES[j]*sizeof(int));
 		int *C=(int *) malloc(SIZES[j]*sizeof(int));
+		
 		clock_t inicioCPU, inicioGPU,finCPU, finGPU;
 		int i;
 		for(i=0;i< SIZES[j]; i++){
@@ -139,11 +136,11 @@ int main(){
 		}
 		// Ejecuto por GPU
 		inicioGPU=clock();
-		vectorAddGPU(A, B, C, SIZES[j]);
+		matrixAddGPU(A, B, C, SIZES[j]);
 		finGPU = clock();
 		// Ejecuto por CPU
 		inicioCPU=clock();
-		vectorAddCPU(A, B, C, SIZES[j]);
+		MatrixSum(A, B, C, SIZES[j]);
 		finCPU=clock();
 		printf("Size %d\n", SIZES[j]);
 		printf("El tiempo GPU es: %f\n",(double)(finGPU - inicioGPU) / CLOCKS_PER_SEC);
