@@ -1,0 +1,130 @@
+<<< 1, 1024 >>>
+
+Size 512:
+DIM GRID 1
+El tiempo CPU es: 0.000002
+El tiempo GPU es: 0.084985
+Size 1024:
+DIM GRID 1
+El tiempo CPU es: 0.000003
+El tiempo GPU es: 0.000247
+Size 3000:
+DIM GRID 2
+El tiempo CPU es: 0.000008
+El tiempo GPU es: 0.000254
+Size 10000:
+DIM GRID 9
+El tiempo CPU es: 0.000025
+El tiempo GPU es: 0.000273
+Size 500000:
+DIM GRID 488
+El tiempo CPU es: 0.001277
+El tiempo GPU es: 0.002142
+Size 1000000:
+DIM GRID 976
+El tiempo CPU es: 0.002555
+El tiempo GPU es: 0.003221
+Size 2000000:
+DIM GRID 1953
+El tiempo CPU es: 0.005081
+El tiempo GPU es: 0.005681
+Size 3000000:
+DIM GRID 2929
+El tiempo CPU es: 0.007638
+El tiempo GPU es: 0.007351
+Size 10000000:
+DIM GRID 9765
+El tiempo CPU es: 0.025530
+El tiempo GPU es: 0.020404
+Size 50000000:
+DIM GRID 48828
+El tiempo CPU es: 0.128368
+El tiempo GPU es: 0.099245
+
+---------
+
+Size 512:
+DIM GRID 1
+El tiempo CPU es: 0.000001
+El tiempo GPU es: 0.100151
+Size 1024:
+DIM GRID 1
+El tiempo CPU es: 0.000003
+El tiempo GPU es: 0.000253
+Size 3000:
+DIM GRID 2
+El tiempo CPU es: 0.000007
+El tiempo GPU es: 0.000253
+Size 10000:
+DIM GRID 9
+El tiempo CPU es: 0.000026
+El tiempo GPU es: 0.000284
+Size 500000:
+DIM GRID 488
+El tiempo CPU es: 0.001273
+El tiempo GPU es: 0.002171
+Size 1000000:
+DIM GRID 976
+El tiempo CPU es: 0.002545
+El tiempo GPU es: 0.003122
+Size 2000000:
+DIM GRID 1953
+El tiempo CPU es: 0.005093
+El tiempo GPU es: 0.005236
+Size 3000000:
+DIM GRID 2929
+El tiempo CPU es: 0.007744
+El tiempo GPU es: 0.007258
+Size 10000000:
+DIM GRID 9765
+El tiempo CPU es: 0.025450
+El tiempo GPU es: 0.021247
+Size 50000000:
+DIM GRID 48828
+El tiempo CPU es: 0.127305
+El tiempo GPU es: 0.102499
+
+-----------
+
+<<< 1024 , 1 >>>
+
+Size 512:
+DIM GRID 1
+El tiempo CPU es: 0.000002
+El tiempo GPU es: 0.099593
+Size 1024:
+DIM GRID 1
+El tiempo CPU es: 0.000002
+El tiempo GPU es: 0.000256
+Size 3000:
+DIM GRID 2
+El tiempo CPU es: 0.000008
+El tiempo GPU es: 0.000257
+Size 10000:
+DIM GRID 9
+El tiempo CPU es: 0.000026
+El tiempo GPU es: 0.000280
+Size 500000:
+DIM GRID 488
+El tiempo CPU es: 0.001277
+El tiempo GPU es: 0.002144
+Size 1000000:
+DIM GRID 976
+El tiempo CPU es: 0.002541
+El tiempo GPU es: 0.003217
+Size 2000000:
+DIM GRID 1953
+El tiempo CPU es: 0.005083
+El tiempo GPU es: 0.005666
+Size 3000000:
+DIM GRID 2929
+El tiempo CPU es: 0.007665
+El tiempo GPU es: 0.007261
+Size 10000000:
+DIM GRID 9765
+El tiempo CPU es: 0.025768
+El tiempo GPU es: 0.021396
+Size 50000000:
+DIM GRID 48828
+El tiempo CPU es: 0.127613
+El tiempo GPU es: 0.097132

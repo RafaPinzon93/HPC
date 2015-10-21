@@ -1,0 +1,100 @@
+Size 512:
+El tiempo CPU es: 0.000002
+El tiempo GPU es: 0.085151
+Size 1024:
+El tiempo CPU es: 0.000003
+El tiempo GPU es: 0.000246
+Size 3000:
+El tiempo CPU es: 0.000008
+El tiempo GPU es: 0.000252
+Size 10000:
+El tiempo CPU es: 0.000026
+El tiempo GPU es: 0.000272
+Size 500000:
+El tiempo CPU es: 0.001480
+El tiempo GPU es: 0.002200
+Size 1000000:
+El tiempo CPU es: 0.002541
+El tiempo GPU es: 0.003103
+Size 2000000:
+El tiempo CPU es: 0.005080
+El tiempo GPU es: 0.005256
+Size 3000000:
+El tiempo CPU es: 0.007977
+El tiempo GPU es: 0.007351
+
+
+-------------------------
+
+
+Size 512:
+DIM GRID 1
+El tiempo CPU es: 0.000002
+El tiempo GPU es: 0.098074
+Size 1024:
+DIM GRID 1
+El tiempo CPU es: 0.000003
+El tiempo GPU es: 0.000252
+Size 3000:
+DIM GRID 2
+El tiempo CPU es: 0.000007
+El tiempo GPU es: 0.000255
+Size 10000:
+DIM GRID 9
+El tiempo CPU es: 0.000026
+El tiempo GPU es: 0.000272
+Size 500000:
+DIM GRID 488
+El tiempo CPU es: 0.001277
+El tiempo GPU es: 0.002098
+Size 1000000:
+DIM GRID 976
+El tiempo CPU es: 0.002553
+El tiempo GPU es: 0.003159
+Size 2000000:
+DIM GRID 1953
+El tiempo CPU es: 0.005091
+El tiempo GPU es: 0.005368
+Size 3000000:
+DIM GRID 2929
+El tiempo CPU es: 0.007624
+El tiempo GPU es: 0.007671
+
+---------------------------
+
+Size 512:
+DIM GRID 1
+El tiempo CPU es: 0.000001
+El tiempo GPU es: 0.093129
+Size 1024:
+DIM GRID 1
+El tiempo CPU es: 0.000002
+El tiempo GPU es: 0.000253
+Size 3000:
+DIM GRID 2
+El tiempo CPU es: 0.000008
+El tiempo GPU es: 0.000305
+Size 10000:
+DIM GRID 9
+El tiempo CPU es: 0.000025
+El tiempo GPU es: 0.000271
+Size 500000:
+DIM GRID 488
+El tiempo CPU es: 0.001278
+El tiempo GPU es: 0.002198
+Size 1000000:
+DIM GRID 976
+El tiempo CPU es: 0.002541
+El tiempo GPU es: 0.003176
+Size 2000000:
+DIM GRID 1953
+El tiempo CPU es: 0.005118
+El tiempo GPU es: 0.005709
+Size 3000000:
+DIM GRID 2929
+El tiempo CPU es: 0.007650
+El tiempo GPU es: 0.007294
+Size 10000000:
+DIM GRID 9765
+El tiempo CPU es: 0.025702
+El tiempo GPU es: 0.021038

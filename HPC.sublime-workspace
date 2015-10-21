@@ -1,0 +1,1738 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"block",
+				"BLOCKSIZE"
+			],
+			[
+				"dimgri",
+				"dimGrid1D"
+			],
+			[
+				"dimbloc",
+				"dimBlock3D"
+			],
+			[
+				"dimgrid",
+				"dimGrid3D"
+			],
+			[
+				"sign",
+				"SignUpForm	class"
+			],
+			[
+				"requ",
+				"request	param"
+			],
+			[
+				"Re",
+				"RequestContext	class"
+			],
+			[
+				"reque",
+				"RequestContext	class"
+			],
+			[
+				"render",
+				"render_to_response	function"
+			],
+			[
+				"SignU",
+				"SignUpAdmin	class"
+			],
+			[
+				"mod",
+				"ModelAdmin	class"
+			],
+			[
+				"sm",
+				"smart_unicode	statement"
+			],
+			[
+				"ut",
+				"utils	module"
+			],
+			[
+				"auto",
+				"auto_now	param"
+			],
+			[
+				"Dat",
+				"DateTimeField	class"
+			],
+			[
+				"lro",
+				"lRowValue"
+			],
+			[
+				"lr",
+				"lRadio"
+			],
+			[
+				"w",
+				"TILE_WIDTH"
+			],
+			[
+				"lt",
+				"lTx"
+			],
+			[
+				"lB",
+				"lBy"
+			],
+			[
+				"lT",
+				"lTx"
+			],
+			[
+				"lR",
+				"lRandomNumberA"
+			],
+			[
+				"B",
+				"B"
+			],
+			[
+				"close",
+				"closeAp	function"
+			],
+			[
+				"vent",
+				"ventanaEmergente	statement"
+			],
+			[
+				"opt",
+				"optimizarFrec	function"
+			],
+			[
+				"my",
+				"myMessageBox	class"
+			],
+			[
+				"ve",
+				"ventanaEmergente	statement"
+			],
+			[
+				"UI_",
+				"Ui_optimizandoDialog	class"
+			],
+			[
+				"ui",
+				"ui"
+			],
+			[
+				"QDI",
+				"QDialog	class"
+			],
+			[
+				"action",
+				"actionManual_Usuario	statement"
+			],
+			[
+				"GUI",
+				"GUI_App	module"
+			],
+			[
+				"fa",
+				"factorialRec	function"
+			],
+			[
+				"max",
+				"max_length"
+			],
+			[
+				"avg",
+				"avgGPA"
+			],
+			[
+				"app",
+				"Apply"
+			],
+			[
+				"stu",
+				"Student"
+			],
+			[
+				"ap",
+				"Apply"
+			],
+			[
+				"servicios",
+				"serviciosDict	statement"
+			],
+			[
+				"pr",
+				"printLinkedList"
+			],
+			[
+				"pri",
+				"price"
+			],
+			[
+				"p",
+				"pound"
+			],
+			[
+				"or",
+				"orangeAmt"
+			],
+			[
+				"q",
+				"quantityType"
+			],
+			[
+				"in",
+				"individual"
+			],
+			[
+				"size",
+				"sizeof"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"pila",
+				"pila_pop"
+			],
+			[
+				"pila_",
+				"pila_push"
+			],
+			[
+				"S",
+				"StdIn"
+			],
+			[
+				"ar",
+				"arguments"
+			],
+			[
+				"curr",
+				"current"
+			],
+			[
+				"entr",
+				"entradaTeclado"
+			],
+			[
+				"ent",
+				"entradaTeclado"
+			],
+			[
+				"cle",
+				"cleanupR"
+			],
+			[
+				"id",
+				"idPartidaLocal"
+			],
+			[
+				"conec",
+				"conectadosMult"
+			],
+			[
+				"str",
+				"struct	struct"
+			],
+			[
+				"idp",
+				"idPartida"
+			],
+			[
+				"text",
+				"texto_cif	statement"
+			],
+			[
+				"clea",
+				"cleanupR"
+			],
+			[
+				"arc",
+				"archivoBuf"
+			],
+			[
+				"bu",
+				"bufferLectura"
+			],
+			[
+				"a",
+				"archivo"
+			],
+			[
+				"PRO",
+				"programacion15est	param"
+			],
+			[
+				"nomber",
+				"nombreArc"
+			],
+			[
+				"sock",
+				"sock_envio"
+			],
+			[
+				"nomb",
+				"nombreA"
+			],
+			[
+				"enviar",
+				"enviarArchivo"
+			],
+			[
+				"el",
+				"eliminar"
+			],
+			[
+				"pthr",
+				"pthread_mutex_lock"
+			],
+			[
+				"enc",
+				"encontrar"
+			],
+			[
+				"id_",
+				"id_cliente"
+			],
+			[
+				"encon",
+				"encontrarIndice"
+			],
+			[
+				"clie",
+				"clients"
+			],
+			[
+				"num",
+				"numClientes"
+			],
+			[
+				"en",
+				"enviando"
+			],
+			[
+				"abrir",
+				"abrirArchivo"
+			],
+			[
+				"permis",
+				"permisoIndicador"
+			],
+			[
+				"so",
+				"sock_id"
+			],
+			[
+				"se",
+				"server_reply"
+			],
+			[
+				"user",
+				"user_archivo"
+			],
+			[
+				"permi",
+				"permisos"
+			],
+			[
+				"per",
+				"permisos"
+			],
+			[
+				"strc",
+				"strcpy"
+			],
+			[
+				"send",
+				"sendfile"
+			],
+			[
+				"fil",
+				"received_file"
+			],
+			[
+				"reci",
+				"received_file"
+			],
+			[
+				"re",
+				"received_file"
+			],
+			[
+				"clien",
+				"client_message"
+			],
+			[
+				"siz",
+				"sizeFile"
+			],
+			[
+				"ser",
+				"server_reply"
+			],
+			[
+				"socke",
+				"socket_id"
+			],
+			[
+				"n",
+				"nombreArc"
+			],
+			[
+				"MA",
+				"MAXFILE"
+			],
+			[
+				"usa",
+				"usuarios"
+			],
+			[
+				"nom",
+				"nombreArc"
+			],
+			[
+				"param",
+				"parametros"
+			],
+			[
+				"lis",
+				"listarArchivos"
+			],
+			[
+				"lista",
+				"listaArchivo"
+			],
+			[
+				"M",
+				"MAXBUF"
+			],
+			[
+				"para",
+				"parametros"
+			],
+			[
+				"wri",
+				"write"
+			],
+			[
+				"li",
+				"listaArchivo"
+			],
+			[
+				"cone",
+				"conectado"
+			],
+			[
+				"men",
+				"mensaje"
+			],
+			[
+				"mensa",
+				"mensajeCliente"
+			],
+			[
+				"s",
+				"sprintf"
+			],
+			[
+				"esc",
+				"escribieronG"
+			],
+			[
+				"part",
+				"idPartidaLocal"
+			],
+			[
+				"psd",
+				"psdGlobal"
+			],
+			[
+				"pt",
+				"pthread_create"
+			],
+			[
+				"res",
+				"respuesta1"
+			],
+			[
+				"juga",
+				"jugadorTurno"
+			],
+			[
+				"read",
+				"readWriteWait"
+			],
+			[
+				"buff",
+				"buffer"
+			],
+			[
+				"idpar",
+				"idPartidaLocal"
+			],
+			[
+				"resolver",
+				"resolverFlag"
+			],
+			[
+				"frase",
+				"fraseLlenada"
+			],
+			[
+				"fr",
+				"frase"
+			],
+			[
+				"conect",
+				"conectadosMult"
+			],
+			[
+				"fra",
+				"frases"
+			],
+			[
+				"cl",
+				"cleanup"
+			],
+			[
+				"horai",
+				"horaInicio	param"
+			],
+			[
+				"servicio",
+				"serviciosAdicionales2	statement"
+			],
+			[
+				"horainicio",
+				"horaInicioVueltaArray	statement"
+			],
+			[
+				"_horae",
+				"_horaEstacionesSalida	statement"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/static/templates/signup.html",
+			"settings":
+			{
+				"buffer_size": 288,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/src/signups/forms.py",
+			"settings":
+			{
+				"buffer_size": 163,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/rafapinzon/.config/sublime-text-3/Packages/User/HTML.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 129,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/rafapinzon/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 1667,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/src/mvp_landing/urls.py",
+			"settings":
+			{
+				"buffer_size": 296,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/src/signups/views.py",
+			"settings":
+			{
+				"buffer_size": 447,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "35319 comprobante debito\nNúmero tarjeta 5306954614754982\ncod seg: 666\ncomprobante: 21832\n",
+			"settings":
+			{
+				"buffer_size": 89,
+				"line_ending": "Unix",
+				"name": "35319 comprobante debito"
+			}
+		},
+		{
+			"file": "/home/rafapinzon/Documents/Python/BSF-DSF.py",
+			"settings":
+			{
+				"buffer_size": 545,
+				"line_ending": "Unix",
+				"name": "graph = {'A': set(['B', 'C']),"
+			}
+		},
+		{
+			"contents": "CREATE TABLE tmpEntradasTallerMostrar\n(\n    ID  INTEGER,\n    IDVEHICULO  INTEGER,\n    FECHA   DATETIME,\n    FECHASALIDAPACTADA  DATETIME,\n    FECHASALIDAREAL DATETIME,\n    IDPROVEEDORDESERVICIO   INTEGER,\n    KILOMETRAJE INTEGER,\n    NUMERODEFACTURA VARCHAR(20),\n    VALORDEFACTURA  DOUBLE,\n    OBSERVACIONES   MEMO,\n    FECHAHORADECREACION DATETIME,\n    USUARIODECREACION   VARCHAR(20),\n    VehiculoPlaca VARCHAR(20),\n    ProveedorDescripcion VARCHAR(50)\n);\n\nCREATE TABLE tmpSiniestrosRegMostrar\n(\n    ID  INTEGER,\n    IDVEHICULO  INTEGER,\n    IDCONDUCTOR INTEGER,\n    FECHA   DATETIME,\n    OBSERVACIONES   MEMO,\n    FECHAHORADECREACION DATETIME,\n    USUARIODECREACION   VARCHAR(20),\n    VehiculoPlaca VARCHAR(20),\n    ConductorNombre VARCHAR(85)\n);\n\n\nlRegistroDestino.FieldsLong(\"Id\") = .FieldsLong(\"Id\")\nlRegistroDestino.FieldsString(\"VehiculoPlaca\") = .FieldsString(\"VehiculoPlaca\")\nlRegistroDestino.FieldsString(\"ProveedorDescripcion\") = .FieldsString(\"ProveedorDescripcion\")\nlRegistroDestino.FieldsDate(\"Fecha\") = .FieldsDate(\"Fecha\")\nlRegistroDestino.FieldsLong(\"Kilometraje\") = .FieldsLong(\"Kilometraje\")\nlRegistroDestino.FieldsString(\"NumeroDeFactura\") = .FieldsString(\"NumeroDeFactura\")\nlRegistroDestino.FieldsDouble(\"ValorDeFactura\") = .FieldsDouble(\"ValorDeFactura\")\n\n\n\nlRegistroDestino.FieldsLong(\"Id\") = .FieldsLong(\"Id\")\nlRegistroDestino.FieldsString(\"VehiculoPlaca\") = .FieldsString(\"VehiculoPlaca\")\nlRegistroDestino.FieldsString(\"ProveedorDescripcion\") = .FieldsString(\"ProveedorDescripcion\")\nlRegistroDestino.FieldsDate(\"Fecha\") = .FieldsDate(\"Fecha\")\nlRegistroDestino.FieldsDate(\"FechaSalidaPactada\") = .FieldsDate(\"FechaSalidaPactada\")\nlRegistroDestino.FieldsDate(\"FechaSalidaReal\") = .FieldsDate(\"FechaSalidaReal\")\nlRegistroDestino.FieldsLong(\"Kilometraje\") = .FieldsLong(\"Kilometraje\")\nlRegistroDestino.FieldsString(\"NumeroDeFactura\") = .FieldsString(\"NumeroDeFactura\")\nlRegistroDestino.FieldsDouble(\"ValorDeFactura\") = .FieldsDouble(\"ValorDeFactura\")\n\n\nlRegistroDestino.FieldsLong(\"Id\") = .FieldsLong(\"Id\")\nlRegistroDestino.FieldsString(\"VehiculoPlaca\") = .FieldsString(\"VehiculoPlaca\")\nlRegistroDestino.FieldsString(\"ConductorNombre\") = .FieldsString(\"ConductorNombre\")\nlRegistroDestino.FieldsDate(\"Fecha\") = .FieldsDate(\"Fecha\")\n\nlRegistroDestino.FieldsLong(\"Id\") = .FieldsLong(\"Id\")\nlRegistroDestino.FieldsString(\"ConductorNombre\") = .FieldsString(\"ConductorNombre\")\nlRegistroDestino.FieldsString(\"NivelEducativoNombre\") = .FieldsString(\"NivelEducativoNombre\")\nlRegistroDestino.FieldsDate(\"Fecha\") = .FieldsDate(\"Fecha\")",
+			"settings":
+			{
+				"buffer_size": 2546,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "convolution.c",
+			"settings":
+			{
+				"buffer_size": 4282,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "MatrixMultTiled.c",
+			"settings":
+			{
+				"buffer_size": 4763,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Primary Quick Build"
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Choose Quick Build"
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Clean up Files"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/LaTeXing/LaTeX.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "instal",
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"inSTALL",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"prefere",
+				"Preferences: Settings - User"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"packa",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"op",
+				"Evernote: Open Evernote Note"
+			],
+			[
+				"evernot",
+				"Evernote: Send to Evernote as new note"
+			],
+			[
+				"evern",
+				"Evernote: New empty note"
+			],
+			[
+				"upd",
+				"Evernote: Update Evernote Note"
+			],
+			[
+				"UDP",
+				"Evernote: Update Evernote Note"
+			],
+			[
+				"oo",
+				"Evernote: Open Evernote Note"
+			],
+			[
+				"open",
+				"Evernote: Open Evernote Note"
+			],
+			[
+				"UPD",
+				"Evernote: Update Evernote Note"
+			],
+			[
+				"u",
+				"Evernote: Update Evernote Note"
+			],
+			[
+				"evernote",
+				"Evernote: Update Evernote Note"
+			],
+			[
+				"up",
+				"Evernote: Update Evernote Note"
+			],
+			[
+				"set syntax s",
+				"Set Syntax: SQL"
+			],
+			[
+				"set syntax ev",
+				"Set Syntax: Evernote Note"
+			],
+			[
+				"upt",
+				"Evernote: Update Evernote Note"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"ever",
+				"Evernote: Open Evernote Note"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"add rep",
+				"Package Control: Add Repository"
+			],
+			[
+				"upda",
+				"Evernote: Update Evernote Note"
+			],
+			[
+				"Evernote",
+				"Evernote: Update Evernote Note"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"them",
+				"Themr: List themes"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"late",
+				"Set Syntax: LaTeXing"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"pyt",
+				"Set Syntax: Python"
+			],
+			[
+				"pytho",
+				"Set Syntax: Python (Django)"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"enabl",
+				"Package Control: Enable Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"DISABLE",
+				"Package Control: Disable Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"disabl",
+				"Package Control: Disable Package"
+			],
+			[
+				"INSTALL ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 557.0
+	},
+	"console":
+	{
+		"height": 116.0,
+		"history":
+		[
+			"view.settings().get(\"setting_name\")",
+			"view.settings()",
+			"view.settings().get(\"setting_name\")",
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/rafapinzon/Documents/GitHub/HPC"
+	],
+	"file_history":
+	[
+		"/home/rafapinzon/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/home/rafapinzon/Documents/Python/Django/djangoTut/lib/python2.7/site-packages/django/db/models/fields/__init__.py",
+		"/home/rafapinzon/Documents/Python/Django/djangoTut/src/mvp_landing/urls.py",
+		"/home/rafapinzon/Documents/Python/Django/djangoTut/src/signups/admin.py",
+		"/home/rafapinzon/Documents/Python/Django/djangoTut/src/signups/models.py",
+		"/home/rafapinzon/Documents/Python/Django/djangoTut/src/mvp_landing/settings.py",
+		"/home/rafapinzon/MEGA/U/Progra/Python/MyNewGUI/GUI/mainWindow.py",
+		"/home/rafapinzon/Documents/Python/prueba.py",
+		"/home/rafapinzon/MEGA/U/Progra/Python/MyNewGUI/GUI/asd.py",
+		"/home/rafapinzon/Documents/Python/tryOpen.py",
+		"/home/rafapinzon/Downloads/Informacion.py",
+		"/home/rafapinzon/MEGA/U/Progra/Python/MyNewGUI/GUI/aplicacionInicio.py",
+		"/home/rafapinzon/MEGA/U/Progra/Python/MyNewGUI/GUI/Ventanas/info.py",
+		"/home/rafapinzon/MEGA/U/Progra/Python/MyNewGUI/GUI/GUI_App.py",
+		"/home/rafapinzon/MEGA/U/Progra/Python/MyNewGUI/GUI/Ventanas/Informacion.py",
+		"/home/rafapinzon/Documents/GitHub/HPC/matrixMult.c",
+		"/home/rafapinzon/Documents/GitHub/HPC/matrixMultSec.c",
+		"/home/rafapinzon/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/rafapinzon/Downloads/asd.py",
+		"/home/rafapinzon/MEGA/U/Progra/Python/MyNewGUI/GUI/optimizando.py",
+		"/home/rafapinzon/Downloads/asd (1).py",
+		"/home/rafapinzon/MEGA/U/Progra/Python/MyNewGUI/GUI/Ventanas/Informacion1.py",
+		"/home/rafapinzon/MEGA/U/Progra/Python/MyNewGUI/GUI/Ventanas/resource_rc.py",
+		"/home/rafapinzon/MEGA/U/Progra/Python/MyNewGUI/GUI/Ventanas/resource_rp.qrc",
+		"/home/rafapinzon/Downloads/Ventanas/Informacion.py",
+		"/home/rafapinzon/Dropbox/PROMEDIO.txt",
+		"/home/rafapinzon/Documents/Python/Django/qblog/blog/models.py",
+		"/home/rafapinzon/MEGA/U/Progra/Python/MyNewGUI/GUI/jsonToCsv.py",
+		"/home/rafapinzon/Dropbox/ProyectoMegaBusR/Entrega/modeloOptimizacion/modeloOptimizacion.py",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/ProyectoRuleta/proyectoRuleta-Cliente2.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/ProyectoRuleta/proyectoRuleta-Server3.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/ProyectoRuleta/juego3.h",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/ProyectoRuleta/estadisticas.txt",
+		"/home/rafapinzon/MEGA/U/Progra/Programacion/Programación 2/structs_tutorial.c",
+		"/home/rafapinzon/MEGA/U/Progra/Programacion/Programación 2/structs_tutorial2.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/ProyectoRuleta/proyectoRuleta-Server2.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/ProyectoRuleta/juego2.h",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/ProyectoRuleta/usuarios.txt",
+		"/home/rafapinzon/MEGA/U/Progra/Programacion/C/ctutorial_union.c",
+		"/home/rafapinzon/VRS/project_rs/rs/settings.py",
+		"/home/rafapinzon/VRS/project_rs/manage.py",
+		"/home/rafapinzon/MEGA/U/Progra/Programacion/C/main_pila.c",
+		"/home/rafapinzon/MEGA/U/Progra/Programacion/C/pila_impl.c",
+		"/home/rafapinzon/MEGA/U/Progra/Programacion/C/pila.h",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/ProyectoRuleta/cifrado.txt",
+		"/home/rafapinzon/Dropbox/ProyectoMegaBusR/ProyectoOptimizacion/modeloOptimizacion.py",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/ProyectoRuleta/cifrado.py",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/ProyectoRuleta/decifrado.py",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/ProyectoRuleta/desifrado.py",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/ProyectoRuleta/rafa.py",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Proyecto 2 Entrega/server_threads1.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Proyecto-2/server_threads1.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Proyecto-2/cliente_threads1.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Ejemplo Threads/client_threads.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Proyecto 2 Entrega/temp.txt",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto (2)/proyectoRuleta-Server.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto (2)/proyectoRuleta-Server2.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto (2)/proyectoRuleta-Cliente2.c",
+		"/home/rafapinzon/.config/sublime-text-3/Packages/User/c2.sublime-build",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/proyectoRuleta-Cliente2.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/proyectoRuleta-Server3.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Proyecto 2 Entrega/cliente_threads3.c",
+		"/home/rafapinzon/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Proyecto 2 Entrega/folderr/qwd.txt",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Proyecto 2 Entrega/archivoDif1.txt",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Proyecto 2 Entrega/folderr/archivoDif1.txt",
+		"/home/rafapinzon/MEGA/U/Progra/Python/MyNewGUI/GUI/modeloOptimizacion.py",
+		"/home/rafapinzon/MEGA/U/Progra/Python/MyNewGUI/GUI/modeloOptimizacion1.py",
+		"/home/rafapinzon/MEGA/U/Progra/Python/MyNewGUI/GUI/baseDatosDialog.py",
+		"/home/rafapinzon/.config/sublime-text-3/Packages/User/c.sublime-build",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/Taller14_Semaforos.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/Taller13.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto1/proyectoRuleta-Server2.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/proyectoRuleta-Server2.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Proyecto-2/server_threads.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Proyecto-2/client_threads.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto1/juego2.h",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto1/proyectoRuleta-Cliente2.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Proyecto-2/folderr/rr1.txt",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Proyecto-2/hola.txt",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Proyecto-2/rr.txt",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Proyecto-2/temp.txt",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/Taller13_HilosColas.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Proyecto-2/qwd.txt",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Proyecto-2/folderr/qwd.txt",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Proyecto-2/folderr/hola.txt",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Proyecto-2/folderr/prueba.txt",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Proyecto-2/folderr/ty.txt",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/Ejemplo Threads/server_threads.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto1/proyectoRuleta-Server.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/proyectoRuleta-Cliente4.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/juego4.h",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/proyectoRuleta-Server4.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/comando.txt",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/juego2.h",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/estadisticas.txt",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/22 Junio/Taller6(Kill).c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/22 Junio/Taller12_3Hilos.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/22 Junio/Taller9.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/proyectoRuleta-Server2lalal.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/juego2lala.h",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/juego3.h",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto1/juego.h",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto1/proyectoRuleta-Cliente.c",
+		"/home/rafapinzon/MEGA/U/Progra/Programacion/Programación 2/ensayo.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyectoservidor.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyectocliente.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/client_threads.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/server_threads.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/taller17-servidor-tcp.c",
+		"/home/rafapinzon/Downloads/client_threads.c",
+		"/home/rafapinzon/Downloads/server_threads.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/ClienteServidor.sublime-project",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto1/juego.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/22 Junio/hola.txt",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/22 Junio/Taller8(Triki).c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/Taller19-cliente.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/Taller19-servidor.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/Taller20-cliente_eco.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/Taller20-servidor_eco.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/22 Junio/Taller7.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Documentos/01.1 - Introduccion a CS.pdf",
+		"/home/rafapinzon/Downloads/Taller7.c",
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/CTutorial.c",
+		"/home/rafapinzon/.config/sublime-text-2/Packages/Default/Preferences (Linux).sublime-settings",
+		"/home/rafapinzon/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/rafapinzon/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
+		"/home/rafapinzon/.config/sublime-text-3/Packages/User/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 100.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mytype",
+			"int",
+			"n",
+			"NUMBER(10,0)",
+			".",
+			"DATE",
+			"VARCHAR2",
+			"VARCHAR",
+			"NUMBER(10,0)",
+			".",
+			"DATE",
+			"NUMBER(10,0)",
+			".",
+			"DATE",
+			"NUMBER",
+			"DATE",
+			"NUMBER",
+			".",
+			"DATE",
+			"NUMBER(10,0)",
+			".",
+			"CHAR",
+			".",
+			"NUMBER",
+			"inicioGPU",
+			"i",
+			"tama",
+			"numCRows",
+			"Tx",
+			"tx",
+			"numARows",
+			"Row",
+			"WIDTH",
+			"Width",
+			"WIDTH",
+			"Width",
+			"WIDTH",
+			"Width",
+			"WIDTH",
+			"Width",
+			"WIDTH",
+			"Width",
+			"TILE_WIDTH",
+			"WIDTH",
+			"Width",
+			"WIDTH",
+			"Width",
+			"ty",
+			"lPx",
+			"by",
+			"SIZEy",
+			"tx",
+			"bx",
+			"Col",
+			"Row",
+			"SIZES",
+			"j",
+			"matrixMulGPU",
+			"generate_website_thumbnail",
+			"\\n\\n",
+			"\\r",
+			"*",
+			"\\r",
+			"all",
+			"\\n\\n",
+			"\\n",
+			"estructura",
+			"};\n",
+			"el turno pasa",
+			"salir",
+			"turno",
+			"print(",
+			"siguiente",
+			"i",
+			"printf(\"-",
+			"freeMemory",
+			"el turno pasa",
+			"SALAS[*idPartida]",
+			"idPartidaLocal",
+			"SALAS[*idPartida]",
+			"resolverFlag",
+			"turno",
+			"current",
+			"turnos",
+			"resolverFlag",
+			"visaje",
+			"conectadosMult",
+			"turno",
+			"frase",
+			"turno",
+			"psdglo",
+			"ganador",
+			"raw_input",
+			"ThisHost",
+			"sizeof",
+			"baba",
+			"++\"",
+			"++",
+			"me sacaron",
+			"salir",
+			"usuario conectad",
+			"open(",
+			"fopen",
+			"enviar",
+			"ingreso",
+			"archivo",
+			"atoi",
+			"nombreArc",
+			"archivo",
+			"Fd",
+			"FILE",
+			"file",
+			"taman",
+			"temp",
+			"signal",
+			"sleep",
+			"bzero",
+			"server_reply",
+			"archivo",
+			"sql",
+			"sigint",
+			"locationFile",
+			"listar",
+			"et_id",
+			";\n",
+			"locationFile",
+			"socket_id",
+			"fget"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"SALAS[idPartidaLocal]",
+			"*idPartida",
+			"SALAS[idPartidaLocal]->current",
+			"SALAS[*idPartida]->current",
+			"SALAS[*idPartida]->turnos",
+			"SALAS[*idPartida]->resolverFlag",
+			"SALAS[*idPartida]->fraseLlenada",
+			"SALAS[*idPartida]->conectadosMult",
+			"SALAS[*idPartida]->turno",
+			"SALAS[*idPartida]->FRASE",
+			"archivoBuf",
+			"self.TRANSBORDO",
+			"# global",
+			"self.calcularTopologiaTiempo",
+			"self.trayectosValueF",
+			"self.optNelderMead",
+			"self.optGAPyevolve",
+			"self.gradf",
+			"self.objFunctionList",
+			"self.objFunction",
+			"self.objFunctionGenetic",
+			"self.jsonFile",
+			"self.serviciosOrdenados",
+			"self.serviciosRuta",
+			"self.horasRuta",
+			"self.horaEstaciones",
+			"self.horaInicioServicios",
+			"self.convertHour",
+			"self.tiempoViajePromedioSinEspera",
+			"self.tiempoViajePromedioSinEsperaSB",
+			"self.intervalosTiemposEntreSalidas",
+			"self.flujoAsignado",
+			"self.serviciosRequeridos",
+			"self.funcionCalidad",
+			"self.frecuenciaTotal",
+			"self.tiempoEsperarPor2Viaje",
+			"self.tiempoEsperaPor2Bus",
+			"self.pasajerosEspera2Viaje",
+			"self.tiempoViajePromedio",
+			"self.tiempoAcumuladoSubida",
+			"self.tiempoAcumuladoBajada",
+			"self.tiempoEsperaEstaciones",
+			"self.pasajerosPuedenAbordar",
+			"self.pasajerosEstacionValida",
+			"self.pasajerosEstacion",
+			"self.distribucionDemanda",
+			"self.probabilidadEleccion",
+			"self.matrizDemandaMedia",
+			"self.tiempoEsperaPromedioTot",
+			"self.tiempoEsperaPromedio",
+			"self.demandaMediaConstante",
+			"self.tiempoEsperaMaximoTot",
+			"self.topologiaTot",
+			"self.tiempoEsperaMaximo",
+			"self.transbordos",
+			"self.mejoresSecuencias",
+			"self.tiempoEntreEstaciones",
+			"self.numeroEstaciones",
+			"self.obtenerTopologias",
+			"self.tiempoTrayectosRutas",
+			"self.tiempoTrayectosTransbordo",
+			"self.tiempoTrayectosDirectos",
+			"self._TRAYECTOS",
+			"self._PROPORCIONES",
+			"self.EsRutasFantasmas",
+			"self.FinTrayectoArray",
+			"self.EstacionesBaseDatosDict",
+			"self.NUMEROESTACIONES",
+			"self._TRANSBORDOS",
+			"self._SECUENCIAS",
+			"self._TOPOLOGIA",
+			"self._TiempoDirectoTrayectos",
+			"self._TIEMPO_ENTRE_ESTACIONES",
+			"self.FrecuenciasOptimas",
+			"self.COSTOS",
+			"self.ValoresFrecuencias",
+			"self.NUMERORUTAS",
+			"self.HORAFIN",
+			"self.HORAINICIO",
+			"self.NUMERODEMANDA",
+			"self.TIEMPOESPERA2BUS",
+			"self.TIEMPOABORDAR",
+			"self.CAPACIDADBUSES",
+			"self.FACTOROPERADEOR",
+			"self.FACTORPASAJERO",
+			"TRANSBORDO",
+			"10"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 10,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/static/templates/signup.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 288,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								204,
+								204
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"open_with_edit": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/src/signups/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 163,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								163,
+								163
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"open_with_edit": true,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/rafapinzon/.config/sublime-text-3/Packages/User/HTML.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								126,
+								126
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/rafapinzon/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1667,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/src/mvp_landing/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 296,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								174,
+								174
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/src/signups/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 447,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								261,
+								261
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 89,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								56,
+								56
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_name": "35319 comprobante debito",
+							"default_dir": "/home/rafapinzon/Documents/Python/Django/djangoTut",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/home/rafapinzon/Documents/Python/BSF-DSF.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 545,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								193,
+								193
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_name": "graph = {'A': set(['B', 'C']),",
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2546,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								587,
+								587
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/SQL/SQL.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"default_dir": "/home/rafapinzon/Documents/GitHub/HPC",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "convolution.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1857,
+								1857
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/C Improved/C Improved.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 624.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "MatrixMultTiled.c",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 4763,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3619,
+								3619
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/C Improved/C Improved.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2652.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 69.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.anaconda_documentation":
+	{
+		"height": 122.0
+	},
+	"output.exec":
+	{
+		"height": 174.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "HPC.sublime-project",
+	"replace":
+	{
+		"height": 114.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Package Control Messages"
+			],
+			[
+				"d",
+				"def sol"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 400.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
