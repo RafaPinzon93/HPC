@@ -13,16 +13,20 @@ Rafael Pinzón Rivera 1088313004
 
 typedef int dataType;
 
-void conv(const dataType *A, const dataType *B, dataType* out, int N) {
-
-    for (int i = 0; i < N; ++i)
-        for (int j = 0; j < N; ++j)
-            out[i + j] += A[i] * B[j];
+void conv(const dataType *A, const dataType *B, dataType* out, int N, int nMask) {
+  int N_start_point;
+  int i ;
+  for ( i = 0; i < N; ++i)
+      N_start_point = i - (nMask/2);
+      out[i] = 0;
+        for (int j = 0; j < nMask; ++j)
+            if (N_start_point + j >= 0 && (N_start_point + j) < N )
+                out[i] += A[i] * B[j];
 }
 
 __global__ void Convolution1D_Basic(dataType *N, dataType *M, dataType *P, int Mask_Width, int Width){
     int i = blockIdx.x * blockDim.x + threadIdx.x;
-
+    
     dataType Pvalue = 0.0;
     int N_start_point = i - (Mask_Width/2);
     for (int j = 0; j < Mask_Width; ++j)
@@ -50,15 +54,16 @@ int InvoqueKernel(dataType *A, dataType *B, dataType *C, int n, int pMask_Width,
     */
     dataType *d_A, *d_B, *d_C;
     int sizeN = n*sizeof(dataType);
+    int MaskSize = pMask_Width*sizeof(dataType);
     // int Mask_Width = 2*sizeN + 1;
     //Reserve memory in the device
     cudaMalloc((void **)&d_A, sizeN);
-    cudaMalloc((void **)&d_B, pMask_Width);
+    cudaMalloc((void **)&d_B, MaskSize);
     cudaMalloc((void **)&d_C, sizeN);
     //Copy the data to the device memory
     cudaMemcpy(d_A, A, sizeN, cudaMemcpyHostToDevice);
 
-    int dimGrid1D = ceil((float)sizeN/(float)pMask_Width);
+    int dimGrid1D = ceil((float)sizeN/(float)MaskSize);
 
     dim3 dimBlock3D(TILE_WIDTH, TILE_WIDTH, 1);
     int dimGridX = (int)ceil(sizeN/(dataType)dimBlock3D.x);
@@ -67,8 +72,8 @@ int InvoqueKernel(dataType *A, dataType *B, dataType *C, int n, int pMask_Width,
 
     switch (Option){
         case 1:
-            cudaMemcpy(d_B, B, sizeN, cudaMemcpyHostToDevice);
-            Convolution1D_Basic<<< dimGrid1D, pMask_Width >>>(d_A, d_B, d_C, pMask_Width, sizeN);
+            cudaMemcpy(d_B, B, MaskSize, cudaMemcpyHostToDevice);
+            Convolution1D_Basic<<< dimGrid1D, TILE_WIDTH >>>(d_A, d_B, d_C, pMask_Width, n);
             cudaDeviceSynchronize();
             break;
         case 2:
@@ -86,8 +91,8 @@ int InvoqueKernel(dataType *A, dataType *B, dataType *C, int n, int pMask_Width,
 
 int main(){
     int j;
-    int SIZES[] = {5};
-    int Mask_Width = 3;
+    int SIZES[] = {7};
+    int Mask_Width = 5;
     for (j = 0; j < sizeof(SIZES)/sizeof(SIZES[0]); ++j)
     {
         dataType *A=(dataType *) malloc(SIZES[j]*sizeof(dataType));
@@ -97,23 +102,18 @@ int main(){
         dataType *C=(dataType *) malloc(SIZES[j]*sizeof(dataType));
         dataType *result=(dataType *) malloc(SIZES[j]*sizeof(dataType));
         clock_t inicioCPU, inicioGPU,finCPU, finGPU;
-        int i;
-        for(i=0;i< SIZES[j]; i++){
-            A[i]=1;
-            hA[i]=A[i];
-            // A[i]=rand()%21;
-            B[i]=1;
-            hB[i]=B[i];
-            // B[i]=rand()%21;
-        }
         printf("A ");
         for (int iVector = 0; iVector < SIZES[j]; ++iVector)
         {
+            A[iVector]=1;
+            hA[iVector]=A[iVector];
             printf("%d ", A[iVector]);
         }
         printf("\nB ");
         for (int iVector = 0; iVector < Mask_Width; ++iVector)
         {
+            B[iVector]=1;
+            hB[iVector]=B[iVector];
             printf("%d ", B[iVector]);
         }
         printf("\n");
@@ -127,7 +127,7 @@ int main(){
 
         // Ejecuto por CPU
         inicioCPU=clock();
-        conv(hA, hB, result, SIZES[j]);
+        conv(hA, hB, result, SIZES[j], Mask_Width);
         finCPU=clock();
 
 
