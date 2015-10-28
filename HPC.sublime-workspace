@@ -604,7 +604,7 @@
 			"file": "convolution.c",
 			"settings":
 			{
-				"buffer_size": 4282,
+				"buffer_size": 4485,
 				"line_ending": "Unix"
 			}
 		},
@@ -1043,6 +1043,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Mask_Width",
 			"mytype",
 			"int",
 			"n",
@@ -1169,8 +1170,7 @@
 			"et_id",
 			";\n",
 			"locationFile",
-			"socket_id",
-			"fget"
+			"socket_id"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1578,15 +1578,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4282,
+						"buffer_size": 4485,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1857,
-								1857
+								586,
+								586
 							]
 						],
 						"settings":
@@ -1597,7 +1597,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 624.0,
+						"translation.y": 359.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
