@@ -4,8 +4,56 @@
 		"selected_items":
 		[
 			[
+				"data",
+				"dataType2"
+			],
+			[
+				"ima",
+				"imageSource"
+			],
+			[
+				"d_i",
+				"d_img_out"
+			],
+			[
+				"img",
+				"img_out"
+			],
+			[
+				"pm",
+				"pMaskSize"
+			],
+			[
+				"d_img_",
+				"d_img_in"
+			],
+			[
+				"cons",
+				"Convolution2D_Constant"
+			],
+			[
+				"file",
+				"filename	forstmt"
+			],
+			[
+				"blo",
+				"blockDim"
+			],
+			[
+				"N",
+				"N_ds"
+			],
+			[
+				"n",
+				"N"
+			],
+			[
 				"block",
-				"BLOCKSIZE"
+				"blockDim"
+			],
+			[
+				"M",
+				"MaskSize"
 			],
 			[
 				"dimgri",
@@ -380,10 +428,6 @@
 				"socket_id"
 			],
 			[
-				"n",
-				"nombreArc"
-			],
-			[
 				"MA",
 				"MAXFILE"
 			],
@@ -406,10 +450,6 @@
 			[
 				"lista",
 				"listaArchivo"
-			],
-			[
-				"M",
-				"MAXBUF"
 			],
 			[
 				"para",
@@ -474,46 +514,6 @@
 			[
 				"idpar",
 				"idPartidaLocal"
-			],
-			[
-				"resolver",
-				"resolverFlag"
-			],
-			[
-				"frase",
-				"fraseLlenada"
-			],
-			[
-				"fr",
-				"frase"
-			],
-			[
-				"conect",
-				"conectadosMult"
-			],
-			[
-				"fra",
-				"frases"
-			],
-			[
-				"cl",
-				"cleanup"
-			],
-			[
-				"horai",
-				"horaInicio	param"
-			],
-			[
-				"servicio",
-				"serviciosAdicionales2	statement"
-			],
-			[
-				"horainicio",
-				"horaInicioVueltaArray	statement"
-			],
-			[
-				"_horae",
-				"_horaEstacionesSalida	statement"
 			]
 		]
 	},
@@ -532,14 +532,6 @@
 			"settings":
 			{
 				"buffer_size": 163,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/rafapinzon/.config/sublime-text-3/Packages/User/HTML.sublime-settings",
-			"settings":
-			{
-				"buffer_size": 129,
 				"line_ending": "Unix"
 			}
 		},
@@ -594,9 +586,10 @@
 			}
 		},
 		{
+			"file": "/home/rafapinzon/Documents/BitBucket/HPC/convolution.c",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 8129,
 				"line_ending": "Unix"
 			}
 		},
@@ -604,15 +597,47 @@
 			"file": "convolution.c",
 			"settings":
 			{
-				"buffer_size": 4485,
+				"buffer_size": 6821,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "MatrixMultTiled.c",
+			"file": "ImageFilterSobel.c",
 			"settings":
 			{
-				"buffer_size": 4763,
+				"buffer_size": 7170,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/rafapinzon/MEGA/U/HPC/Constante.c.txt",
+			"settings":
+			{
+				"buffer_size": 3766,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/rafapinzon/MEGA/U/Progra/Python/ChangeNameFiles.py",
+			"settings":
+			{
+				"buffer_size": 625,
+				"line_ending": "Unix",
+				"name": "import os"
+			}
+		},
+		{
+			"contents": "#include <stdio.h>\n#include <stdlib.h>\n#include <time.h>\n#include <sys/time.h>\n\n// RG*RG*MAXN must fit within mytype\n\n#define MAXN 100000\n#define RG 10\n#define USECPSEC 1000000ULL\n#define nTPB 256\n\ntypedef double mytype;\n\nvoid conv(const mytype *A, const mytype *B, mytype* out, int N) {\n\n    for (int i = 0; i < N; ++i)\n        for (int j = 0; j < N; ++j)\n            out[i + j] += A[i] * B[j];\n}\n\nunsigned long long dtime_usec(unsigned long long prev){\n  timeval tv1;\n  gettimeofday(&tv1,0);\n  return ((tv1.tv_sec * USECPSEC)+tv1.tv_usec) - prev;\n}\n\n\n\n__global__ void conv_Kernel2(const mytype * __restrict__ A, const mytype * __restrict__ B, mytype *out, const int N){\n    int idx = threadIdx.x+blockDim.x*blockIdx.x;\n    if (idx < (2*N)-1){\n      mytype my_sum = 0;\n      for (int i = 0; i < N; i++)\n        if (((idx < N) && (i <= idx)) || ((idx >= N) && (i > (idx-N)))) my_sum += A[i]*B[idx-i];\n      out[idx] = my_sum;\n    }\n}\n\nint main(int argc, char *argv[]){\n\n\n  mytype *h_A, *d_A, *h_result, *d_result, *result, *h_B, *d_B, *A, *B;\n  if (argc != 2) {printf(\"must specify N on the command line\\n\"); return 1;}\n  int my_N = atoi(argv[1]);\n  if ((my_N < 1) || (my_N > MAXN)) {printf(\"N out of range\\n\"); return 1;}\n  B   = (mytype *)malloc(my_N*sizeof(mytype));\n  A   = (mytype *)malloc(my_N*sizeof(mytype));\n  h_A = (mytype *)malloc(my_N*sizeof(mytype));\n  h_B = (mytype *)malloc(my_N*sizeof(mytype));\n  h_result = (mytype *)malloc(2*my_N*sizeof(mytype));\n  result   = (mytype *)malloc(2*my_N*sizeof(mytype));\n\n  cudaMalloc(&d_B, my_N*sizeof(mytype));\n  cudaMalloc(&d_A, my_N*sizeof(mytype));\n  cudaMalloc(&d_result, 2*my_N*sizeof(mytype));\n\n  for (int i=0; i < my_N; i++){\n    A[i] = rand()%RG;\n    B[i] = rand()%RG;\n    h_A[i] = A[i];\n    h_B[i] = B[i];}\n\n  for (int i=0; i < 2*my_N; i++){\n    result[i]   = 0;\n    h_result[i] = 0;}\n\n  unsigned long long cpu_time = dtime_usec(0);\n  conv(A, B, result, my_N);\n  cpu_time = dtime_usec(cpu_time);\n\n  cudaMemset(d_result, 0, 2*my_N*sizeof(mytype));\n\n  unsigned long long gpu_time = dtime_usec(0);\n  cudaMemcpy(d_A, h_A, my_N*sizeof(mytype), cudaMemcpyHostToDevice);\n  cudaMemcpy(d_B, h_B, my_N*sizeof(mytype), cudaMemcpyHostToDevice);\n  conv_Kernel2<<<((2*(my_N-1))+nTPB-1)/nTPB,nTPB>>>(d_A, d_B, d_result, my_N);\n  cudaDeviceSynchronize();\n  cudaMemcpy(h_result, d_result, 2*my_N*sizeof(mytype), cudaMemcpyDeviceToHost);\n  gpu_time = dtime_usec(gpu_time);\n\n  for (int i = 0; i < 2*my_N; i++) if (result[i] != h_result[i]) {printf(\"mismatch2 at %d, cpu: %d, gpu %d\\n\", i, result[i], h_result[i]); return 1;}\n  printf(\"Finished.  Results match.  cpu time: %ldus, gpu time: %ldus\\n\", cpu_time, gpu_time);\n  printf(\"cpu/gpu = %f\\n\", cpu_time/(float)gpu_time);\n  return 0;\n}",
+			"settings":
+			{
+				"buffer_size": 2727,
 				"line_ending": "Unix"
 			}
 		}
@@ -869,7 +894,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 557.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -897,6 +922,8 @@
 	],
 	"file_history":
 	[
+		"/home/rafapinzon/.config/sublime-text-3/Packages/User/HTML.sublime-settings",
+		"/home/rafapinzon/Documents/GitHub/HPC/convolution.c",
 		"/home/rafapinzon/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
 		"/home/rafapinzon/Documents/Python/Django/djangoTut/lib/python2.7/site-packages/django/db/models/fields/__init__.py",
 		"/home/rafapinzon/Documents/Python/Django/djangoTut/src/mvp_landing/urls.py",
@@ -1022,9 +1049,7 @@
 		"/home/rafapinzon/Downloads/Taller7.c",
 		"/home/rafapinzon/MEGA/U/Cliente Servidor/CTutorial.c",
 		"/home/rafapinzon/.config/sublime-text-2/Packages/Default/Preferences (Linux).sublime-settings",
-		"/home/rafapinzon/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
-		"/home/rafapinzon/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
-		"/home/rafapinzon/.config/sublime-text-3/Packages/User/Package Control.sublime-settings"
+		"/home/rafapinzon/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings"
 	],
 	"find":
 	{
@@ -1043,6 +1068,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"gM",
+			"Mat",
+			"img_out",
+			"C",
+			"img_in",
+			"d_img_in",
+			"pSizeImage",
+			"M",
+			"Mask_Width",
+			"M",
+			"img_in",
+			"ConstantConvolution",
+			"unsigned char",
+			"(\".\");",
+			"halo_index_left",
+			"midMask",
+			"%d",
+			"i",
 			"Mask_Width",
 			"mytype",
 			"int",
@@ -1152,27 +1195,9 @@
 			"archivo",
 			"atoi",
 			"nombreArc",
-			"archivo",
-			"Fd",
-			"FILE",
-			"file",
-			"taman",
-			"temp",
-			"signal",
-			"sleep",
-			"bzero",
-			"server_reply",
-			"archivo",
-			"sql",
-			"sigint",
-			"locationFile",
-			"listar",
-			"et_id",
-			";\n",
-			"locationFile",
-			"socket_id"
+			"archivo"
 		],
-		"highlight": false,
+		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
 		"regex": false,
@@ -1269,13 +1294,13 @@
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": false,
+		"whole_word": true,
 		"wrap": true
 	},
 	"groups":
 	[
 		{
-			"selected": 10,
+			"selected": 9,
 			"sheets":
 			[
 				{
@@ -1305,7 +1330,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -1335,40 +1360,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/home/rafapinzon/.config/sublime-text-3/Packages/User/HTML.sublime-settings",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 129,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								126,
-								126
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "/home/rafapinzon/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 					"semi_transient": false,
 					"settings":
@@ -1394,11 +1390,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/src/mvp_landing/urls.py",
 					"semi_transient": false,
 					"settings":
@@ -1423,11 +1419,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/src/signups/views.py",
 					"semi_transient": false,
 					"settings":
@@ -1452,11 +1448,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1482,11 +1478,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 6,
 					"file": "/home/rafapinzon/Documents/Python/BSF-DSF.py",
 					"semi_transient": false,
 					"settings":
@@ -1512,11 +1508,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 7,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1544,7 +1540,131 @@
 					"type": "text"
 				},
 				{
+					"buffer": 8,
+					"file": "/home/rafapinzon/Documents/BitBucket/HPC/convolution.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7511,
+								7511
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/C Improved/C Improved.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3528.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
 					"buffer": 9,
+					"file": "convolution.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6821,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6764,
+								6764
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/C Improved/C Improved.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4080.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "ImageFilterSobel.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7170,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4980,
+								4980
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/C Improved/C Improved.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2268.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/home/rafapinzon/MEGA/U/HPC/Constante.c.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3766,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1216,
+								1216
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/C++/C.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2110.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1569,69 +1689,68 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "convolution.c",
+					"buffer": 13,
+					"file": "/home/rafapinzon/MEGA/U/Progra/Python/ChangeNameFiles.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4485,
+						"buffer_size": 625,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								586,
-								586
+								516,
+								516
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"syntax": "Packages/C Improved/C Improved.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"auto_name": "import os",
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 359.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "MatrixMultTiled.c",
-					"semi_transient": true,
+					"buffer": 14,
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4763,
+						"buffer_size": 2727,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3619,
-								3619
+								2231,
+								2231
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"syntax": "Packages/C Improved/C Improved.tmLanguage",
+							"default_dir": "/home/rafapinzon/Documents/GitHub/HPC",
+							"syntax": "Packages/C++/C.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2652.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]

@@ -18,6 +18,7 @@ Rafael Pinzón Rivera 1088313004
 #define BLOCKSIZE 256
 #define TILE_WIDTH 32
 #define MAX_MASK_WIDTH 9
+#define gMASK_WIDTH 9
 
 using namespace std;
 using namespace cv;
@@ -104,30 +105,44 @@ __global__ void Convolution2D_Constant(dataType *Img_in, dataType *Img_out,int M
     Img_out[row*rowImg+col] = rgbLimit(Pvalue);
 }
 
-__global__ void Convolution1D_Tiled(dataType *N, dataType *P, int Mask_Width, int Width){
-    __shared__ dataType N_ds[TILE_WIDTH + MAX_MASK_WIDTH -1];
-    int i = blockIdx.x * blockDim.x + threadIdx.x;
-    int midMask = Mask_Width/2;
 
-    int halo_index_left = (blockIdx.x - 1) *blockDim.x + threadIdx.x;
-    if (threadIdx.x >= blockDim.x - midMask){
-        N_ds[threadIdx.x - (blockDim.x - midMask)] = (halo_index_left < 0) ? 0 : N[halo_index_left];
+__global__ void Convolution2D_Tiled(dataType *In, dataType *Out, int Mask_Width, int width, int height){
+    __shared__ float N_ds[TILE_WIDTH + gMASK_WIDTH - 1][TILE_WIDTH + gMASK_WIDTH - 1];
+    int n = gMASK_WIDTH/2;
+    int dest = threadIdx.y*TILE_WIDTH+threadIdx.x, destY = dest / (TILE_WIDTH+gMASK_WIDTH-1), destX = dest % (TILE_WIDTH+gMASK_WIDTH-1),
+       srcY = blockIdx.y * TILE_WIDTH + destY - n, srcX = blockIdx.x * TILE_WIDTH + destX - n,
+       src = (srcY * width + srcX);
+    if (srcY >= 0 && srcY < height && srcX >= 0 && srcX < width)
+       N_ds[destY][destX] = In[src];
+    else
+       N_ds[destY][destX] = 0;
+
+    // Second batch loading
+    dest = threadIdx.y * TILE_WIDTH + threadIdx.x + TILE_WIDTH * TILE_WIDTH;
+    destY = dest /(TILE_WIDTH + gMASK_WIDTH - 1), destX = dest % (TILE_WIDTH + gMASK_WIDTH - 1);
+    srcY = blockIdx.y * TILE_WIDTH + destY - n;
+    srcX = blockIdx.x * TILE_WIDTH + destX - n;
+    src = (srcY * width + srcX);
+    if (destY < TILE_WIDTH + gMASK_WIDTH - 1) {
+        if (srcY >= 0 && srcY < height && srcX >= 0 && srcX < width)
+           N_ds[destY][destX] = In[src];
+        else
+           N_ds[destY][destX] = 0;
     }
+    __syncthreads();
 
-    N_ds[midMask + threadIdx.x] = N[blockIdx.x * blockDim.x + threadIdx.x];
-
-    int halo_index_right = (blockIdx.x + 1) *blockDim.x + threadIdx.x;
-    if (threadIdx.x >= blockDim.x - midMask){
-        N_ds[threadIdx.x + blockDim.x + midMask] = (halo_index_right < 0) ? 0 : N[halo_index_right];
-    }
-
-    dataType Pvalue = 0.0;
-    for (int j = 0; j < Mask_Width; ++j)
-    {
-        Pvalue += N_ds[threadIdx.x + j] * gM[j];
-    }
-    P[i] = Pvalue;
+    int accum = 0;
+    int y, x;
+    for (y = 0; y < Mask_Width; y++)
+       for (x = 0; x < Mask_Width; x++)
+           accum += N_ds[threadIdx.y + y][threadIdx.x + x] * gM[y * Mask_Width + x];
+    y = blockIdx.y * TILE_WIDTH + threadIdx.y;
+    x = blockIdx.x * TILE_WIDTH + threadIdx.x;
+    if (y < height && x < width)
+       Out[(y * width + x)] = rgbLimit(accum);
+    __syncthreads();
 }
+
 
 int InvoqueKernel(dataType *pImgIn, dataType2 *pMask, dataType *pImg_out, int pRows, int pCols, int pMaskSize, int Option){
     /* 
@@ -138,11 +153,7 @@ int InvoqueKernel(dataType *pImgIn, dataType2 *pMask, dataType *pImg_out, int pR
             C: Vector de enteros, para guardar la solución.
             Option: Saber que función va a llamar.
     */
-
-    // int scale = 1;
-    // int delta = 0;
-    // int ddepth = CV_8UC1;
-    Mat gray_image;
+    Mat gray_image ;
 
     int sizeImage = sizeof(dataType)*pRows*pCols;
     dataType *d_img_in, *d_img_out;
@@ -159,35 +170,39 @@ int InvoqueKernel(dataType *pImgIn, dataType2 *pMask, dataType *pImg_out, int pR
     unsigned long long gpu_time = dtime_usec(0);
 
 
-
     switch (Option){
         case 1:
             cudaMemcpy(d_Mask, pMask, pMaskSize, cudaMemcpyHostToDevice);
             Convolution2D_Basic<<<dimGrid3D,dimBlock3D>>>(d_img_in, d_Mask, d_img_out, 3, pRows, pCols);
             cudaDeviceSynchronize();
             cudaMemcpy(pImg_out, d_img_out, sizeImage, cudaMemcpyDeviceToHost);
-            gray_image.create(pCols, pRows, CV_8UC1);
-            gray_image.data = pImg_out;
-            imwrite("./outputs/1088313004.png",gray_image);
+            // gray_image.create(pCols, pRows, CV_8UC1);
+            // gray_image.data = pImg_out;
+            // imwrite("./outputs/1088313004.png",gray_image);
             gpu_time = dtime_usec(gpu_time);
-            printf("Finished 1. Basic.  Results match. gpu time: %lldus\n", gpu_time);
+            printf("Finished 1. Basic.  Results match. gpu time: %lld\n", gpu_time);
             break;
         case 2:
             cudaMemcpyToSymbol(gM, pMask, pMaskSize);
             Convolution2D_Constant<<<dimGrid3D,dimBlock3D>>>(d_img_in, d_img_out, 3, pRows, pCols);
             cudaDeviceSynchronize();
             cudaMemcpy(pImg_out, d_img_out, sizeImage, cudaMemcpyDeviceToHost);
-            gray_image.create(pCols, pRows, CV_8UC1);
-            gray_image.data = pImg_out;
-            imwrite("./outputs/1088313004.png",gray_image);
+            // gray_image.create(pCols, pRows, CV_8UC1);
+            // gray_image.data = pImg_out;
+            // imwrite("./outputs/1088313004.png",gray_image);
             gpu_time = dtime_usec(gpu_time);
-            printf("Finished 2. Constant.  Results match. gpu time: %lldus\n", gpu_time);
+            printf("Finished 2. Constant.  Results match. gpu time: %lld\n", gpu_time);
             break;
             
         case 3:
+            cudaMemcpyToSymbol(gM, pMask, pMaskSize);
+            Convolution2D_Constant<<<dimGrid3D,dimBlock3D>>>(d_img_in, d_img_out, 3, pRows, pCols);
+            cudaDeviceSynchronize();
+            cudaMemcpy(pImg_out, d_img_out, sizeImage, cudaMemcpyDeviceToHost);
             gpu_time = dtime_usec(gpu_time);
+            printf("Finished 3. Tiled.  Results match. gpu time: %lld\n", gpu_time);
             break;
-
+            
     }
     cudaMemcpy(pImg_out, d_img_out, sizeImage, cudaMemcpyDeviceToHost);
     cudaFree(d_img_in);
@@ -198,26 +213,41 @@ int InvoqueKernel(dataType *pImgIn, dataType2 *pMask, dataType *pImg_out, int pR
 
 int main(){
     char imageSource[20];
-    for (int i = 1; i <= 1; ++i)
+    int scale = 1;
+    int delta = 0;
+    int ddepth = CV_8UC1;
+    for (int iteration = 0; iteration < 20; ++iteration)
     {
-        Mat image;
-        sprintf(imageSource, "inputs/img%d.jpg", i);
-        printf("%s\n", imageSource);
-        image = imread(imageSource, 0);
-        Size sizeImage = image.size();
+        for (int i = 1; i <= 6; ++i)
+        {
+            Mat image, grad_x;
+            sprintf(imageSource, "inputs/img%d.jpg", i);
+            printf("%s\n", imageSource);
+            image = imread(imageSource, 0);
+            Size sizeImage = image.size();
 
-        int row=sizeImage.width;
-        int col=sizeImage.height;
-        int sizeMask= sizeof(dataType2)*9;
-        int size = sizeof( dataType)*row*col;
-        dataType *img_in=( dataType*)malloc(size);
-        dataType *img_out=(dataType*)malloc(size);
-        dataType2 Mask[9] = {-1,0,1,-2,0,2,-1,0,1};
+            int row=sizeImage.width;
+            int col=sizeImage.height;
+            int sizeMask= sizeof(dataType2)*9;
+            int size = sizeof( dataType)*row*col;
+            dataType *img_in=( dataType*)malloc(size);
+            dataType *img_out=(dataType*)malloc(size);
+            dataType2 Mask[9] = {-1,0,1,-2,0,2,-1,0,1};
 
-        img_in = image.data;
+            img_in = image.data;
 
-        InvoqueKernel(img_in, Mask, img_out, row, col, sizeMask, 1);
-        InvoqueKernel(img_in, Mask, img_out, row, col, sizeMask, 2);
+            unsigned long long cpu_time = dtime_usec(0);
+            Sobel(image, grad_x, ddepth, 1, 0, 3, scale, delta, BORDER_DEFAULT);
+            cpu_time = dtime_usec(cpu_time);
+            printf("Finished 4. Sequential.  Results match. cpu time: %lld\n", cpu_time);
+
+            InvoqueKernel(img_in, Mask, img_out, row, col, sizeMask, 1);
+            InvoqueKernel(img_in, Mask, img_out, row, col, sizeMask, 2);
+            InvoqueKernel(img_in, Mask, img_out, row, col, sizeMask, 3);
+
+            printf("\n");
+        }
+        printf("\n-----------------------------------------------------\n");
     }
     return 0;
 }
