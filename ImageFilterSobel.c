@@ -34,6 +34,8 @@ unsigned long long dtime_usec(unsigned long long prev){
 }
 
 __constant__ dataType2 gM[MAX_MASK_WIDTH];
+__constant__ dataType2 gMX[MAX_MASK_WIDTH];
+__constant__ dataType2 gMY[MAX_MASK_WIDTH];
 
 __device__ dataType rgbLimit(int v){
   if(v>255)
@@ -44,7 +46,19 @@ __device__ dataType rgbLimit(int v){
   return v;
 }
 
-__global__ void Convolution1D_Basic(dataType *N, dataType *M, dataType *P, int Mask_Width, int Width){
+__global__ void GradientConvolution(dataType *ImgX, dataType *ImgY, dataType *Img_out, int rows, int cols){
+    int Row = blockIdx.x * blockDim.x + threadIdx.x;
+    int Col = blockIdx.y * blockDim.y + threadIdx.y;
+  	int total = 0;
+    if ((Row <= rows) && (Col <= cols)){
+      	total = sqrt((float)((ImgX[Row * rows + Col] * ImgX[Row * rows + Col]) + (ImgY[Row * rows + Col] * ImgY[Row * rows + Col]))); 
+        Img_out[Row*rows + Col] = total;
+        // printf("%d\n", d_P[Row*Width + Col]);
+    }
+  
+}
+
+__global__ void Convolution1D_Basic(dataType *N, dataType2 *M, dataType *P, int Mask_Width, int Width){
     int i = blockIdx.x * blockDim.x + threadIdx.x;
 
     dataType Pvalue = 0.0;
@@ -142,9 +156,8 @@ __global__ void Convolution2D_Tiled(dataType *In, dataType *Out, int Mask_Width,
        Out[(y * width + x)] = rgbLimit(accum);
     __syncthreads();
 }
-/home/rafapinzon/Documents/GitHub/HPC/
 
-int InvoqueKernel(dataType *pImgIn, dataType2 *pMask, dataType *pImg_out, int pRows, int pCols, int pMaskSize, int Option){
+int InvoqueKernel(dataType *pImgIn, dataType2 *pMaskX, dataType2 *pMaskY, int size, int pRows, int pCols, int pMaskSize, int Option){
     /* 
         Función que invoca un método en el kernel (GPU) 
         Parametros:
@@ -156,13 +169,20 @@ int InvoqueKernel(dataType *pImgIn, dataType2 *pMask, dataType *pImg_out, int pR
     Mat gray_image ;
 
     int sizeImage = sizeof(dataType)*pRows*pCols;
-    dataType *d_img_in, *d_img_out;
-    dataType2 *d_Mask;
+    dataType *d_img_in, *d_img_outX, *d_img_outY, *d_img_out;
+    dataType2 *d_MaskX, *d_MaskY;
     cudaMalloc((void**)&d_img_in,sizeImage);
-    cudaMalloc((void**)&d_img_out,sizeImage);
-    cudaMalloc((void**)&d_Mask, pMaskSize);
+    cudaMalloc((void**)&d_MaskX, pMaskSize);
+  	cudaMalloc((void**)&d_MaskY, pMaskSize);
     cudaMemcpy(d_img_in, pImgIn, sizeImage, cudaMemcpyHostToDevice);
-
+		
+  	dataType *img_outX=(dataType*)malloc(size);
+  	dataType *img_outY=(dataType*)malloc(size);
+  	dataType *img_out=(dataType*)malloc(size);
+  	cudaMalloc((void**)&d_img_outX,sizeImage);
+    cudaMalloc((void**)&d_img_outY,sizeImage);
+  	cudaMalloc((void**)&d_img_out,sizeImage);
+  
     dim3 dimBlock3D(TILE_WIDTH, TILE_WIDTH, 1);
     int dimGridX = (int)ceil(pRows/(float)dimBlock3D.x);
     int dimGridY = (int)ceil(pCols/(float)dimBlock3D.y);
@@ -172,21 +192,30 @@ int InvoqueKernel(dataType *pImgIn, dataType2 *pMask, dataType *pImg_out, int pR
 
     switch (Option){
         case 1:
-            cudaMemcpy(d_Mask, pMask, pMaskSize, cudaMemcpyHostToDevice);
-            Convolution2D_Basic<<<dimGrid3D,dimBlock3D>>>(d_img_in, d_Mask, d_img_out, 3, pRows, pCols);
+            cudaMemcpy(d_MaskX, pMaskX, pMaskSize, cudaMemcpyHostToDevice);
+      			cudaMemcpy(d_MaskY, pMaskY, pMaskSize, cudaMemcpyHostToDevice);
+            Convolution2D_Basic<<<dimGrid3D,dimBlock3D>>>(d_img_in, d_MaskX, d_img_outX, 3, pRows, pCols);
+      			Convolution2D_Basic<<<dimGrid3D,dimBlock3D>>>(d_img_in, d_MaskY, d_img_outY, 3, pRows, pCols);
+     			  GradientConvolution<<<dimGrid3D,dimBlock3D>>>(d_img_outX, d_img_outY, d_img_out, pRows, pCols);
             cudaDeviceSynchronize();
-            cudaMemcpy(pImg_out, d_img_out, sizeImage, cudaMemcpyDeviceToHost);
-            // gray_image.create(pCols, pRows, CV_8UC1);
-            // gray_image.data = pImg_out;
-            // imwrite("./outputs/1088313004.png",gray_image);
+            cudaMemcpy(img_out, d_img_out, sizeImage, cudaMemcpyDeviceToHost);
+            gray_image.create(pCols, pRows, CV_8UC1);
+            gray_image.data = img_out;
+            imwrite("./outputs/1088313004.png",gray_image);
             gpu_time = dtime_usec(gpu_time);
             printf("Finished 1. Basic.  Results match. gpu time: %lld\n", gpu_time);
             break;
         case 2:
-            cudaMemcpyToSymbol(gM, pMask, pMaskSize);
-            Convolution2D_Constant<<<dimGrid3D,dimBlock3D>>>(d_img_in, d_img_out, 3, pRows, pCols);
+      			cudaMemcpyToSymbol(gMX, pMaskX, pMaskSize);
+      			cudaMemcpyToSymbol(gMY, pMaskY, pMaskSize);
+            Convolution2D_Constant<<<dimGrid3D,dimBlock3D>>>(d_img_in, d_img_outX, 3, pRows, pCols);
+      			Convolution2D_Constant<<<dimGrid3D,dimBlock3D>>>(d_img_in, d_img_outY, 3, pRows, pCols);
+     			  GradientConvolution<<<dimGrid3D,dimBlock3D>>>(d_img_outX, d_img_outY, d_img_out, pRows, pCols);
             cudaDeviceSynchronize();
-            cudaMemcpy(pImg_out, d_img_out, sizeImage, cudaMemcpyDeviceToHost);
+            //cudaMemcpyToSymbol(gM, pMask, pMaskSize);
+            //Convolution2D_Constant<<<dimGrid3D,dimBlock3D>>>(d_img_in, d_img_out, 3, pRows, pCols);
+            //cudaDeviceSynchronize();
+            //cudaMemcpy(pImg_out, d_img_out, sizeImage, cudaMemcpyDeviceToHost);
             // gray_image.create(pCols, pRows, CV_8UC1);
             // gray_image.data = pImg_out;
             // imwrite("./outputs/1088313004.png",gray_image);
@@ -195,19 +224,25 @@ int InvoqueKernel(dataType *pImgIn, dataType2 *pMask, dataType *pImg_out, int pR
             break;
             
         case 3:
-            cudaMemcpyToSymbol(gM, pMask, pMaskSize);
-            Convolution2D_Constant<<<dimGrid3D,dimBlock3D>>>(d_img_in, d_img_out, 3, pRows, pCols);
+      			cudaMemcpyToSymbol(gMX, pMaskX, pMaskSize);
+      			cudaMemcpyToSymbol(gMY, pMaskY, pMaskSize);
+            Convolution2D_Tiled<<<dimGrid3D,dimBlock3D>>>(d_img_in, d_img_outX, 3, pRows, pCols);
+      			Convolution2D_Tiled<<<dimGrid3D,dimBlock3D>>>(d_img_in, d_img_outY, 3, pRows, pCols);
+     			  GradientConvolution<<<dimGrid3D,dimBlock3D>>>(d_img_outX, d_img_outY, d_img_out, pRows, pCols);
             cudaDeviceSynchronize();
-            cudaMemcpy(pImg_out, d_img_out, sizeImage, cudaMemcpyDeviceToHost);
-            gray_image.create(pCols, pRows, CV_8UC1);
-            gray_image.data = pImg_out;
+            //cudaMemcpyToSymbol(gM, pMask, pMaskSize);
+            //Convolution2D_Constant<<<dimGrid3D,dimBlock3D>>>(d_img_in, d_img_out, 3, pRows, pCols);
+            //cudaDeviceSynchronize();
+            //cudaMemcpy(pImg_out, d_img_out, sizeImage, cudaMemcpyDeviceToHost);
+            //gray_image.create(pCols, pRows, CV_8UC1);
+            //gray_image.data = pImg_out;
             // imwrite("./outputs/1088313004.png",gray_image);
             gpu_time = dtime_usec(gpu_time);
             printf("Finished 3. Tiled.  Results match. gpu time: %lld\n", gpu_time);
             break;
             
     }
-    cudaMemcpy(pImg_out, d_img_out, sizeImage, cudaMemcpyDeviceToHost);
+    //cudaMemcpy(pImg_out, d_img_out, sizeImage, cudaMemcpyDeviceToHost);
     cudaFree(d_img_in);
     cudaFree(d_img_out);
     return 0;
@@ -221,7 +256,7 @@ int main(){
     int ddepth = CV_8UC1;
     for (int iteration = 0; iteration < 1; ++iteration)
     {
-        for (int i = 1; i <= 1; ++i)
+        for (int i = 2; i <= 2; ++i)
         {
             Mat image, grad_x;
             sprintf(imageSource, "inputs/img%d.jpg", i);
@@ -234,8 +269,8 @@ int main(){
             int sizeMask= sizeof(dataType2)*9;
             int size = sizeof( dataType)*row*col;
             dataType *img_in=( dataType*)malloc(size);
-            dataType *img_out=(dataType*)malloc(size);
-            dataType2 Mask[9] = {-1,0,1,-2,0,2,-1,0,1};
+            dataType2 MaskX[9] = {-1,0,1,-2,0,2,-1,0,1};
+         		dataType2 MaskY[9] = {-1,-2,-1,0,0,0,1,2,1};
 
             img_in = image.data;
 
@@ -246,9 +281,9 @@ int main(){
             cpu_time = dtime_usec(cpu_time);
             printf("Finished 4. Sequential.  Results match. cpu time: %lld\n", cpu_time);
 
-            InvoqueKernel(img_in, Mask, img_out, row, col, sizeMask, 1);
-            InvoqueKernel(img_in, Mask, img_out, row, col, sizeMask, 2);
-            InvoqueKernel(img_in, Mask, img_out, row, col, sizeMask, 3);
+            InvoqueKernel(img_in, MaskX, MaskY, size, row, col, sizeMask, 1);
+            InvoqueKernel(img_in, MaskX, MaskY,  size, row, col, sizeMask, 2);
+            InvoqueKernel(img_in, MaskX, MaskY,  size, row, col, sizeMask, 3);
 
             printf("\n");
         }
