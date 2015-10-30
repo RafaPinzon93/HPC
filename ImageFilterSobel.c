@@ -47,16 +47,18 @@ __device__ dataType rgbLimit(int v){
 }
 
 __global__ void GradientConvolution(dataType *ImgX, dataType *ImgY, dataType *Img_out, int rows, int cols){
-    int Row = blockIdx.x * blockDim.x + threadIdx.x;
-    int Col = blockIdx.y * blockDim.y + threadIdx.y;
+    int Col = blockIdx.x * blockDim.x + threadIdx.x;
+    int Row = blockIdx.y * blockDim.y + threadIdx.y;
   	int total = 0;
-    if ((Row <= rows) && (Col <= cols)){
+    if ((Row <= cols) && (Col <= rows)){
       	total = sqrt((float)((ImgX[Row * rows + Col] * ImgX[Row * rows + Col]) + (ImgY[Row * rows + Col] * ImgY[Row * rows + Col]))); 
-        Img_out[Row*rows + Col] = total;
+        Img_out[Row*rows + Col] = rgbLimit(total);
         // printf("%d\n", d_P[Row*Width + Col]);
     }
   
 }
+
+
 
 __global__ void Convolution1D_Basic(dataType *N, dataType2 *M, dataType *P, int Mask_Width, int Width){
     int i = blockIdx.x * blockDim.x + threadIdx.x;
@@ -256,7 +258,7 @@ int main(){
     int ddepth = CV_8UC1;
     for (int iteration = 0; iteration < 1; ++iteration)
     {
-        for (int i = 2; i <= 2; ++i)
+        for (int i = 3; i <= 3; ++i)
         {
             Mat image, grad_x;
             sprintf(imageSource, "inputs/img%d.jpg", i);
@@ -274,7 +276,7 @@ int main(){
 
             img_in = image.data;
 
-            imwrite("./outputs/1088313004.png",image);
+            //imwrite("./outputs/1088313004.png",image);
 
             unsigned long long cpu_time = dtime_usec(0);
             Sobel(image, grad_x, ddepth, 1, 0, 3, scale, delta, BORDER_DEFAULT);
