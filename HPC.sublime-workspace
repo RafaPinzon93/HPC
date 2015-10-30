@@ -605,17 +605,17 @@
 			"file": "ImageFilterSobel.c",
 			"settings":
 			{
-				"buffer_size": 9053,
+				"buffer_size": 9091,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img2_Original.png}\n\\caption{Img1.jpg Original}\n\\label{fig:Img2_Original}\n\\end{figure}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img2_Filtered.png}\n\\caption{Img1.jpg Filtered}\n\\label{fig:Img2_Filtered}\n\\end{figure}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img3_Original.png}\n\\caption{Img1.jpg Original}\n\\label{fig:Img3_Original}\n\\end{figure}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img3_Filtered.png}\n\\caption{Img1.jpg Filtered}\n\\label{fig:Img3_Filtered}\n\\end{figure}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img4_Original.png}\n\\caption{Img1.jpg Original}\n\\label{fig:Img4_Original}\n\\end{figure}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img4_Filtered.png}\n\\caption{Img1.jpg Filtered}\n\\label{fig:Img4_Filtered}\n\\end{figure}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img5_Original.png}\n\\caption{Img1.jpg Original}\n\\label{fig:Img5_Original}\n\\end{figure}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img5_Filtered.png}\n\\caption{Img1.jpg Filtered}\n\\label{fig:Img5_Filtered}\n\\end{figure}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img6_Original.png}\n\\caption{Img1.jpg Original}\n\\label{fig:Img6_Original}\n\\end{figure}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img6_Filtered.png}\n\\caption{Img1.jpg Filtered}\n\\label{fig:Img6_Filtered}\n\\end{figure}\n\n2\n2\n3\n3\n4\n4\n5\n5\n6\n6",
+			"contents": "\\section{Image 1}\n\\begin{table}[ht]\n\\centering\n\\begin{tabular}{l|llll}\n\\multicolumn{5}{c}{Img1.jpg Total Size = 336400}                     \\\\\n\\hline\nTest    & Sequential & Basic  & Constant & Tiled \\\\\n\\hline\n1       & 3624       & 333    & 224      & 223   \\\\\n2       & 3575       & 328    & 224      & 225   \\\\\n3       & 3184       & 315    & 216      & 214   \\\\\n4       & 3190       & 309    & 214      & 213   \\\\\n5       & 3185       & 309    & 226      & 215   \\\\\n6       & 3184       & 318    & 217      & 215   \\\\\n7       & 3181       & 313    & 216      & 214   \\\\\n8       & 3580       & 329    & 224      & 223   \\\\\n9       & 3187       & 314    & 213      & 213   \\\\\n10      & 3182       & 307    & 212      & 214   \\\\\n11      & 3197       & 315    & 216      & 216   \\\\\n12      & 3183       & 311    & 215      & 213   \\\\\n13      & 3187       & 316    & 217      & 215   \\\\\n14      & 3184       & 317    & 216      & 214   \\\\\n15      & 3190       & 308    & 214      & 210   \\\\\n16      & 3188       & 311    & 218      & 216   \\\\\n17      & 3186       & 308    & 217      & 212   \\\\\n18      & 3187       & 316    & 214      & 215   \\\\\n19      & 3575       & 323    & 222      & 219   \\\\\n20      & 3184       & 311    & 216      & 217   \\\\\n\\hline\nAverage & 3266,65    & 315,55 & 217,55   & 215,8\n\\end{tabular}\n\\caption{Convolución Img1.jpg. tiempo: microsegundos.}\n\\label{table: Img1Convolution}\n\\end{table}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img1_Original.png}\n\\caption{Img1.jpg Original}\n\\label{fig:Img1_Original}\n\\end{figure}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img1_Filtered.png}\n\\caption{Img1.jpg Filtered}\n\\label{fig:Img1_Filtered}\n\\end{figure}\n\n\n\\section{Image 2}\n\\begin{table}[ht]\n\\centering\n\\begin{tabular}{l|llll}\n\\multicolumn{5}{c}{Img2.jpg Total Size = 408320}                     \\\\\n\\hline\nTest    & Sequential & Basic  & Constant & Tiled \\\\\n\\hline\n1        & 4760       & 487   & 255      & 254   \\\\\n2        & 4632       & 365   & 246      & 246   \\\\\n3        & 4113       & 362   & 245      & 244   \\\\\n4        & 4120       & 359   & 245      & 244   \\\\\n5        & 4116       & 355   & 241      & 247   \\\\\n6        & 4115       & 356   & 245      & 241   \\\\\n7        & 4118       & 356   & 246      & 246   \\\\\n8        & 4635       & 371   & 251      & 255   \\\\\n9        & 4199       & 359   & 247      & 247   \\\\\n10       & 4137       & 362   & 245      & 247   \\\\\n11       & 4112       & 362   & 246      & 248   \\\\\n12       & 4124       & 365   & 247      & 244   \\\\\n13       & 4117       & 361   & 244      & 242   \\\\\n14       & 4116       & 358   & 246      & 246   \\\\\n15       & 4117       & 359   & 245      & 245   \\\\\n16       & 4124       & 360   & 245      & 244   \\\\\n17       & 4115       & 355   & 255      & 243   \\\\\n18       & 4122       & 363   & 243      & 243   \\\\\n19       & 4623       & 362   & 247      & 246   \\\\\n20       & 4115       & 359   & 244      & 244   \\\\\n\\hline\nAverage  & 4231,5     & 366,8 & 246,4    & 245,8\n\\end{tabular}\n\\caption{Convolución Img2.jpg. tiempo: microsegundos.}\n\\label{table: Img2Convolution}\n\\end{table}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img2_Original.png}\n\\caption{Img2.jpg Original}\n\\label{fig:Img2_Original}\n\\end{figure}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img2_Filtered.png}\n\\caption{Img2.jpg Filtered}\n\\label{fig:Img2_Filtered}\n\\end{figure}\n\n\n\\section{Image 3}\n\\begin{table}[ht]\n\\centering\n\\begin{tabular}{l|llll}\n\\multicolumn{5}{c}{Img3.jpg Total Size = 1049088}                     \\\\\n\\hline\nTest    & Sequential & Basic  & Constant & Tiled \\\\\n\\hline\n1        & 10874      & 1190   & 588      & 583   \\\\\n2        & 10516      & 847    & 573      & 571   \\\\\n3        & 9357       & 842    & 571      & 569   \\\\\n4        & 9366       & 843    & 572      & 551   \\\\\n5        & 9354       & 838    & 570      & 567   \\\\\n6        & 9348       & 850    & 572      & 574   \\\\\n7        & 9346       & 844    & 572      & 572   \\\\\n8        & 10569      & 862    & 588      & 587   \\\\\n9        & 9407       & 866    & 575      & 576   \\\\\n10       & 9356       & 841    & 570      & 571   \\\\\n11       & 9438       & 857    & 576      & 573   \\\\\n12       & 9354       & 842    & 567      & 566   \\\\\n13       & 9354       & 846    & 572      & 571   \\\\\n14       & 9363       & 842    & 568      & 569   \\\\\n15       & 9361       & 846    & 573      & 575   \\\\\n16       & 9352       & 841    & 567      & 566   \\\\\n17       & 9358       & 847    & 575      & 575   \\\\\n18       & 9358       & 844    & 569      & 570   \\\\\n19       & 10536      & 853    & 578      & 577   \\\\\n20       & 9363       & 846    & 571      & 571   \\\\\n\\hline\nAverage  & 9616,5     & 864,35 & 573,35   & 571,7\n\\end{tabular}\n\\caption{Convolución Img3.jpg. tiempo: microsegundos.}\n\\label{table: Img3Convolution}\n\\end{table}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img3_Original.png}\n\\caption{Img3.jpg Original}\n\\label{fig:Img3_Original}\n\\end{figure}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img3_Filtered.png}\n\\caption{Img3.jpg Filtered}\n\\label{fig:Img3_Filtered}\n\\end{figure}\n\n\\section{Image 4}\n\\begin{table}[ht]\n\\centering\n\\begin{tabular}{l|llll}\n\\multicolumn{5}{c}{Img4.jpg Total Size = 4096000}                     \\\\\n\\hline\nTest    & Sequential & Basic  & Constant & Tiled \\\\\n\\hline\n1        & 38254      & 3298   & 1635     & 1638    \\\\\n2        & 35271      & 2694   & 1634     & 1622    \\\\\n3        & 35285      & 2749   & 1643     & 1648    \\\\\n4        & 35254      & 2733   & 1646     & 1659    \\\\\n5        & 37710      & 2735   & 1638     & 1652    \\\\\n6        & 35508      & 2728   & 1641     & 1638    \\\\\n7        & 35382      & 2752   & 1654     & 1638    \\\\\n8        & 39450      & 2735   & 1643     & 1644    \\\\\n9        & 35398      & 2760   & 1687     & 1676    \\\\\n10       & 35296      & 2736   & 1638     & 1644    \\\\\n11       & 35267      & 2734   & 1646     & 1649    \\\\\n12       & 35345      & 2732   & 1629     & 1631    \\\\\n13       & 35345      & 2750   & 1642     & 1645    \\\\\n14       & 35416      & 2726   & 1627     & 1625    \\\\\n15       & 35314      & 2747   & 1645     & 1653    \\\\\n16       & 37246      & 2742   & 1649     & 1644    \\\\\n17       & 35282      & 2746   & 1645     & 1645    \\\\\n18       & 35389      & 2721   & 1636     & 1630    \\\\\n19       & 39808      & 2748   & 1651     & 1646    \\\\\n20       & 35286      & 2740   & 1643     & 1642    \\\\\n\\hline\nAverage  & 9616,5     & 864,35 & 573,35   & 571,7\n\\end{tabular}\n\\caption{Convolución Img4.jpg. tiempo: microsegundos.}\n\\label{table: Img4Convolution}\n\\end{table}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img4_Original.png}\n\\caption{Img4.jpg Original}\n\\label{fig:Img4_Original}\n\\end{figure}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img4_Filtered.png}\n\\caption{Img4.jpg Filtered}\n\\label{fig:Img4_Filtered}\n\\end{figure}\n\n\\section{Image 5}\n\\begin{table}[ht]\n\\centering\n\\begin{tabular}{l|llll}\n\\multicolumn{5}{c}{Img5.jpg Total Size = 22064172}                     \\\\\n\\hline\nTest    & Sequential & Basic  & Constant & Tiled \\\\\n\\hline\n1        & 202281     & 15041    & 8019     & 8025   \\\\\n2        & 201912     & 15552    & 7991     & 7990   \\\\\n3        & 204844     & 15627    & 8015     & 8002   \\\\\n4        & 202158     & 15327    & 8037     & 7997   \\\\\n5        & 212209     & 15292    & 8004     & 8005   \\\\\n6        & 201889     & 15458    & 8049     & 8109   \\\\\n7        & 202188     & 15325    & 8045     & 8057   \\\\\n8        & 202807     & 15652    & 8040     & 8050   \\\\\n9        & 203495     & 14943    & 7958     & 7952   \\\\\n10       & 218755     & 16140    & 8173     & 8073   \\\\\n11       & 201913     & 15594    & 8020     & 8033   \\\\\n12       & 202113     & 15534    & 7956     & 7979   \\\\\n13       & 203782     & 16037    & 8238     & 8234   \\\\\n14       & 202507     & 15155    & 8008     & 7956   \\\\\n15       & 202218     & 15332    & 8028     & 8015   \\\\\n16       & 202274     & 15354    & 8018     & 8016   \\\\\n17       & 204213     & 15398    & 8035     & 8035   \\\\\n18       & 220255     & 15627    & 8013     & 8039   \\\\\n19       & 223218     & 16153    & 8186     & 8183   \\\\\n20       & 225040     & 15440    & 8165     & 8176   \\\\\n\\hline\nAverage  & 207003,6   & 15499,05 & 8049,9   & 8046,3\n\\end{tabular}\n\\caption{Convolución Img5.jpg. tiempo: microsegundos.}\n\\label{table: Image5Convolution}\n\\end{table}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img5_Original.png}\n\\caption{Img5.jpg Original}\n\\label{fig:Img5_Original}\n\\end{figure}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img5_Filtered.png}\n\\caption{Img5.jpg Filtered}\n\\label{fig:Img5_Filtered}\n\\end{figure}\n\n\\section{Image 6}\n\\begin{table}[H]\n\\centering\n\\begin{tabular}{l|llll}\n\\multicolumn{5}{c}{Img6.jpg Total Size = 16084992}                     \\\\\n\\hline\nTest    & Sequential & Basic  & Constant & Tiled \\\\\n\\hline\n1        & 148669     & 11228   & 5885     & 5969    \\\\\n2        & 149134     & 10833   & 5849     & 5860    \\\\\n3        & 149106     & 10764   & 5870     & 5868    \\\\\n4        & 150440     & 10732   & 5819     & 5804    \\\\\n5        & 148752     & 10890   & 5888     & 5884    \\\\\n6        & 148558     & 9879    & 5866     & 5863    \\\\\n7        & 167099     & 10960   & 5873     & 5868    \\\\\n8        & 148763     & 11159   & 5877     & 5882    \\\\\n9        & 149392     & 10847   & 5869     & 5873    \\\\\n10       & 167907     & 11135   & 5988     & 5991    \\\\\n11       & 150995     & 10791   & 5888     & 5873    \\\\\n12       & 148571     & 9830    & 5801     & 5810    \\\\\n13       & 170552     & 10861   & 5862     & 5869    \\\\\n14       & 148812     & 10747   & 5853     & 5852    \\\\\n15       & 148715     & 10736   & 5836     & 5831    \\\\\n16       & 148412     & 9887    & 5876     & 5887    \\\\\n17       & 165187     & 10798   & 5881     & 5882    \\\\\n18       & 151738     & 11127   & 5987     & 6090    \\\\\n19       & 148791     & 11157   & 5874     & 5877    \\\\\n20       & 164498     & 10965   & 5887     & 5868    \\\\\n\\hline\nAverage  & 153704,6   & 10766,3 & 5876,45  & 5885,05\n\\end{tabular}\n\\caption{Convolución Img6.jpg. tiempo: microsegundos.}\n\\label{table: Img6Convolution}\n\\end{table}\n\n\\begin{figure}[H]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img6_Original.png}\n\\caption{Img6.jpg Original}\n\\label{fig:Img6_Original}\n\\end{figure}\n\n\\begin{figure}[H]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img6_Filtered.png}\n\\caption{Img6.jpg Filtered}\n\\label{fig:Img6_Filtered}\n\\end{figure}\n\n\\begin{figure}[H]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/ConvolucionGPU_Grafic.png}\n\\caption{Gráfico de comparación de tiempos}\n\\label{fig:ConvolucionGPU_Grafic}\n\\end{figure}\n\n\\begin{figure}[H]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/SpeedUp_Graphic.png}\n\\caption{Img6.jpg Filtered}\n\\label{fig:SpeedUp_Graphic}\n\\end{figure}\n",
 			"settings":
 			{
-				"buffer_size": 1779,
+				"buffer_size": 11262,
 				"line_ending": "Unix",
-				"name": "\\begin{figure}[ht]"
+				"name": "\\section{Image 1}"
 			}
 		},
 		{
@@ -1112,6 +1112,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\\section{Image }",
+			"\\begin{table}",
+			"Img1",
 			"Img1_Filtered",
 			"Img1_Original",
 			"inputs",
@@ -1236,10 +1239,7 @@
 			"psdglo",
 			"ganador",
 			"raw_input",
-			"ThisHost",
-			"sizeof",
-			"baba",
-			"++\""
+			"ThisHost"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1344,7 +1344,7 @@
 	"groups":
 	[
 		{
-			"selected": 11,
+			"selected": 10,
 			"sheets":
 			[
 				{
@@ -1651,15 +1651,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9053,
+						"buffer_size": 9091,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7730,
-								7730
+								4591,
+								4552
 							]
 						],
 						"settings":
@@ -1669,11 +1669,11 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": -0.0,
-						"translation.y": 5160.0,
+						"translation.x": 0.0,
+						"translation.y": 2508.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1681,21 +1681,21 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1779,
+						"buffer_size": 11262,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								117,
-								121
+								364,
+								364
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"auto_name": "\\begin{figure}[ht]",
+							"auto_name": "\\section{Image 1}",
 							"default_dir": "/home/rafapinzon/Documents/GitHub/HPC",
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
@@ -1703,7 +1703,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
