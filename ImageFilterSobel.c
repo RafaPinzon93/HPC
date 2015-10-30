@@ -142,7 +142,7 @@ __global__ void Convolution2D_Tiled(dataType *In, dataType *Out, int Mask_Width,
        Out[(y * width + x)] = rgbLimit(accum);
     __syncthreads();
 }
-
+/home/rafapinzon/Documents/GitHub/HPC/
 
 int InvoqueKernel(dataType *pImgIn, dataType2 *pMask, dataType *pImg_out, int pRows, int pCols, int pMaskSize, int Option){
     /* 
@@ -199,6 +199,9 @@ int InvoqueKernel(dataType *pImgIn, dataType2 *pMask, dataType *pImg_out, int pR
             Convolution2D_Constant<<<dimGrid3D,dimBlock3D>>>(d_img_in, d_img_out, 3, pRows, pCols);
             cudaDeviceSynchronize();
             cudaMemcpy(pImg_out, d_img_out, sizeImage, cudaMemcpyDeviceToHost);
+            gray_image.create(pCols, pRows, CV_8UC1);
+            gray_image.data = pImg_out;
+            // imwrite("./outputs/1088313004.png",gray_image);
             gpu_time = dtime_usec(gpu_time);
             printf("Finished 3. Tiled.  Results match. gpu time: %lld\n", gpu_time);
             break;
@@ -216,9 +219,9 @@ int main(){
     int scale = 1;
     int delta = 0;
     int ddepth = CV_8UC1;
-    for (int iteration = 0; iteration < 20; ++iteration)
+    for (int iteration = 0; iteration < 1; ++iteration)
     {
-        for (int i = 1; i <= 6; ++i)
+        for (int i = 1; i <= 1; ++i)
         {
             Mat image, grad_x;
             sprintf(imageSource, "inputs/img%d.jpg", i);
@@ -235,6 +238,8 @@ int main(){
             dataType2 Mask[9] = {-1,0,1,-2,0,2,-1,0,1};
 
             img_in = image.data;
+
+            imwrite("./outputs/1088313004.png",image);
 
             unsigned long long cpu_time = dtime_usec(0);
             Sobel(image, grad_x, ddepth, 1, 0, 3, scale, delta, BORDER_DEFAULT);
