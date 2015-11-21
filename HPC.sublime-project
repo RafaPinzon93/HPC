@@ -11,10 +11,13 @@
 	"folders":
 	[
 		{
-			"path": "."
+			"path": "/home/rafapinzon/Documents/Python/Django/djangoTut"
 		},
 		{
-			"path": "/home/rafapinzon/Documents/BitBucket/HPC"
+			"path": "/home/rafapinzon/Downloads/workspace"
+		},
+		{
+			"path": "/home/rafapinzon/LabSoft/vast-escarpment-5565"
 		}
 	],
 	"settings":

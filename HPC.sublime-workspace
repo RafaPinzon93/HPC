@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"theme",
+				"Material-Theme-Darker"
+			],
+			[
+				"static",
+				"STATIC_ROOT"
+			],
+			[
+				"stati",
+				"STATIC_URL"
+			],
+			[
+				"D",
+				"DEBUG"
+			],
+			[
+				"STAT",
+				"STATICFILES_DIRS"
+			],
+			[
+				"MEDIA",
+				"MEDIA_ROOT"
+			],
+			[
+				"STATIC",
+				"STATIC_ROOT"
+			],
+			[
+				"deb",
+				"DEBUG	statement"
+			],
+			[
+				"is",
+				"is_superuser"
+			],
+			[
+				"user",
+				"user"
+			],
+			[
+				"reques",
+				"request"
+			],
+			[
+				"reque",
+				"request	param"
+			],
+			[
+				"adm",
+				"administrador"
+			],
+			[
+				"rel",
+				"related_name"
+			],
+			[
 				"pr",
 				"printf	printf …"
 			],
@@ -89,10 +145,6 @@
 			],
 			[
 				"Re",
-				"RequestContext	class"
-			],
-			[
-				"reque",
 				"RequestContext	class"
 			],
 			[
@@ -388,10 +440,6 @@
 				"server_reply"
 			],
 			[
-				"user",
-				"user_archivo"
-			],
-			[
 				"permi",
 				"permisos"
 			],
@@ -466,99 +514,11 @@
 			[
 				"wri",
 				"write"
-			],
-			[
-				"li",
-				"listaArchivo"
-			],
-			[
-				"cone",
-				"conectado"
-			],
-			[
-				"men",
-				"mensaje"
-			],
-			[
-				"mensa",
-				"mensajeCliente"
-			],
-			[
-				"s",
-				"sprintf"
-			],
-			[
-				"esc",
-				"escribieronG"
-			],
-			[
-				"part",
-				"idPartidaLocal"
-			],
-			[
-				"psd",
-				"psdGlobal"
-			],
-			[
-				"pt",
-				"pthread_create"
-			],
-			[
-				"res",
-				"respuesta1"
-			],
-			[
-				"juga",
-				"jugadorTurno"
-			],
-			[
-				"read",
-				"readWriteWait"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/static/templates/signup.html",
-			"settings":
-			{
-				"buffer_size": 288,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/src/signups/forms.py",
-			"settings":
-			{
-				"buffer_size": 163,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/rafapinzon/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
-			"settings":
-			{
-				"buffer_size": 1667,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/src/mvp_landing/urls.py",
-			"settings":
-			{
-				"buffer_size": 296,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/src/signups/views.py",
-			"settings":
-			{
-				"buffer_size": 447,
-				"line_ending": "Unix"
-			}
-		},
 		{
 			"contents": "35319 comprobante debito\nNúmero tarjeta 5306954614754982\ncod seg: 666\ncomprobante: 21832\n",
 			"settings":
@@ -569,120 +529,46 @@
 			}
 		},
 		{
-			"file": "/home/rafapinzon/Documents/Python/BSF-DSF.py",
+			"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/static/templates/base.html",
 			"settings":
 			{
-				"buffer_size": 545,
+				"buffer_size": 4457,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\n10108768",
+			"settings":
+			{
+				"buffer_size": 9,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/rafapinzon/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 1623,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/src/mvp_landing/settings.py",
+			"settings":
+			{
+				"buffer_size": 2461,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nLaTeXTools\n----------\n\n  LaTeXTools Plugin version 2015-11-14 changelog:\n  \n  This release improves the Fill Helper feature, and adds other user-contributed functionality.\n  \n  New features (Ian Bacher, Richard Stein, Dan Schrage):\n  \n  - Fill Helper now injects completions into ST's autocomplete features\n  - Auto-hide build panel; see README for settings\n  - Jump to included tex files (see README for details)\n  - Support \\nobibliography{} command\n  \n  Bugs fixed:\n  \n  - Fill Helper now handles backslashes correctly on Windows.\n  - Other Fill Helper fixes\n  - Fixed PDF forward search issues with long builds\n\n\nMaterial Theme\n--------------\n\n  Material Theme for Sublime Text 3\n  https://github.com/equinusocio/material-theme\n  \n  \n  Version 1.9.1\n  ********************************************************************************\n  \n  #### COLOR SCHEME\n  \n    - New Oceanic Next based color schemes ( Material-Theme-OceanicNext.tmTheme, Material-Theme-Darker-OceanicNext.tmTheme )\n    - BABEL JS color scheme improvements\n    - Fix JSON color scheme\n",
+			"settings":
+			{
+				"buffer_size": 1108,
 				"line_ending": "Unix",
-				"name": "graph = {'A': set(['B', 'C']),"
-			}
-		},
-		{
-			"contents": "CREATE TABLE tmpEntradasTallerMostrar\n(\n    ID  INTEGER,\n    IDVEHICULO  INTEGER,\n    FECHA   DATETIME,\n    FECHASALIDAPACTADA  DATETIME,\n    FECHASALIDAREAL DATETIME,\n    IDPROVEEDORDESERVICIO   INTEGER,\n    KILOMETRAJE INTEGER,\n    NUMERODEFACTURA VARCHAR(20),\n    VALORDEFACTURA  DOUBLE,\n    OBSERVACIONES   MEMO,\n    FECHAHORADECREACION DATETIME,\n    USUARIODECREACION   VARCHAR(20),\n    VehiculoPlaca VARCHAR(20),\n    ProveedorDescripcion VARCHAR(50)\n);\n\nCREATE TABLE tmpSiniestrosRegMostrar\n(\n    ID  INTEGER,\n    IDVEHICULO  INTEGER,\n    IDCONDUCTOR INTEGER,\n    FECHA   DATETIME,\n    OBSERVACIONES   MEMO,\n    FECHAHORADECREACION DATETIME,\n    USUARIODECREACION   VARCHAR(20),\n    VehiculoPlaca VARCHAR(20),\n    ConductorNombre VARCHAR(85)\n);\n\n\nlRegistroDestino.FieldsLong(\"Id\") = .FieldsLong(\"Id\")\nlRegistroDestino.FieldsString(\"VehiculoPlaca\") = .FieldsString(\"VehiculoPlaca\")\nlRegistroDestino.FieldsString(\"ProveedorDescripcion\") = .FieldsString(\"ProveedorDescripcion\")\nlRegistroDestino.FieldsDate(\"Fecha\") = .FieldsDate(\"Fecha\")\nlRegistroDestino.FieldsLong(\"Kilometraje\") = .FieldsLong(\"Kilometraje\")\nlRegistroDestino.FieldsString(\"NumeroDeFactura\") = .FieldsString(\"NumeroDeFactura\")\nlRegistroDestino.FieldsDouble(\"ValorDeFactura\") = .FieldsDouble(\"ValorDeFactura\")\n\n\n\nlRegistroDestino.FieldsLong(\"Id\") = .FieldsLong(\"Id\")\nlRegistroDestino.FieldsString(\"VehiculoPlaca\") = .FieldsString(\"VehiculoPlaca\")\nlRegistroDestino.FieldsString(\"ProveedorDescripcion\") = .FieldsString(\"ProveedorDescripcion\")\nlRegistroDestino.FieldsDate(\"Fecha\") = .FieldsDate(\"Fecha\")\nlRegistroDestino.FieldsDate(\"FechaSalidaPactada\") = .FieldsDate(\"FechaSalidaPactada\")\nlRegistroDestino.FieldsDate(\"FechaSalidaReal\") = .FieldsDate(\"FechaSalidaReal\")\nlRegistroDestino.FieldsLong(\"Kilometraje\") = .FieldsLong(\"Kilometraje\")\nlRegistroDestino.FieldsString(\"NumeroDeFactura\") = .FieldsString(\"NumeroDeFactura\")\nlRegistroDestino.FieldsDouble(\"ValorDeFactura\") = .FieldsDouble(\"ValorDeFactura\")\n\n\nlRegistroDestino.FieldsLong(\"Id\") = .FieldsLong(\"Id\")\nlRegistroDestino.FieldsString(\"VehiculoPlaca\") = .FieldsString(\"VehiculoPlaca\")\nlRegistroDestino.FieldsString(\"ConductorNombre\") = .FieldsString(\"ConductorNombre\")\nlRegistroDestino.FieldsDate(\"Fecha\") = .FieldsDate(\"Fecha\")\n\nlRegistroDestino.FieldsLong(\"Id\") = .FieldsLong(\"Id\")\nlRegistroDestino.FieldsString(\"ConductorNombre\") = .FieldsString(\"ConductorNombre\")\nlRegistroDestino.FieldsString(\"NivelEducativoNombre\") = .FieldsString(\"NivelEducativoNombre\")\nlRegistroDestino.FieldsDate(\"Fecha\") = .FieldsDate(\"Fecha\")",
-			"settings":
-			{
-				"buffer_size": 2546,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/rafapinzon/Documents/BitBucket/HPC/convolution.c",
-			"settings":
-			{
-				"buffer_size": 8129,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "convolution.c",
-			"settings":
-			{
-				"buffer_size": 6821,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "ImageFilterSobel.c",
-			"settings":
-			{
-				"buffer_size": 9091,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "\\section{Image 1}\n\\begin{table}[ht]\n\\centering\n\\begin{tabular}{l|llll}\n\\multicolumn{5}{c}{Img1.jpg Total Size = 336400}                     \\\\\n\\hline\nTest    & Sequential & Basic  & Constant & Tiled \\\\\n\\hline\n1       & 3624       & 333    & 224      & 223   \\\\\n2       & 3575       & 328    & 224      & 225   \\\\\n3       & 3184       & 315    & 216      & 214   \\\\\n4       & 3190       & 309    & 214      & 213   \\\\\n5       & 3185       & 309    & 226      & 215   \\\\\n6       & 3184       & 318    & 217      & 215   \\\\\n7       & 3181       & 313    & 216      & 214   \\\\\n8       & 3580       & 329    & 224      & 223   \\\\\n9       & 3187       & 314    & 213      & 213   \\\\\n10      & 3182       & 307    & 212      & 214   \\\\\n11      & 3197       & 315    & 216      & 216   \\\\\n12      & 3183       & 311    & 215      & 213   \\\\\n13      & 3187       & 316    & 217      & 215   \\\\\n14      & 3184       & 317    & 216      & 214   \\\\\n15      & 3190       & 308    & 214      & 210   \\\\\n16      & 3188       & 311    & 218      & 216   \\\\\n17      & 3186       & 308    & 217      & 212   \\\\\n18      & 3187       & 316    & 214      & 215   \\\\\n19      & 3575       & 323    & 222      & 219   \\\\\n20      & 3184       & 311    & 216      & 217   \\\\\n\\hline\nAverage & 3266,65    & 315,55 & 217,55   & 215,8\n\\end{tabular}\n\\caption{Convolución Img1.jpg. tiempo: microsegundos.}\n\\label{table: Img1Convolution}\n\\end{table}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img1_Original.png}\n\\caption{Img1.jpg Original}\n\\label{fig:Img1_Original}\n\\end{figure}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img1_Filtered.png}\n\\caption{Img1.jpg Filtered}\n\\label{fig:Img1_Filtered}\n\\end{figure}\n\n\n\\section{Image 2}\n\\begin{table}[ht]\n\\centering\n\\begin{tabular}{l|llll}\n\\multicolumn{5}{c}{Img2.jpg Total Size = 408320}                     \\\\\n\\hline\nTest    & Sequential & Basic  & Constant & Tiled \\\\\n\\hline\n1        & 4760       & 487   & 255      & 254   \\\\\n2        & 4632       & 365   & 246      & 246   \\\\\n3        & 4113       & 362   & 245      & 244   \\\\\n4        & 4120       & 359   & 245      & 244   \\\\\n5        & 4116       & 355   & 241      & 247   \\\\\n6        & 4115       & 356   & 245      & 241   \\\\\n7        & 4118       & 356   & 246      & 246   \\\\\n8        & 4635       & 371   & 251      & 255   \\\\\n9        & 4199       & 359   & 247      & 247   \\\\\n10       & 4137       & 362   & 245      & 247   \\\\\n11       & 4112       & 362   & 246      & 248   \\\\\n12       & 4124       & 365   & 247      & 244   \\\\\n13       & 4117       & 361   & 244      & 242   \\\\\n14       & 4116       & 358   & 246      & 246   \\\\\n15       & 4117       & 359   & 245      & 245   \\\\\n16       & 4124       & 360   & 245      & 244   \\\\\n17       & 4115       & 355   & 255      & 243   \\\\\n18       & 4122       & 363   & 243      & 243   \\\\\n19       & 4623       & 362   & 247      & 246   \\\\\n20       & 4115       & 359   & 244      & 244   \\\\\n\\hline\nAverage  & 4231,5     & 366,8 & 246,4    & 245,8\n\\end{tabular}\n\\caption{Convolución Img2.jpg. tiempo: microsegundos.}\n\\label{table: Img2Convolution}\n\\end{table}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img2_Original.png}\n\\caption{Img2.jpg Original}\n\\label{fig:Img2_Original}\n\\end{figure}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img2_Filtered.png}\n\\caption{Img2.jpg Filtered}\n\\label{fig:Img2_Filtered}\n\\end{figure}\n\n\n\\section{Image 3}\n\\begin{table}[ht]\n\\centering\n\\begin{tabular}{l|llll}\n\\multicolumn{5}{c}{Img3.jpg Total Size = 1049088}                     \\\\\n\\hline\nTest    & Sequential & Basic  & Constant & Tiled \\\\\n\\hline\n1        & 10874      & 1190   & 588      & 583   \\\\\n2        & 10516      & 847    & 573      & 571   \\\\\n3        & 9357       & 842    & 571      & 569   \\\\\n4        & 9366       & 843    & 572      & 551   \\\\\n5        & 9354       & 838    & 570      & 567   \\\\\n6        & 9348       & 850    & 572      & 574   \\\\\n7        & 9346       & 844    & 572      & 572   \\\\\n8        & 10569      & 862    & 588      & 587   \\\\\n9        & 9407       & 866    & 575      & 576   \\\\\n10       & 9356       & 841    & 570      & 571   \\\\\n11       & 9438       & 857    & 576      & 573   \\\\\n12       & 9354       & 842    & 567      & 566   \\\\\n13       & 9354       & 846    & 572      & 571   \\\\\n14       & 9363       & 842    & 568      & 569   \\\\\n15       & 9361       & 846    & 573      & 575   \\\\\n16       & 9352       & 841    & 567      & 566   \\\\\n17       & 9358       & 847    & 575      & 575   \\\\\n18       & 9358       & 844    & 569      & 570   \\\\\n19       & 10536      & 853    & 578      & 577   \\\\\n20       & 9363       & 846    & 571      & 571   \\\\\n\\hline\nAverage  & 9616,5     & 864,35 & 573,35   & 571,7\n\\end{tabular}\n\\caption{Convolución Img3.jpg. tiempo: microsegundos.}\n\\label{table: Img3Convolution}\n\\end{table}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img3_Original.png}\n\\caption{Img3.jpg Original}\n\\label{fig:Img3_Original}\n\\end{figure}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img3_Filtered.png}\n\\caption{Img3.jpg Filtered}\n\\label{fig:Img3_Filtered}\n\\end{figure}\n\n\\section{Image 4}\n\\begin{table}[ht]\n\\centering\n\\begin{tabular}{l|llll}\n\\multicolumn{5}{c}{Img4.jpg Total Size = 4096000}                     \\\\\n\\hline\nTest    & Sequential & Basic  & Constant & Tiled \\\\\n\\hline\n1        & 38254      & 3298   & 1635     & 1638    \\\\\n2        & 35271      & 2694   & 1634     & 1622    \\\\\n3        & 35285      & 2749   & 1643     & 1648    \\\\\n4        & 35254      & 2733   & 1646     & 1659    \\\\\n5        & 37710      & 2735   & 1638     & 1652    \\\\\n6        & 35508      & 2728   & 1641     & 1638    \\\\\n7        & 35382      & 2752   & 1654     & 1638    \\\\\n8        & 39450      & 2735   & 1643     & 1644    \\\\\n9        & 35398      & 2760   & 1687     & 1676    \\\\\n10       & 35296      & 2736   & 1638     & 1644    \\\\\n11       & 35267      & 2734   & 1646     & 1649    \\\\\n12       & 35345      & 2732   & 1629     & 1631    \\\\\n13       & 35345      & 2750   & 1642     & 1645    \\\\\n14       & 35416      & 2726   & 1627     & 1625    \\\\\n15       & 35314      & 2747   & 1645     & 1653    \\\\\n16       & 37246      & 2742   & 1649     & 1644    \\\\\n17       & 35282      & 2746   & 1645     & 1645    \\\\\n18       & 35389      & 2721   & 1636     & 1630    \\\\\n19       & 39808      & 2748   & 1651     & 1646    \\\\\n20       & 35286      & 2740   & 1643     & 1642    \\\\\n\\hline\nAverage  & 9616,5     & 864,35 & 573,35   & 571,7\n\\end{tabular}\n\\caption{Convolución Img4.jpg. tiempo: microsegundos.}\n\\label{table: Img4Convolution}\n\\end{table}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img4_Original.png}\n\\caption{Img4.jpg Original}\n\\label{fig:Img4_Original}\n\\end{figure}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img4_Filtered.png}\n\\caption{Img4.jpg Filtered}\n\\label{fig:Img4_Filtered}\n\\end{figure}\n\n\\section{Image 5}\n\\begin{table}[ht]\n\\centering\n\\begin{tabular}{l|llll}\n\\multicolumn{5}{c}{Img5.jpg Total Size = 22064172}                     \\\\\n\\hline\nTest    & Sequential & Basic  & Constant & Tiled \\\\\n\\hline\n1        & 202281     & 15041    & 8019     & 8025   \\\\\n2        & 201912     & 15552    & 7991     & 7990   \\\\\n3        & 204844     & 15627    & 8015     & 8002   \\\\\n4        & 202158     & 15327    & 8037     & 7997   \\\\\n5        & 212209     & 15292    & 8004     & 8005   \\\\\n6        & 201889     & 15458    & 8049     & 8109   \\\\\n7        & 202188     & 15325    & 8045     & 8057   \\\\\n8        & 202807     & 15652    & 8040     & 8050   \\\\\n9        & 203495     & 14943    & 7958     & 7952   \\\\\n10       & 218755     & 16140    & 8173     & 8073   \\\\\n11       & 201913     & 15594    & 8020     & 8033   \\\\\n12       & 202113     & 15534    & 7956     & 7979   \\\\\n13       & 203782     & 16037    & 8238     & 8234   \\\\\n14       & 202507     & 15155    & 8008     & 7956   \\\\\n15       & 202218     & 15332    & 8028     & 8015   \\\\\n16       & 202274     & 15354    & 8018     & 8016   \\\\\n17       & 204213     & 15398    & 8035     & 8035   \\\\\n18       & 220255     & 15627    & 8013     & 8039   \\\\\n19       & 223218     & 16153    & 8186     & 8183   \\\\\n20       & 225040     & 15440    & 8165     & 8176   \\\\\n\\hline\nAverage  & 207003,6   & 15499,05 & 8049,9   & 8046,3\n\\end{tabular}\n\\caption{Convolución Img5.jpg. tiempo: microsegundos.}\n\\label{table: Image5Convolution}\n\\end{table}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img5_Original.png}\n\\caption{Img5.jpg Original}\n\\label{fig:Img5_Original}\n\\end{figure}\n\n\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img5_Filtered.png}\n\\caption{Img5.jpg Filtered}\n\\label{fig:Img5_Filtered}\n\\end{figure}\n\n\\section{Image 6}\n\\begin{table}[H]\n\\centering\n\\begin{tabular}{l|llll}\n\\multicolumn{5}{c}{Img6.jpg Total Size = 16084992}                     \\\\\n\\hline\nTest    & Sequential & Basic  & Constant & Tiled \\\\\n\\hline\n1        & 148669     & 11228   & 5885     & 5969    \\\\\n2        & 149134     & 10833   & 5849     & 5860    \\\\\n3        & 149106     & 10764   & 5870     & 5868    \\\\\n4        & 150440     & 10732   & 5819     & 5804    \\\\\n5        & 148752     & 10890   & 5888     & 5884    \\\\\n6        & 148558     & 9879    & 5866     & 5863    \\\\\n7        & 167099     & 10960   & 5873     & 5868    \\\\\n8        & 148763     & 11159   & 5877     & 5882    \\\\\n9        & 149392     & 10847   & 5869     & 5873    \\\\\n10       & 167907     & 11135   & 5988     & 5991    \\\\\n11       & 150995     & 10791   & 5888     & 5873    \\\\\n12       & 148571     & 9830    & 5801     & 5810    \\\\\n13       & 170552     & 10861   & 5862     & 5869    \\\\\n14       & 148812     & 10747   & 5853     & 5852    \\\\\n15       & 148715     & 10736   & 5836     & 5831    \\\\\n16       & 148412     & 9887    & 5876     & 5887    \\\\\n17       & 165187     & 10798   & 5881     & 5882    \\\\\n18       & 151738     & 11127   & 5987     & 6090    \\\\\n19       & 148791     & 11157   & 5874     & 5877    \\\\\n20       & 164498     & 10965   & 5887     & 5868    \\\\\n\\hline\nAverage  & 153704,6   & 10766,3 & 5876,45  & 5885,05\n\\end{tabular}\n\\caption{Convolución Img6.jpg. tiempo: microsegundos.}\n\\label{table: Img6Convolution}\n\\end{table}\n\n\\begin{figure}[H]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img6_Original.png}\n\\caption{Img6.jpg Original}\n\\label{fig:Img6_Original}\n\\end{figure}\n\n\\begin{figure}[H]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/Img6_Filtered.png}\n\\caption{Img6.jpg Filtered}\n\\label{fig:Img6_Filtered}\n\\end{figure}\n\n\\begin{figure}[H]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/ConvolucionGPU_Grafic.png}\n\\caption{Gráfico de comparación de tiempos}\n\\label{fig:ConvolucionGPU_Grafic}\n\\end{figure}\n\n\\begin{figure}[H]\n\\centering\n\\includegraphics[width=\\textwidth, keepaspectratio]{images/SpeedUp_Graphic.png}\n\\caption{Img6.jpg Filtered}\n\\label{fig:SpeedUp_Graphic}\n\\end{figure}\n",
-			"settings":
-			{
-				"buffer_size": 11262,
-				"line_ending": "Unix",
-				"name": "\\section{Image 1}"
-			}
-		},
-		{
-			"contents": "inputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3624us\nFinished 1. Basic.  Results match. gpu time: 331us\nFinished 2. Constant.  Results match. gpu time: 221us\nFinished 3. Tiled.  Results match. gpu time: 221us\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4783us\nFinished 1. Basic.  Results match. gpu time: 489us\nFinished 2. Constant.  Results match. gpu time: 255us\nFinished 3. Tiled.  Results match. gpu time: 254us\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9998us\nFinished 1. Basic.  Results match. gpu time: 1119us\nFinished 2. Constant.  Results match. gpu time: 571us\nFinished 3. Tiled.  Results match. gpu time: 570us\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35869us\nFinished 1. Basic.  Results match. gpu time: 3279us\nFinished 2. Constant.  Results match. gpu time: 1643us\nFinished 3. Tiled.  Results match. gpu time: 1651us\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 207687us\nFinished 1. Basic.  Results match. gpu time: 15293us\nFinished 2. Constant.  Results match. gpu time: 8023us\nFinished 3. Tiled.  Results match. gpu time: 8024us\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 148854us\nFinished 1. Basic.  Results match. gpu time: 11126us\nFinished 2. Constant.  Results match. gpu time: 5837us\nFinished 3. Tiled.  Results match. gpu time: 5820us\n\n---------------------------------------------------------------\n\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3628us\nFinished 1. Basic.  Results match. gpu time: 324us\nFinished 2. Constant.  Results match. gpu time: 216us\nFinished 3. Tiled.  Results match. gpu time: 221us\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4225us\nFinished 1. Basic.  Results match. gpu time: 453us\nFinished 2. Constant.  Results match. gpu time: 246us\nFinished 3. Tiled.  Results match. gpu time: 246us\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9597us\nFinished 1. Basic.  Results match. gpu time: 1109us\nFinished 2. Constant.  Results match. gpu time: 582us\nFinished 3. Tiled.  Results match. gpu time: 574us\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35931us\nFinished 1. Basic.  Results match. gpu time: 3301us\nFinished 2. Constant.  Results match. gpu time: 1640us\nFinished 3. Tiled.  Results match. gpu time: 1645us\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 202725us\nFinished 1. Basic.  Results match. gpu time: 15578us\nFinished 2. Constant.  Results match. gpu time: 8040us\nFinished 3. Tiled.  Results match. gpu time: 8170us\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 166930us\nFinished 1. Basic.  Results match. gpu time: 11463us\nFinished 2. Constant.  Results match. gpu time: 6010us\nFinished 3. Tiled.  Results match. gpu time: 5980us\n\n--------------------------------------------------------------\n\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3622us\nFinished 1. Basic.  Results match. gpu time: 324us\nFinished 2. Constant.  Results match. gpu time: 218us\nFinished 3. Tiled.  Results match. gpu time: 212us\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4226us\nFinished 1. Basic.  Results match. gpu time: 452us\nFinished 2. Constant.  Results match. gpu time: 246us\nFinished 3. Tiled.  Results match. gpu time: 243us\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9677us\nFinished 1. Basic.  Results match. gpu time: 1118us\nFinished 2. Constant.  Results match. gpu time: 572us\nFinished 3. Tiled.  Results match. gpu time: 572us\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35970us\nFinished 1. Basic.  Results match. gpu time: 3276us\nFinished 2. Constant.  Results match. gpu time: 1640us\nFinished 3. Tiled.  Results match. gpu time: 1650us\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 201943us\nFinished 1. Basic.  Results match. gpu time: 15472us\nFinished 2. Constant.  Results match. gpu time: 8026us\nFinished 3. Tiled.  Results match. gpu time: 8021us\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 150950us\nFinished 1. Basic.  Results match. gpu time: 12020us\nFinished 2. Constant.  Results match. gpu time: 6007us\nFinished 3. Tiled.  Results match. gpu time: 5980us\n\n---------------------------------------------------------------\n\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3615us\nFinished 1. Basic.  Results match. gpu time: 331us\nFinished 2. Constant.  Results match. gpu time: 219us\nFinished 3. Tiled.  Results match. gpu time: 212us\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4231us\nFinished 1. Basic.  Results match. gpu time: 456us\nFinished 2. Constant.  Results match. gpu time: 245us\nFinished 3. Tiled.  Results match. gpu time: 246us\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9624us\nFinished 1. Basic.  Results match. gpu time: 1098us\nFinished 2. Constant.  Results match. gpu time: 567us\nFinished 3. Tiled.  Results match. gpu time: 565us\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35868us\nFinished 1. Basic.  Results match. gpu time: 3266us\nFinished 2. Constant.  Results match. gpu time: 1635us\nFinished 3. Tiled.  Results match. gpu time: 1648us\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 201962us\nFinished 1. Basic.  Results match. gpu time: 15403us\nFinished 2. Constant.  Results match. gpu time: 8016us\nFinished 3. Tiled.  Results match. gpu time: 8009us\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 151135us\nFinished 1. Basic.  Results match. gpu time: 11070us\nFinished 2. Constant.  Results match. gpu time: 5878us\nFinished 3. Tiled.  Results match. gpu time: 5856us\n\n-----------------------------------------------------------\n\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3635us\nFinished 1. Basic.  Results match. gpu time: 334us\nFinished 2. Constant.  Results match. gpu time: 224us\nFinished 3. Tiled.  Results match. gpu time: 224us\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4706us\nFinished 1. Basic.  Results match. gpu time: 454us\nFinished 2. Constant.  Results match. gpu time: 247us\nFinished 3. Tiled.  Results match. gpu time: 245us\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9638us\nFinished 1. Basic.  Results match. gpu time: 1106us\nFinished 2. Constant.  Results match. gpu time: 570us\nFinished 3. Tiled.  Results match. gpu time: 573us\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35983us\nFinished 1. Basic.  Results match. gpu time: 3282us\nFinished 2. Constant.  Results match. gpu time: 1644us\nFinished 3. Tiled.  Results match. gpu time: 1645us\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 203065us\nFinished 1. Basic.  Results match. gpu time: 15448us\nFinished 2. Constant.  Results match. gpu time: 8033us\nFinished 3. Tiled.  Results match. gpu time: 8037us\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 149597us\nFinished 1. Basic.  Results match. gpu time: 11134us\nFinished 2. Constant.  Results match. gpu time: 5824us\nFinished 3. Tiled.  Results match. gpu time: 5818us\n\n-----------------------------------------------------------\n\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3190us\nFinished 1. Basic.  Results match. gpu time: 317us\nFinished 2. Constant.  Results match. gpu time: 217us\nFinished 3. Tiled.  Results match. gpu time: 215us\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4108us\nFinished 1. Basic.  Results match. gpu time: 358us\nFinished 2. Constant.  Results match. gpu time: 242us\nFinished 3. Tiled.  Results match. gpu time: 242us\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9361us\nFinished 1. Basic.  Results match. gpu time: 842us\nFinished 2. Constant.  Results match. gpu time: 571us\nFinished 3. Tiled.  Results match. gpu time: 575us\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 40076us\nFinished 1. Basic.  Results match. gpu time: 2734us\nFinished 2. Constant.  Results match. gpu time: 1636us\nFinished 3. Tiled.  Results match. gpu time: 1645us\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 201931us\nFinished 1. Basic.  Results match. gpu time: 15481us\nFinished 2. Constant.  Results match. gpu time: 8014us\nFinished 3. Tiled.  Results match. gpu time: 8018us\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 149098us\nFinished 1. Basic.  Results match. gpu time: 10810us\nFinished 2. Constant.  Results match. gpu time: 5815us\nFinished 3. Tiled.  Results match. gpu time: 5804us\n\n-----------------------------------------------------------\n\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3192us\nFinished 1. Basic.  Results match. gpu time: 317us\nFinished 2. Constant.  Results match. gpu time: 216us\nFinished 3. Tiled.  Results match. gpu time: 215us\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4131us\nFinished 1. Basic.  Results match. gpu time: 362us\nFinished 2. Constant.  Results match. gpu time: 243us\nFinished 3. Tiled.  Results match. gpu time: 243us\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9369us\nFinished 1. Basic.  Results match. gpu time: 842us\nFinished 2. Constant.  Results match. gpu time: 565us\nFinished 3. Tiled.  Results match. gpu time: 570us\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35239us\nFinished 1. Basic.  Results match. gpu time: 2759us\nFinished 2. Constant.  Results match. gpu time: 1649us\nFinished 3. Tiled.  Results match. gpu time: 1649us\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 206687us\nFinished 1. Basic.  Results match. gpu time: 16190us\nFinished 2. Constant.  Results match. gpu time: 8194us\nFinished 3. Tiled.  Results match. gpu time: 8197us\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 166653us\nFinished 1. Basic.  Results match. gpu time: 10743us\nFinished 2. Constant.  Results match. gpu time: 5880us\nFinished 3. Tiled.  Results match. gpu time: 5888us\n\n-----------------------------------------------------------\n\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3192us\nFinished 1. Basic.  Results match. gpu time: 307us\nFinished 2. Constant.  Results match. gpu time: 213us\nFinished 3. Tiled.  Results match. gpu time: 217us\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4115us\nFinished 1. Basic.  Results match. gpu time: 359us\nFinished 2. Constant.  Results match. gpu time: 246us\nFinished 3. Tiled.  Results match. gpu time: 245us\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9365us\nFinished 1. Basic.  Results match. gpu time: 837us\nFinished 2. Constant.  Results match. gpu time: 566us\nFinished 3. Tiled.  Results match. gpu time: 547us\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35330us\nFinished 1. Basic.  Results match. gpu time: 2738us\nFinished 2. Constant.  Results match. gpu time: 1633us\nFinished 3. Tiled.  Results match. gpu time: 1627us\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 202541us\nFinished 1. Basic.  Results match. gpu time: 15203us\nFinished 2. Constant.  Results match. gpu time: 7954us\nFinished 3. Tiled.  Results match. gpu time: 7939us\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 150116us\nFinished 1. Basic.  Results match. gpu time: 11141us\nFinished 2. Constant.  Results match. gpu time: 5987us\nFinished 3. Tiled.  Results match. gpu time: 6003us\n\n-----------------------------------------------------------\n\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3575us\nFinished 1. Basic.  Results match. gpu time: 316us\nFinished 2. Constant.  Results match. gpu time: 220us\nFinished 3. Tiled.  Results match. gpu time: 218us\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4629us\nFinished 1. Basic.  Results match. gpu time: 370us\nFinished 2. Constant.  Results match. gpu time: 255us\nFinished 3. Tiled.  Results match. gpu time: 255us\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 10575us\nFinished 1. Basic.  Results match. gpu time: 862us\nFinished 2. Constant.  Results match. gpu time: 585us\nFinished 3. Tiled.  Results match. gpu time: 585us\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 39828us\nFinished 1. Basic.  Results match. gpu time: 2760us\nFinished 2. Constant.  Results match. gpu time: 1674us\nFinished 3. Tiled.  Results match. gpu time: 1672us\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 210348us\nFinished 1. Basic.  Results match. gpu time: 15360us\nFinished 2. Constant.  Results match. gpu time: 8056us\nFinished 3. Tiled.  Results match. gpu time: 8048us\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 148869us\nFinished 1. Basic.  Results match. gpu time: 10757us\nFinished 2. Constant.  Results match. gpu time: 5805us\nFinished 3. Tiled.  Results match. gpu time: 5820us\n\n-----------------------------------------------------------\n\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3655us\nFinished 1. Basic.  Results match. gpu time: 322us\nFinished 2. Constant.  Results match. gpu time: 219us\nFinished 3. Tiled.  Results match. gpu time: 213us\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4116us\nFinished 1. Basic.  Results match. gpu time: 361us\nFinished 2. Constant.  Results match. gpu time: 246us\nFinished 3. Tiled.  Results match. gpu time: 246us\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9352us\nFinished 1. Basic.  Results match. gpu time: 853us\nFinished 2. Constant.  Results match. gpu time: 573us\nFinished 3. Tiled.  Results match. gpu time: 573us\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35501us\nFinished 1. Basic.  Results match. gpu time: 2723us\nFinished 2. Constant.  Results match. gpu time: 1639us\nFinished 3. Tiled.  Results match. gpu time: 1643us\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 214587us\nFinished 1. Basic.  Results match. gpu time: 15038us\nFinished 2. Constant.  Results match. gpu time: 8043us\nFinished 3. Tiled.  Results match. gpu time: 8045us\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 148433us\nFinished 1. Basic.  Results match. gpu time: 9892us\nFinished 2. Constant.  Results match. gpu time: 5876us\nFinished 3. Tiled.  Results match. gpu time: 5880us\n\n-----------------------------------------------------------\n\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3184us\nFinished 1. Basic.  Results match. gpu time: 320us\nFinished 2. Constant.  Results match. gpu time: 218us\nFinished 3. Tiled.  Results match. gpu time: 217us\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4115us\nFinished 1. Basic.  Results match. gpu time: 354us\nFinished 2. Constant.  Results match. gpu time: 244us\nFinished 3. Tiled.  Results match. gpu time: 244us\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9357us\nFinished 1. Basic.  Results match. gpu time: 847us\nFinished 2. Constant.  Results match. gpu time: 572us\nFinished 3. Tiled.  Results match. gpu time: 573us\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35378us\nFinished 1. Basic.  Results match. gpu time: 2682us\nFinished 2. Constant.  Results match. gpu time: 1631us\nFinished 3. Tiled.  Results match. gpu time: 1669us\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 204298us\nFinished 1. Basic.  Results match. gpu time: 15187us\nFinished 2. Constant.  Results match. gpu time: 7972us\nFinished 3. Tiled.  Results match. gpu time: 7953us\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 148620us\nFinished 1. Basic.  Results match. gpu time: 10777us\nFinished 2. Constant.  Results match. gpu time: 5872us\nFinished 3. Tiled.  Results match. gpu time: 5875us\n\n-----------------------------------------------------------\n\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3186us\nFinished 1. Basic.  Results match. gpu time: 312us\nFinished 2. Constant.  Results match. gpu time: 211us\nFinished 3. Tiled.  Results match. gpu time: 210us\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4113us\nFinished 1. Basic.  Results match. gpu time: 360us\nFinished 2. Constant.  Results match. gpu time: 244us\nFinished 3. Tiled.  Results match. gpu time: 243us\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9371us\nFinished 1. Basic.  Results match. gpu time: 851us\nFinished 2. Constant.  Results match. gpu time: 577us\nFinished 3. Tiled.  Results match. gpu time: 576us\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35275us\nFinished 1. Basic.  Results match. gpu time: 2738us\nFinished 2. Constant.  Results match. gpu time: 1649us\nFinished 3. Tiled.  Results match. gpu time: 1656us\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 202107us\nFinished 1. Basic.  Results match. gpu time: 15738us\nFinished 2. Constant.  Results match. gpu time: 8046us\nFinished 3. Tiled.  Results match. gpu time: 8054us\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 149447us\nFinished 1. Basic.  Results match. gpu time: 10706us\nFinished 2. Constant.  Results match. gpu time: 5878us\nFinished 3. Tiled.  Results match. gpu time: 5882us\n\n-----------------------------------------------------------\n\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3190us\nFinished 1. Basic.  Results match. gpu time: 317us\nFinished 2. Constant.  Results match. gpu time: 218us\nFinished 3. Tiled.  Results match. gpu time: 217us\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4118us\nFinished 1. Basic.  Results match. gpu time: 353us\nFinished 2. Constant.  Results match. gpu time: 242us\nFinished 3. Tiled.  Results match. gpu time: 241us\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9472us\nFinished 1. Basic.  Results match. gpu time: 865us\nFinished 2. Constant.  Results match. gpu time: 577us\nFinished 3. Tiled.  Results match. gpu time: 576us\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35330us\nFinished 1. Basic.  Results match. gpu time: 2750us\nFinished 2. Constant.  Results match. gpu time: 1643us\nFinished 3. Tiled.  Results match. gpu time: 1652us\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 202064us\nFinished 1. Basic.  Results match. gpu time: 15027us\nFinished 2. Constant.  Results match. gpu time: 8015us\nFinished 3. Tiled.  Results match. gpu time: 8005us\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 148778us\nFinished 1. Basic.  Results match. gpu time: 11170us\nFinished 2. Constant.  Results match. gpu time: 5883us\nFinished 3. Tiled.  Results match. gpu time: 5873us\n\n-----------------------------------------------------------\n\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3193us\nFinished 1. Basic.  Results match. gpu time: 310us\nFinished 2. Constant.  Results match. gpu time: 221us\nFinished 3. Tiled.  Results match. gpu time: 215us\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4119us\nFinished 1. Basic.  Results match. gpu time: 357us\nFinished 2. Constant.  Results match. gpu time: 244us\nFinished 3. Tiled.  Results match. gpu time: 245us\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9356us\nFinished 1. Basic.  Results match. gpu time: 851us\nFinished 2. Constant.  Results match. gpu time: 573us\nFinished 3. Tiled.  Results match. gpu time: 570us\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35253us\nFinished 1. Basic.  Results match. gpu time: 2746us\nFinished 2. Constant.  Results match. gpu time: 1649us\nFinished 3. Tiled.  Results match. gpu time: 1637us\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 202253us\nFinished 1. Basic.  Results match. gpu time: 15482us\nFinished 2. Constant.  Results match. gpu time: 8037us\nFinished 3. Tiled.  Results match. gpu time: 8045us\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 149225us\nFinished 1. Basic.  Results match. gpu time: 10800us\nFinished 2. Constant.  Results match. gpu time: 5827us\nFinished 3. Tiled.  Results match. gpu time: 5820us\n\n-----------------------------------------------------------\n\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3190us\nFinished 1. Basic.  Results match. gpu time: 315us\nFinished 2. Constant.  Results match. gpu time: 214us\nFinished 3. Tiled.  Results match. gpu time: 213us\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4119us\nFinished 1. Basic.  Results match. gpu time: 360us\nFinished 2. Constant.  Results match. gpu time: 246us\nFinished 3. Tiled.  Results match. gpu time: 245us\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9351us\nFinished 1. Basic.  Results match. gpu time: 848us\nFinished 2. Constant.  Results match. gpu time: 578us\nFinished 3. Tiled.  Results match. gpu time: 575us\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35293us\nFinished 1. Basic.  Results match. gpu time: 2740us\nFinished 2. Constant.  Results match. gpu time: 1632us\nFinished 3. Tiled.  Results match. gpu time: 1639us\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 202296us\nFinished 1. Basic.  Results match. gpu time: 15604us\nFinished 2. Constant.  Results match. gpu time: 8034us\nFinished 3. Tiled.  Results match. gpu time: 8043us\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 149297us\nFinished 1. Basic.  Results match. gpu time: 10896us\nFinished 2. Constant.  Results match. gpu time: 5858us\nFinished 3. Tiled.  Results match. gpu time: 5978us\n\n-----------------------------------------------------------\n\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3578us\nFinished 1. Basic.  Results match. gpu time: 327us\nFinished 2. Constant.  Results match. gpu time: 222us\nFinished 3. Tiled.  Results match. gpu time: 218us\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4624us\nFinished 1. Basic.  Results match. gpu time: 367us\nFinished 2. Constant.  Results match. gpu time: 254us\nFinished 3. Tiled.  Results match. gpu time: 254us\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 10537us\nFinished 1. Basic.  Results match. gpu time: 860us\nFinished 2. Constant.  Results match. gpu time: 585us\nFinished 3. Tiled.  Results match. gpu time: 583us\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 39756us\nFinished 1. Basic.  Results match. gpu time: 2760us\nFinished 2. Constant.  Results match. gpu time: 1670us\nFinished 3. Tiled.  Results match. gpu time: 1675us\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 201869us\nFinished 1. Basic.  Results match. gpu time: 15625us\nFinished 2. Constant.  Results match. gpu time: 8027us\nFinished 3. Tiled.  Results match. gpu time: 8211us\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 166626us\nFinished 1. Basic.  Results match. gpu time: 10033us\nFinished 2. Constant.  Results match. gpu time: 5993us\nFinished 3. Tiled.  Results match. gpu time: 5996us\n\n-----------------------------------------------------------\n\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3568us\nFinished 1. Basic.  Results match. gpu time: 327us\nFinished 2. Constant.  Results match. gpu time: 221us\nFinished 3. Tiled.  Results match. gpu time: 221us\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4628us\nFinished 1. Basic.  Results match. gpu time: 375us\nFinished 2. Constant.  Results match. gpu time: 256us\nFinished 3. Tiled.  Results match. gpu time: 256us\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9772us\nFinished 1. Basic.  Results match. gpu time: 849us\nFinished 2. Constant.  Results match. gpu time: 571us\nFinished 3. Tiled.  Results match. gpu time: 571us\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 36337us\nFinished 1. Basic.  Results match. gpu time: 2763us\nFinished 2. Constant.  Results match. gpu time: 1678us\nFinished 3. Tiled.  Results match. gpu time: 1682us\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 202018us\nFinished 1. Basic.  Results match. gpu time: 15014us\nFinished 2. Constant.  Results match. gpu time: 8044us\nFinished 3. Tiled.  Results match. gpu time: 8044us\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 148704us\nFinished 1. Basic.  Results match. gpu time: 10760us\nFinished 2. Constant.  Results match. gpu time: 5797us\nFinished 3. Tiled.  Results match. gpu time: 5820us\n\n-----------------------------------------------------------\n\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3187us\nFinished 1. Basic.  Results match. gpu time: 316us\nFinished 2. Constant.  Results match. gpu time: 213us\nFinished 3. Tiled.  Results match. gpu time: 212us\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4180us\nFinished 1. Basic.  Results match. gpu time: 359us\nFinished 2. Constant.  Results match. gpu time: 247us\nFinished 3. Tiled.  Results match. gpu time: 247us\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9449us\nFinished 1. Basic.  Results match. gpu time: 844us\nFinished 2. Constant.  Results match. gpu time: 572us\nFinished 3. Tiled.  Results match. gpu time: 572us\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35360us\nFinished 1. Basic.  Results match. gpu time: 2729us\nFinished 2. Constant.  Results match. gpu time: 1634us\nFinished 3. Tiled.  Results match. gpu time: 1646us\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 203154us\nFinished 1. Basic.  Results match. gpu time: 15188us\nFinished 2. Constant.  Results match. gpu time: 8113us\nFinished 3. Tiled.  Results match. gpu time: 8144us\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 148684us\nFinished 1. Basic.  Results match. gpu time: 10774us\nFinished 2. Constant.  Results match. gpu time: 5883us\nFinished 3. Tiled.  Results match. gpu time: 5872us\n\n-----------------------------------------------------------\n\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3191us\nFinished 1. Basic.  Results match. gpu time: 314us\nFinished 2. Constant.  Results match. gpu time: 217us\nFinished 3. Tiled.  Results match. gpu time: 216us\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4117us\nFinished 1. Basic.  Results match. gpu time: 358us\nFinished 2. Constant.  Results match. gpu time: 242us\nFinished 3. Tiled.  Results match. gpu time: 242us\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9362us\nFinished 1. Basic.  Results match. gpu time: 851us\nFinished 2. Constant.  Results match. gpu time: 570us\nFinished 3. Tiled.  Results match. gpu time: 573us\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35284us\nFinished 1. Basic.  Results match. gpu time: 2742us\nFinished 2. Constant.  Results match. gpu time: 1651us\nFinished 3. Tiled.  Results match. gpu time: 1648us\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 202245us\nFinished 1. Basic.  Results match. gpu time: 15208us\nFinished 2. Constant.  Results match. gpu time: 7968us\nFinished 3. Tiled.  Results match. gpu time: 7939us\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 149488us\nFinished 1. Basic.  Results match. gpu time: 10785us\nFinished 2. Constant.  Results match. gpu time: 5865us\nFinished 3. Tiled.  Results match. gpu time: 5877us\n\n-----------------------------------------------------------\n\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3191us\nFinished 1. Basic.  Results match. gpu time: 307us\nFinished 2. Constant.  Results match. gpu time: 213us\nFinished 3. Tiled.  Results match. gpu time: 216us\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4122us\nFinished 1. Basic.  Results match. gpu time: 361us\nFinished 2. Constant.  Results match. gpu time: 246us\nFinished 3. Tiled.  Results match. gpu time: 247us\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9356us\nFinished 1. Basic.  Results match. gpu time: 850us\nFinished 2. Constant.  Results match. gpu time: 577us\nFinished 3. Tiled.  Results match. gpu time: 574us\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35780us\nFinished 1. Basic.  Results match. gpu time: 2729us\nFinished 2. Constant.  Results match. gpu time: 1673us\nFinished 3. Tiled.  Results match. gpu time: 1682us\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 202381us\nFinished 1. Basic.  Results match. gpu time: 15331us\nFinished 2. Constant.  Results match. gpu time: 8027us\nFinished 3. Tiled.  Results match. gpu time: 8029us\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 148763us\nFinished 1. Basic.  Results match. gpu time: 9901us\nFinished 2. Constant.  Results match. gpu time: 5879us\nFinished 3. Tiled.  Results match. gpu time: 5886us\n\n-----------------------------------------------------------\n\n",
-			"settings":
-			{
-				"buffer_size": 29151,
-				"line_ending": "Unix",
-				"name": "inputs/img1.jpg"
-			}
-		},
-		{
-			"contents": "inputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3624\nFinished 1. Basic.  Results match. gpu time: 333\nFinished 2. Constant.  Results match. gpu time: 224\nFinished 3. Tiled.  Results match. gpu time: 223\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4760\nFinished 1. Basic.  Results match. gpu time: 487\nFinished 2. Constant.  Results match. gpu time: 255\nFinished 3. Tiled.  Results match. gpu time: 254\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 10874\nFinished 1. Basic.  Results match. gpu time: 1190\nFinished 2. Constant.  Results match. gpu time: 588\nFinished 3. Tiled.  Results match. gpu time: 583\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 38254\nFinished 1. Basic.  Results match. gpu time: 3298\nFinished 2. Constant.  Results match. gpu time: 1635\nFinished 3. Tiled.  Results match. gpu time: 1638\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 202281\nFinished 1. Basic.  Results match. gpu time: 15041\nFinished 2. Constant.  Results match. gpu time: 8019\nFinished 3. Tiled.  Results match. gpu time: 8025\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 148669\nFinished 1. Basic.  Results match. gpu time: 11228\nFinished 2. Constant.  Results match. gpu time: 5885\nFinished 3. Tiled.  Results match. gpu time: 5969\n\n\n-----------------------------------------------------\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3575\nFinished 1. Basic.  Results match. gpu time: 328\nFinished 2. Constant.  Results match. gpu time: 224\nFinished 3. Tiled.  Results match. gpu time: 225\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4632\nFinished 1. Basic.  Results match. gpu time: 365\nFinished 2. Constant.  Results match. gpu time: 246\nFinished 3. Tiled.  Results match. gpu time: 246\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 10516\nFinished 1. Basic.  Results match. gpu time: 847\nFinished 2. Constant.  Results match. gpu time: 573\nFinished 3. Tiled.  Results match. gpu time: 571\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35271\nFinished 1. Basic.  Results match. gpu time: 2694\nFinished 2. Constant.  Results match. gpu time: 1634\nFinished 3. Tiled.  Results match. gpu time: 1622\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 201912\nFinished 1. Basic.  Results match. gpu time: 15552\nFinished 2. Constant.  Results match. gpu time: 7991\nFinished 3. Tiled.  Results match. gpu time: 7990\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 149134\nFinished 1. Basic.  Results match. gpu time: 10833\nFinished 2. Constant.  Results match. gpu time: 5849\nFinished 3. Tiled.  Results match. gpu time: 5860\n\n\n-----------------------------------------------------\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3184\nFinished 1. Basic.  Results match. gpu time: 315\nFinished 2. Constant.  Results match. gpu time: 216\nFinished 3. Tiled.  Results match. gpu time: 214\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4113\nFinished 1. Basic.  Results match. gpu time: 362\nFinished 2. Constant.  Results match. gpu time: 245\nFinished 3. Tiled.  Results match. gpu time: 244\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9357\nFinished 1. Basic.  Results match. gpu time: 842\nFinished 2. Constant.  Results match. gpu time: 571\nFinished 3. Tiled.  Results match. gpu time: 569\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35285\nFinished 1. Basic.  Results match. gpu time: 2749\nFinished 2. Constant.  Results match. gpu time: 1643\nFinished 3. Tiled.  Results match. gpu time: 1648\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 204844\nFinished 1. Basic.  Results match. gpu time: 15627\nFinished 2. Constant.  Results match. gpu time: 8015\nFinished 3. Tiled.  Results match. gpu time: 8002\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 149106\nFinished 1. Basic.  Results match. gpu time: 10764\nFinished 2. Constant.  Results match. gpu time: 5870\nFinished 3. Tiled.  Results match. gpu time: 5868\n\n\n-----------------------------------------------------\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3190\nFinished 1. Basic.  Results match. gpu time: 309\nFinished 2. Constant.  Results match. gpu time: 214\nFinished 3. Tiled.  Results match. gpu time: 213\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4120\nFinished 1. Basic.  Results match. gpu time: 359\nFinished 2. Constant.  Results match. gpu time: 245\nFinished 3. Tiled.  Results match. gpu time: 244\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9366\nFinished 1. Basic.  Results match. gpu time: 843\nFinished 2. Constant.  Results match. gpu time: 572\nFinished 3. Tiled.  Results match. gpu time: 551\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35254\nFinished 1. Basic.  Results match. gpu time: 2733\nFinished 2. Constant.  Results match. gpu time: 1646\nFinished 3. Tiled.  Results match. gpu time: 1659\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 202158\nFinished 1. Basic.  Results match. gpu time: 15327\nFinished 2. Constant.  Results match. gpu time: 8037\nFinished 3. Tiled.  Results match. gpu time: 7997\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 150440\nFinished 1. Basic.  Results match. gpu time: 10732\nFinished 2. Constant.  Results match. gpu time: 5819\nFinished 3. Tiled.  Results match. gpu time: 5804\n\n\n-----------------------------------------------------\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3185\nFinished 1. Basic.  Results match. gpu time: 309\nFinished 2. Constant.  Results match. gpu time: 226\nFinished 3. Tiled.  Results match. gpu time: 215\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4116\nFinished 1. Basic.  Results match. gpu time: 355\nFinished 2. Constant.  Results match. gpu time: 241\nFinished 3. Tiled.  Results match. gpu time: 247\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9354\nFinished 1. Basic.  Results match. gpu time: 838\nFinished 2. Constant.  Results match. gpu time: 570\nFinished 3. Tiled.  Results match. gpu time: 567\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 37710\nFinished 1. Basic.  Results match. gpu time: 2735\nFinished 2. Constant.  Results match. gpu time: 1638\nFinished 3. Tiled.  Results match. gpu time: 1652\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 212209\nFinished 1. Basic.  Results match. gpu time: 15292\nFinished 2. Constant.  Results match. gpu time: 8004\nFinished 3. Tiled.  Results match. gpu time: 8005\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 148752\nFinished 1. Basic.  Results match. gpu time: 10890\nFinished 2. Constant.  Results match. gpu time: 5888\nFinished 3. Tiled.  Results match. gpu time: 5884\n\n\n-----------------------------------------------------\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3184\nFinished 1. Basic.  Results match. gpu time: 318\nFinished 2. Constant.  Results match. gpu time: 217\nFinished 3. Tiled.  Results match. gpu time: 215\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4115\nFinished 1. Basic.  Results match. gpu time: 356\nFinished 2. Constant.  Results match. gpu time: 245\nFinished 3. Tiled.  Results match. gpu time: 241\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9348\nFinished 1. Basic.  Results match. gpu time: 850\nFinished 2. Constant.  Results match. gpu time: 572\nFinished 3. Tiled.  Results match. gpu time: 574\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35508\nFinished 1. Basic.  Results match. gpu time: 2728\nFinished 2. Constant.  Results match. gpu time: 1641\nFinished 3. Tiled.  Results match. gpu time: 1638\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 201889\nFinished 1. Basic.  Results match. gpu time: 15458\nFinished 2. Constant.  Results match. gpu time: 8049\nFinished 3. Tiled.  Results match. gpu time: 8109\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 148558\nFinished 1. Basic.  Results match. gpu time: 9879\nFinished 2. Constant.  Results match. gpu time: 5866\nFinished 3. Tiled.  Results match. gpu time: 5863\n\n\n-----------------------------------------------------\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3181\nFinished 1. Basic.  Results match. gpu time: 313\nFinished 2. Constant.  Results match. gpu time: 216\nFinished 3. Tiled.  Results match. gpu time: 214\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4118\nFinished 1. Basic.  Results match. gpu time: 356\nFinished 2. Constant.  Results match. gpu time: 246\nFinished 3. Tiled.  Results match. gpu time: 246\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9346\nFinished 1. Basic.  Results match. gpu time: 844\nFinished 2. Constant.  Results match. gpu time: 572\nFinished 3. Tiled.  Results match. gpu time: 572\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35382\nFinished 1. Basic.  Results match. gpu time: 2752\nFinished 2. Constant.  Results match. gpu time: 1654\nFinished 3. Tiled.  Results match. gpu time: 1638\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 202188\nFinished 1. Basic.  Results match. gpu time: 15325\nFinished 2. Constant.  Results match. gpu time: 8045\nFinished 3. Tiled.  Results match. gpu time: 8057\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 167099\nFinished 1. Basic.  Results match. gpu time: 10960\nFinished 2. Constant.  Results match. gpu time: 5873\nFinished 3. Tiled.  Results match. gpu time: 5868\n\n\n-----------------------------------------------------\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3580\nFinished 1. Basic.  Results match. gpu time: 329\nFinished 2. Constant.  Results match. gpu time: 224\nFinished 3. Tiled.  Results match. gpu time: 223\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4635\nFinished 1. Basic.  Results match. gpu time: 371\nFinished 2. Constant.  Results match. gpu time: 251\nFinished 3. Tiled.  Results match. gpu time: 255\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 10569\nFinished 1. Basic.  Results match. gpu time: 862\nFinished 2. Constant.  Results match. gpu time: 588\nFinished 3. Tiled.  Results match. gpu time: 587\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 39450\nFinished 1. Basic.  Results match. gpu time: 2735\nFinished 2. Constant.  Results match. gpu time: 1643\nFinished 3. Tiled.  Results match. gpu time: 1644\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 202807\nFinished 1. Basic.  Results match. gpu time: 15652\nFinished 2. Constant.  Results match. gpu time: 8040\nFinished 3. Tiled.  Results match. gpu time: 8050\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 148763\nFinished 1. Basic.  Results match. gpu time: 11159\nFinished 2. Constant.  Results match. gpu time: 5877\nFinished 3. Tiled.  Results match. gpu time: 5882\n\n\n-----------------------------------------------------\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3187\nFinished 1. Basic.  Results match. gpu time: 314\nFinished 2. Constant.  Results match. gpu time: 213\nFinished 3. Tiled.  Results match. gpu time: 213\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4199\nFinished 1. Basic.  Results match. gpu time: 359\nFinished 2. Constant.  Results match. gpu time: 247\nFinished 3. Tiled.  Results match. gpu time: 247\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9407\nFinished 1. Basic.  Results match. gpu time: 866\nFinished 2. Constant.  Results match. gpu time: 575\nFinished 3. Tiled.  Results match. gpu time: 576\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35398\nFinished 1. Basic.  Results match. gpu time: 2760\nFinished 2. Constant.  Results match. gpu time: 1687\nFinished 3. Tiled.  Results match. gpu time: 1676\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 203495\nFinished 1. Basic.  Results match. gpu time: 14943\nFinished 2. Constant.  Results match. gpu time: 7958\nFinished 3. Tiled.  Results match. gpu time: 7952\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 149392\nFinished 1. Basic.  Results match. gpu time: 10847\nFinished 2. Constant.  Results match. gpu time: 5869\nFinished 3. Tiled.  Results match. gpu time: 5873\n\n\n-----------------------------------------------------\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3182\nFinished 1. Basic.  Results match. gpu time: 307\nFinished 2. Constant.  Results match. gpu time: 212\nFinished 3. Tiled.  Results match. gpu time: 214\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4137\nFinished 1. Basic.  Results match. gpu time: 362\nFinished 2. Constant.  Results match. gpu time: 245\nFinished 3. Tiled.  Results match. gpu time: 247\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9356\nFinished 1. Basic.  Results match. gpu time: 841\nFinished 2. Constant.  Results match. gpu time: 570\nFinished 3. Tiled.  Results match. gpu time: 571\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35296\nFinished 1. Basic.  Results match. gpu time: 2736\nFinished 2. Constant.  Results match. gpu time: 1638\nFinished 3. Tiled.  Results match. gpu time: 1644\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 218755\nFinished 1. Basic.  Results match. gpu time: 16140\nFinished 2. Constant.  Results match. gpu time: 8173\nFinished 3. Tiled.  Results match. gpu time: 8073\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 167907\nFinished 1. Basic.  Results match. gpu time: 11135\nFinished 2. Constant.  Results match. gpu time: 5988\nFinished 3. Tiled.  Results match. gpu time: 5991\n\n\n-----------------------------------------------------\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3197\nFinished 1. Basic.  Results match. gpu time: 315\nFinished 2. Constant.  Results match. gpu time: 216\nFinished 3. Tiled.  Results match. gpu time: 216\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4112\nFinished 1. Basic.  Results match. gpu time: 362\nFinished 2. Constant.  Results match. gpu time: 246\nFinished 3. Tiled.  Results match. gpu time: 248\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9438\nFinished 1. Basic.  Results match. gpu time: 857\nFinished 2. Constant.  Results match. gpu time: 576\nFinished 3. Tiled.  Results match. gpu time: 573\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35267\nFinished 1. Basic.  Results match. gpu time: 2734\nFinished 2. Constant.  Results match. gpu time: 1646\nFinished 3. Tiled.  Results match. gpu time: 1649\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 201913\nFinished 1. Basic.  Results match. gpu time: 15594\nFinished 2. Constant.  Results match. gpu time: 8020\nFinished 3. Tiled.  Results match. gpu time: 8033\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 150995\nFinished 1. Basic.  Results match. gpu time: 10791\nFinished 2. Constant.  Results match. gpu time: 5888\nFinished 3. Tiled.  Results match. gpu time: 5873\n\n\n-----------------------------------------------------\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3183\nFinished 1. Basic.  Results match. gpu time: 311\nFinished 2. Constant.  Results match. gpu time: 215\nFinished 3. Tiled.  Results match. gpu time: 213\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4124\nFinished 1. Basic.  Results match. gpu time: 365\nFinished 2. Constant.  Results match. gpu time: 247\nFinished 3. Tiled.  Results match. gpu time: 244\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9354\nFinished 1. Basic.  Results match. gpu time: 842\nFinished 2. Constant.  Results match. gpu time: 567\nFinished 3. Tiled.  Results match. gpu time: 566\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35345\nFinished 1. Basic.  Results match. gpu time: 2732\nFinished 2. Constant.  Results match. gpu time: 1629\nFinished 3. Tiled.  Results match. gpu time: 1631\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 202113\nFinished 1. Basic.  Results match. gpu time: 15534\nFinished 2. Constant.  Results match. gpu time: 7956\nFinished 3. Tiled.  Results match. gpu time: 7979\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 148571\nFinished 1. Basic.  Results match. gpu time: 9830\nFinished 2. Constant.  Results match. gpu time: 5801\nFinished 3. Tiled.  Results match. gpu time: 5810\n\n\n-----------------------------------------------------\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3187\nFinished 1. Basic.  Results match. gpu time: 316\nFinished 2. Constant.  Results match. gpu time: 217\nFinished 3. Tiled.  Results match. gpu time: 215\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4117\nFinished 1. Basic.  Results match. gpu time: 361\nFinished 2. Constant.  Results match. gpu time: 244\nFinished 3. Tiled.  Results match. gpu time: 242\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9354\nFinished 1. Basic.  Results match. gpu time: 846\nFinished 2. Constant.  Results match. gpu time: 572\nFinished 3. Tiled.  Results match. gpu time: 571\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35345\nFinished 1. Basic.  Results match. gpu time: 2750\nFinished 2. Constant.  Results match. gpu time: 1642\nFinished 3. Tiled.  Results match. gpu time: 1645\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 203782\nFinished 1. Basic.  Results match. gpu time: 16037\nFinished 2. Constant.  Results match. gpu time: 8238\nFinished 3. Tiled.  Results match. gpu time: 8234\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 170552\nFinished 1. Basic.  Results match. gpu time: 10861\nFinished 2. Constant.  Results match. gpu time: 5862\nFinished 3. Tiled.  Results match. gpu time: 5869\n\n\n-----------------------------------------------------\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3184\nFinished 1. Basic.  Results match. gpu time: 317\nFinished 2. Constant.  Results match. gpu time: 216\nFinished 3. Tiled.  Results match. gpu time: 214\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4116\nFinished 1. Basic.  Results match. gpu time: 358\nFinished 2. Constant.  Results match. gpu time: 246\nFinished 3. Tiled.  Results match. gpu time: 246\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9363\nFinished 1. Basic.  Results match. gpu time: 842\nFinished 2. Constant.  Results match. gpu time: 568\nFinished 3. Tiled.  Results match. gpu time: 569\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35416\nFinished 1. Basic.  Results match. gpu time: 2726\nFinished 2. Constant.  Results match. gpu time: 1627\nFinished 3. Tiled.  Results match. gpu time: 1625\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 202507\nFinished 1. Basic.  Results match. gpu time: 15155\nFinished 2. Constant.  Results match. gpu time: 8008\nFinished 3. Tiled.  Results match. gpu time: 7956\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 148812\nFinished 1. Basic.  Results match. gpu time: 10747\nFinished 2. Constant.  Results match. gpu time: 5853\nFinished 3. Tiled.  Results match. gpu time: 5852\n\n\n-----------------------------------------------------\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3190\nFinished 1. Basic.  Results match. gpu time: 308\nFinished 2. Constant.  Results match. gpu time: 214\nFinished 3. Tiled.  Results match. gpu time: 210\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4117\nFinished 1. Basic.  Results match. gpu time: 359\nFinished 2. Constant.  Results match. gpu time: 245\nFinished 3. Tiled.  Results match. gpu time: 245\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9361\nFinished 1. Basic.  Results match. gpu time: 846\nFinished 2. Constant.  Results match. gpu time: 573\nFinished 3. Tiled.  Results match. gpu time: 575\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35314\nFinished 1. Basic.  Results match. gpu time: 2747\nFinished 2. Constant.  Results match. gpu time: 1645\nFinished 3. Tiled.  Results match. gpu time: 1653\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 202218\nFinished 1. Basic.  Results match. gpu time: 15332\nFinished 2. Constant.  Results match. gpu time: 8028\nFinished 3. Tiled.  Results match. gpu time: 8015\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 148715\nFinished 1. Basic.  Results match. gpu time: 10736\nFinished 2. Constant.  Results match. gpu time: 5836\nFinished 3. Tiled.  Results match. gpu time: 5831\n\n\n-----------------------------------------------------\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3188\nFinished 1. Basic.  Results match. gpu time: 311\nFinished 2. Constant.  Results match. gpu time: 218\nFinished 3. Tiled.  Results match. gpu time: 216\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4124\nFinished 1. Basic.  Results match. gpu time: 360\nFinished 2. Constant.  Results match. gpu time: 245\nFinished 3. Tiled.  Results match. gpu time: 244\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9352\nFinished 1. Basic.  Results match. gpu time: 841\nFinished 2. Constant.  Results match. gpu time: 567\nFinished 3. Tiled.  Results match. gpu time: 566\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 37246\nFinished 1. Basic.  Results match. gpu time: 2742\nFinished 2. Constant.  Results match. gpu time: 1649\nFinished 3. Tiled.  Results match. gpu time: 1644\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 202274\nFinished 1. Basic.  Results match. gpu time: 15354\nFinished 2. Constant.  Results match. gpu time: 8018\nFinished 3. Tiled.  Results match. gpu time: 8016\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 148412\nFinished 1. Basic.  Results match. gpu time: 9887\nFinished 2. Constant.  Results match. gpu time: 5876\nFinished 3. Tiled.  Results match. gpu time: 5887\n\n\n-----------------------------------------------------\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3186\nFinished 1. Basic.  Results match. gpu time: 308\nFinished 2. Constant.  Results match. gpu time: 217\nFinished 3. Tiled.  Results match. gpu time: 212\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4115\nFinished 1. Basic.  Results match. gpu time: 355\nFinished 2. Constant.  Results match. gpu time: 255\nFinished 3. Tiled.  Results match. gpu time: 243\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9358\nFinished 1. Basic.  Results match. gpu time: 847\nFinished 2. Constant.  Results match. gpu time: 575\nFinished 3. Tiled.  Results match. gpu time: 575\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35282\nFinished 1. Basic.  Results match. gpu time: 2746\nFinished 2. Constant.  Results match. gpu time: 1645\nFinished 3. Tiled.  Results match. gpu time: 1645\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 204213\nFinished 1. Basic.  Results match. gpu time: 15398\nFinished 2. Constant.  Results match. gpu time: 8035\nFinished 3. Tiled.  Results match. gpu time: 8035\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 165187\nFinished 1. Basic.  Results match. gpu time: 10798\nFinished 2. Constant.  Results match. gpu time: 5881\nFinished 3. Tiled.  Results match. gpu time: 5882\n\n\n-----------------------------------------------------\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3187\nFinished 1. Basic.  Results match. gpu time: 316\nFinished 2. Constant.  Results match. gpu time: 214\nFinished 3. Tiled.  Results match. gpu time: 215\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4122\nFinished 1. Basic.  Results match. gpu time: 363\nFinished 2. Constant.  Results match. gpu time: 243\nFinished 3. Tiled.  Results match. gpu time: 243\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9358\nFinished 1. Basic.  Results match. gpu time: 844\nFinished 2. Constant.  Results match. gpu time: 569\nFinished 3. Tiled.  Results match. gpu time: 570\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35389\nFinished 1. Basic.  Results match. gpu time: 2721\nFinished 2. Constant.  Results match. gpu time: 1636\nFinished 3. Tiled.  Results match. gpu time: 1630\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 220255\nFinished 1. Basic.  Results match. gpu time: 15627\nFinished 2. Constant.  Results match. gpu time: 8013\nFinished 3. Tiled.  Results match. gpu time: 8039\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 151738\nFinished 1. Basic.  Results match. gpu time: 11127\nFinished 2. Constant.  Results match. gpu time: 5987\nFinished 3. Tiled.  Results match. gpu time: 6090\n\n\n-----------------------------------------------------\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3575\nFinished 1. Basic.  Results match. gpu time: 323\nFinished 2. Constant.  Results match. gpu time: 222\nFinished 3. Tiled.  Results match. gpu time: 219\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4623\nFinished 1. Basic.  Results match. gpu time: 362\nFinished 2. Constant.  Results match. gpu time: 247\nFinished 3. Tiled.  Results match. gpu time: 246\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 10536\nFinished 1. Basic.  Results match. gpu time: 853\nFinished 2. Constant.  Results match. gpu time: 578\nFinished 3. Tiled.  Results match. gpu time: 577\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 39808\nFinished 1. Basic.  Results match. gpu time: 2748\nFinished 2. Constant.  Results match. gpu time: 1651\nFinished 3. Tiled.  Results match. gpu time: 1646\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 223218\nFinished 1. Basic.  Results match. gpu time: 16153\nFinished 2. Constant.  Results match. gpu time: 8186\nFinished 3. Tiled.  Results match. gpu time: 8183\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 148791\nFinished 1. Basic.  Results match. gpu time: 11157\nFinished 2. Constant.  Results match. gpu time: 5874\nFinished 3. Tiled.  Results match. gpu time: 5877\n\n\n-----------------------------------------------------\ninputs/img1.jpg\nFinished 4. Sequential.  Results match. cpu time: 3184\nFinished 1. Basic.  Results match. gpu time: 311\nFinished 2. Constant.  Results match. gpu time: 216\nFinished 3. Tiled.  Results match. gpu time: 217\n\ninputs/img2.jpg\nFinished 4. Sequential.  Results match. cpu time: 4115\nFinished 1. Basic.  Results match. gpu time: 359\nFinished 2. Constant.  Results match. gpu time: 244\nFinished 3. Tiled.  Results match. gpu time: 244\n\ninputs/img3.jpg\nFinished 4. Sequential.  Results match. cpu time: 9363\nFinished 1. Basic.  Results match. gpu time: 846\nFinished 2. Constant.  Results match. gpu time: 571\nFinished 3. Tiled.  Results match. gpu time: 571\n\ninputs/img4.jpg\nFinished 4. Sequential.  Results match. cpu time: 35286\nFinished 1. Basic.  Results match. gpu time: 2740\nFinished 2. Constant.  Results match. gpu time: 1643\nFinished 3. Tiled.  Results match. gpu time: 1642\n\ninputs/img5.jpg\nFinished 4. Sequential.  Results match. cpu time: 225040\nFinished 1. Basic.  Results match. gpu time: 15440\nFinished 2. Constant.  Results match. gpu time: 8165\nFinished 3. Tiled.  Results match. gpu time: 8176\n\ninputs/img6.jpg\nFinished 4. Sequential.  Results match. cpu time: 164498\nFinished 1. Basic.  Results match. gpu time: 10965\nFinished 2. Constant.  Results match. gpu time: 5887\nFinished 3. Tiled.  Results match. gpu time: 5868\n\n\n-----------------------------------------------------\n",
-			"settings":
-			{
-				"buffer_size": 28062,
-				"line_ending": "Unix",
-				"name": "inputs/img1.jpg"
-			}
-		},
-		{
-			"contents": "\\begin{table}[h]\n\\centering\n\\begin{tabular}{l|llll}\n\\multicolumn{5}{c}{Img6.jpg}                     \\\\\n\\hline\nTest    & Sequential & Basic  & Constant & Tiled \\\\\n\\hline\n1        & 148669     & 11228   & 5885     & 5969    \\\\\n2        & 149134     & 10833   & 5849     & 5860    \\\\\n3        & 149106     & 10764   & 5870     & 5868    \\\\\n4        & 150440     & 10732   & 5819     & 5804    \\\\\n5        & 148752     & 10890   & 5888     & 5884    \\\\\n6        & 148558     & 9879    & 5866     & 5863    \\\\\n7        & 167099     & 10960   & 5873     & 5868    \\\\\n8        & 148763     & 11159   & 5877     & 5882    \\\\\n9        & 149392     & 10847   & 5869     & 5873    \\\\\n10       & 167907     & 11135   & 5988     & 5991    \\\\\n11       & 150995     & 10791   & 5888     & 5873    \\\\\n12       & 148571     & 9830    & 5801     & 5810    \\\\\n13       & 170552     & 10861   & 5862     & 5869    \\\\\n14       & 148812     & 10747   & 5853     & 5852    \\\\\n15       & 148715     & 10736   & 5836     & 5831    \\\\\n16       & 148412     & 9887    & 5876     & 5887    \\\\\n17       & 165187     & 10798   & 5881     & 5882    \\\\\n18       & 151738     & 11127   & 5987     & 6090    \\\\\n19       & 148791     & 11157   & 5874     & 5877    \\\\\n20       & 164498     & 10965   & 5887     & 5868    \\\\\n\\hline\nAverage  & 153704,6   & 10766,3 & 5876,45  & 5885,05\n\\end{tabular}\n\\caption{Convolución Img6.jpg. tiempo: microsegundos.}\n\\label{table: BasicConvolution}\n\\end{table}",
-			"settings":
-			{
-				"buffer_size": 1462,
-				"line_ending": "Unix",
-				"name": "\\begin{table}[h]"
-			}
-		},
-		{
-			"contents": "\n336400\n408320\n1049088\n4096000\n22064172\n16084992\n\n-----------------------------------------------------",
-			"settings":
-			{
-				"buffer_size": 103,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/rafapinzon/MEGA/U/HPC/Constante.c.txt",
-			"settings":
-			{
-				"buffer_size": 3766,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/rafapinzon/MEGA/U/Progra/Python/ChangeNameFiles.py",
-			"settings":
-			{
-				"buffer_size": 625,
-				"line_ending": "Unix",
-				"name": "import os"
-			}
-		},
-		{
-			"contents": "#include <stdio.h>\n#include <stdlib.h>\n#include <time.h>\n#include <sys/time.h>\n\n// RG*RG*MAXN must fit within mytype\n\n#define MAXN 100000\n#define RG 10\n#define USECPSEC 1000000ULL\n#define nTPB 256\n\ntypedef double mytype;\n\nvoid conv(const mytype *A, const mytype *B, mytype* out, int N) {\n\n    for (int i = 0; i < N; ++i)\n        for (int j = 0; j < N; ++j)\n            out[i + j] += A[i] * B[j];\n}\n\nunsigned long long dtime_usec(unsigned long long prev){\n  timeval tv1;\n  gettimeofday(&tv1,0);\n  return ((tv1.tv_sec * USECPSEC)+tv1.tv_usec) - prev;\n}\n\n\n\n__global__ void conv_Kernel2(const mytype * __restrict__ A, const mytype * __restrict__ B, mytype *out, const int N){\n    int idx = threadIdx.x+blockDim.x*blockIdx.x;\n    if (idx < (2*N)-1){\n      mytype my_sum = 0;\n      for (int i = 0; i < N; i++)\n        if (((idx < N) && (i <= idx)) || ((idx >= N) && (i > (idx-N)))) my_sum += A[i]*B[idx-i];\n      out[idx] = my_sum;\n    }\n}\n\nint main(int argc, char *argv[]){\n\n\n  mytype *h_A, *d_A, *h_result, *d_result, *result, *h_B, *d_B, *A, *B;\n  if (argc != 2) {printf(\"must specify N on the command line\\n\"); return 1;}\n  int my_N = atoi(argv[1]);\n  if ((my_N < 1) || (my_N > MAXN)) {printf(\"N out of range\\n\"); return 1;}\n  B   = (mytype *)malloc(my_N*sizeof(mytype));\n  A   = (mytype *)malloc(my_N*sizeof(mytype));\n  h_A = (mytype *)malloc(my_N*sizeof(mytype));\n  h_B = (mytype *)malloc(my_N*sizeof(mytype));\n  h_result = (mytype *)malloc(2*my_N*sizeof(mytype));\n  result   = (mytype *)malloc(2*my_N*sizeof(mytype));\n\n  cudaMalloc(&d_B, my_N*sizeof(mytype));\n  cudaMalloc(&d_A, my_N*sizeof(mytype));\n  cudaMalloc(&d_result, 2*my_N*sizeof(mytype));\n\n  for (int i=0; i < my_N; i++){\n    A[i] = rand()%RG;\n    B[i] = rand()%RG;\n    h_A[i] = A[i];\n    h_B[i] = B[i];}\n\n  for (int i=0; i < 2*my_N; i++){\n    result[i]   = 0;\n    h_result[i] = 0;}\n\n  unsigned long long cpu_time = dtime_usec(0);\n  conv(A, B, result, my_N);\n  cpu_time = dtime_usec(cpu_time);\n\n  cudaMemset(d_result, 0, 2*my_N*sizeof(mytype));\n\n  unsigned long long gpu_time = dtime_usec(0);\n  cudaMemcpy(d_A, h_A, my_N*sizeof(mytype), cudaMemcpyHostToDevice);\n  cudaMemcpy(d_B, h_B, my_N*sizeof(mytype), cudaMemcpyHostToDevice);\n  conv_Kernel2<<<((2*(my_N-1))+nTPB-1)/nTPB,nTPB>>>(d_A, d_B, d_result, my_N);\n  cudaDeviceSynchronize();\n  cudaMemcpy(h_result, d_result, 2*my_N*sizeof(mytype), cudaMemcpyDeviceToHost);\n  gpu_time = dtime_usec(gpu_time);\n\n  for (int i = 0; i < 2*my_N; i++) if (result[i] != h_result[i]) {printf(\"mismatch2 at %d, cpu: %d, gpu %d\\n\", i, result[i], h_result[i]); return 1;}\n  printf(\"Finished.  Results match.  cpu time: %ldus, gpu time: %ldus\\n\", cpu_time, gpu_time);\n  printf(\"cpu/gpu = %f\\n\", cpu_time/(float)gpu_time);\n  return 0;\n}",
-			"settings":
-			{
-				"buffer_size": 2727,
-				"line_ending": "Unix"
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
 			}
 		}
 	],
@@ -757,10 +643,42 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 354.0,
-		"last_filter": "instal",
+		"height": 392.0,
+		"last_filter": "package",
 		"selected_items":
 		[
+			[
+				"package",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"paka",
+				"Package Control: Disable Package"
+			],
+			[
+				"everno",
+				"Evernote: Update Evernote Note"
+			],
+			[
+				"ever",
+				"Evernote: Update Evernote Note"
+			],
 			[
 				"instal",
 				"Package Control: Install Package"
@@ -784,10 +702,6 @@
 			[
 				"brow",
 				"Preferences: Browse Packages"
-			],
-			[
-				"packa",
-				"Package Control: Upgrade/Overwrite All Packages"
 			],
 			[
 				"op",
@@ -850,14 +764,6 @@
 				"Set Syntax: SQL"
 			],
 			[
-				"ever",
-				"Evernote: Open Evernote Note"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
 				"add rep",
 				"Package Control: Add Repository"
 			],
@@ -884,10 +790,6 @@
 			[
 				"late",
 				"Set Syntax: LaTeXing"
-			],
-			[
-				"enable",
-				"Package Control: Enable Package"
 			],
 			[
 				"inst",
@@ -926,10 +828,6 @@
 				"Package Control: Disable Package"
 			],
 			[
-				"package",
-				"Package Control: Remove Package"
-			],
-			[
 				"disabl",
 				"Package Control: Disable Package"
 			],
@@ -938,7 +836,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 449.0
+		"width": 467.0
 	},
 	"console":
 	{
@@ -962,18 +860,50 @@
 	},
 	"expanded_folders":
 	[
-		"/home/rafapinzon/Documents/GitHub/HPC"
+		"/home/rafapinzon/LabSoft/vast-escarpment-5565"
 	],
 	"file_history":
 	[
-		"/home/rafapinzon/.config/sublime-text-3/Packages/User/HTML.sublime-settings",
+		"/home/rafapinzon/.config/sublime-text-3/Packages/User/Python Django.sublime-settings",
+		"/home/rafapinzon/.config/sublime-text-3/Packages/User/JSON.sublime-settings",
+		"/home/rafapinzon/.config/sublime-text-3/Packages/User/Distraction Free.sublime-settings",
+		"/home/rafapinzon/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/rafapinzon/Downloads/workspace/registro/templates/registro.html",
+		"/home/rafapinzon/Documents/Python/Django/djangoTut/static/templates/signup.html",
+		"/home/rafapinzon/LabSoft/vast-escarpment-5565/usuarios/views/ListasView.py",
+		"/home/rafapinzon/LabSoft/vast-escarpment-5565/usuarios/views/views.py",
+		"/home/rafapinzon/Downloads/workspace/registro/views.py",
+		"/home/rafapinzon/Downloads/workspace/registro/templates/usuarios_list.html",
+		"/home/rafapinzon/Downloads/workspace/proyecto/models.py",
+		"/home/rafapinzon/Downloads/workspace/proyectolab/urls.py",
+		"/home/rafapinzon/Documents/Python/Django/djangoTut/src/mvp_landing/settings.py",
+		"/home/rafapinzon/Documents/Python/Django/djangoTut/src/db.sqlite3",
+		"/home/rafapinzon/Documents/Python/Django/djangoTut/src/mvp_landing/urls.py",
+		"/home/rafapinzon/Downloads/workspace/templates/acciones.html",
+		"/home/rafapinzon/LabSoft/vast-escarpment-5565/gettingstarted/urls.py",
+		"/home/rafapinzon/Downloads/workspace/registro/form.py",
+		"/home/rafapinzon/Downloads/workspace/proyecto/views.py",
+		"/home/rafapinzon/Documents/Python/Django/djangoTut/src/signups/views.py",
+		"/home/rafapinzon/Documents/Python/Django/djangoTut/lib/python2.7/site-packages/django/contrib/admin/sites.py",
+		"/home/rafapinzon/Downloads/workspace/registro/urls.py",
+		"/home/rafapinzon/LabSoft/vast-escarpment-5565/usuarios/models/UsuariosModel.py",
+		"/home/rafapinzon/LabSoft/vast-escarpment-5565/usuarios/templates/usuarios/solicitar_medicamento.html",
+		"/home/rafapinzon/Documents/Python/Django/djangoTut/src/signups/forms.py",
+		"/home/rafapinzon/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/rafapinzon/LabSoft/vast-escarpment-5565/usuarios/views/UsuariosView.py",
+		"/home/rafapinzon/Downloads/workspace/proyectolab/settings.py",
+		"/home/rafapinzon/Downloads/workspace/.c9/project.settings",
+		"/home/rafapinzon/Documents/Python/BSF-DSF.py",
+		"/home/rafapinzon/MEGA/U/Progra/Python/ChangeNameFiles.py",
+		"/home/rafapinzon/MEGA/U/HPC/Constante.c.txt",
+		"/home/rafapinzon/Documents/GitHub/HPC/ImageFilterSobel.c",
 		"/home/rafapinzon/Documents/GitHub/HPC/convolution.c",
+		"/home/rafapinzon/Documents/BitBucket/HPC/convolution.c",
+		"/home/rafapinzon/.config/sublime-text-3/Packages/User/HTML.sublime-settings",
 		"/home/rafapinzon/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
 		"/home/rafapinzon/Documents/Python/Django/djangoTut/lib/python2.7/site-packages/django/db/models/fields/__init__.py",
-		"/home/rafapinzon/Documents/Python/Django/djangoTut/src/mvp_landing/urls.py",
 		"/home/rafapinzon/Documents/Python/Django/djangoTut/src/signups/admin.py",
 		"/home/rafapinzon/Documents/Python/Django/djangoTut/src/signups/models.py",
-		"/home/rafapinzon/Documents/Python/Django/djangoTut/src/mvp_landing/settings.py",
 		"/home/rafapinzon/MEGA/U/Progra/Python/MyNewGUI/GUI/mainWindow.py",
 		"/home/rafapinzon/Documents/Python/prueba.py",
 		"/home/rafapinzon/MEGA/U/Progra/Python/MyNewGUI/GUI/asd.py",
@@ -985,7 +915,6 @@
 		"/home/rafapinzon/MEGA/U/Progra/Python/MyNewGUI/GUI/Ventanas/Informacion.py",
 		"/home/rafapinzon/Documents/GitHub/HPC/matrixMult.c",
 		"/home/rafapinzon/Documents/GitHub/HPC/matrixMultSec.c",
-		"/home/rafapinzon/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 		"/home/rafapinzon/Downloads/asd.py",
 		"/home/rafapinzon/MEGA/U/Progra/Python/MyNewGUI/GUI/optimizando.py",
 		"/home/rafapinzon/Downloads/asd (1).py",
@@ -1062,38 +991,7 @@
 		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/juego4.h",
 		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/proyectoRuleta-Server4.c",
 		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/comando.txt",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/juego2.h",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/estadisticas.txt",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/22 Junio/Taller6(Kill).c",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/22 Junio/Taller12_3Hilos.c",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/22 Junio/Taller9.c",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/proyectoRuleta-Server2lalal.c",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/juego2lala.h",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/juego3.h",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto1/juego.h",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto1/proyectoRuleta-Cliente.c",
-		"/home/rafapinzon/MEGA/U/Progra/Programacion/Programación 2/ensayo.c",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyectoservidor.c",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyectocliente.c",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/client_threads.c",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/server_threads.c",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/taller17-servidor-tcp.c",
-		"/home/rafapinzon/Downloads/client_threads.c",
-		"/home/rafapinzon/Downloads/server_threads.c",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/ClienteServidor.sublime-project",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto1/juego.c",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/22 Junio/hola.txt",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/22 Junio/Taller8(Triki).c",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/Taller19-cliente.c",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/Taller19-servidor.c",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/Taller20-cliente_eco.c",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/Taller20-servidor_eco.c",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Talleres/22 Junio/Taller7.c",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Documentos/01.1 - Introduccion a CS.pdf",
-		"/home/rafapinzon/Downloads/Taller7.c",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/CTutorial.c",
-		"/home/rafapinzon/.config/sublime-text-2/Packages/Default/Preferences (Linux).sublime-settings",
-		"/home/rafapinzon/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings"
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/juego2.h"
 	],
 	"find":
 	{
@@ -1104,6 +1002,8 @@
 		"height": 100.0,
 		"where_history":
 		[
+			"/home/rafapinzon/Downloads/workspace/",
+			"/home/rafapinzon/Downloads/workspace/registro",
 			""
 		]
 	},
@@ -1112,6 +1012,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"color_scheme",
+			"editar",
+			"usuario",
+			"bienvenido admin",
+			"registro",
+			"USUARIO",
+			"ForeignKey(USUARIO",
+			"ForeignKey",
+			"proyecto",
+			"proyecot",
+			"proyecto_usuario",
+			"proyecto_",
+			"registro",
+			"proyecto_usuario",
+			"user",
+			"admin",
 			"\\section{Image }",
 			"\\begin{table}",
 			"Img1",
@@ -1223,23 +1139,7 @@
 			"printf(\"-",
 			"freeMemory",
 			"el turno pasa",
-			"SALAS[*idPartida]",
-			"idPartidaLocal",
-			"SALAS[*idPartida]",
-			"resolverFlag",
-			"turno",
-			"current",
-			"turnos",
-			"resolverFlag",
-			"visaje",
-			"conectadosMult",
-			"turno",
-			"frase",
-			"turno",
-			"psdglo",
-			"ganador",
-			"raw_input",
-			"ThisHost"
+			"SALAS[*idPartida]"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1338,165 +1238,17 @@
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": true,
+		"whole_word": false,
 		"wrap": true
 	},
 	"groups":
 	[
 		{
-			"selected": 10,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/static/templates/signup.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 288,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								204,
-								204
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"open_with_edit": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/src/signups/forms.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 163,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								163,
-								163
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"open_with_edit": true,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/home/rafapinzon/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1667,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 19,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/src/mvp_landing/urls.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 296,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								174,
-								174
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/src/signups/views.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 447,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								261,
-								261
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1515,6 +1267,7 @@
 						{
 							"apply_syntax_touched": true,
 							"auto_name": "35319 comprobante debito",
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 							"default_dir": "/home/rafapinzon/Documents/Python/Django/djangoTut",
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
@@ -1522,181 +1275,63 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/home/rafapinzon/Documents/Python/BSF-DSF.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 545,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								193,
-								193
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"auto_name": "graph = {'A': set(['B', 'C']),",
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2546,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								587,
-								587
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"syntax": "Packages/SQL/SQL.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/home/rafapinzon/Documents/BitBucket/HPC/convolution.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8129,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7511,
-								7511
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"syntax": "Packages/C Improved/C Improved.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3528.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "convolution.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6821,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6764,
-								6764
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"syntax": "Packages/C Improved/C Improved.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3864.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "ImageFilterSobel.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9091,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4591,
-								4552
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"syntax": "Packages/C Improved/C Improved.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2508.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 1,
+					"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/static/templates/base.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11262,
+						"buffer_size": 4457,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								364,
-								364
+								480,
+								480
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"auto_name": "\\section{Image 1}",
-							"default_dir": "/home/rafapinzon/Documents/GitHub/HPC",
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"open_with_edit": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9,
+								9
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_name": "",
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -1707,163 +1342,28 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 3,
+					"file": "/home/rafapinzon/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 29151,
+						"buffer_size": 1623,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								172,
-								172
-							],
-							[
-								1629,
-								1629
-							],
-							[
-								3090,
-								3090
-							],
-							[
-								4552,
-								4552
-							],
-							[
-								6010,
-								6010
-							],
-							[
-								7468,
-								7468
-							],
-							[
-								8925,
-								8925
-							],
-							[
-								10382,
-								10382
-							],
-							[
-								11839,
-								11839
-							],
-							[
-								13297,
-								13297
-							],
-							[
-								14753,
-								14753
-							],
-							[
-								16210,
-								16210
-							],
-							[
-								17667,
-								17667
-							],
-							[
-								19124,
-								19124
-							],
-							[
-								20581,
-								20581
-							],
-							[
-								22038,
-								22038
-							],
-							[
-								23496,
-								23496
-							],
-							[
-								24953,
-								24953
-							],
-							[
-								26410,
-								26410
-							],
-							[
-								27867,
-								27867
+								201,
+								201
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"auto_name": "inputs/img1.jpg",
-							"default_dir": "/home/rafapinzon/Documents/GitHub/HPC",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 15312.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 28062,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								237,
-								237
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"auto_name": "inputs/img1.jpg",
-							"default_dir": "/home/rafapinzon/Documents/GitHub/HPC",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1462,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1462,
-								1462
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"auto_name": "\\begin{table}[h]",
-							"default_dir": "/home/rafapinzon/Documents/GitHub/HPC",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1873,154 +1373,67 @@
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 4,
+					"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/src/mvp_landing/settings.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 103,
+						"buffer_size": 2461,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								103,
-								103
+								240,
+								240
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"auto_name": "",
-							"default_dir": "/home/rafapinzon/Documents/GitHub/HPC",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1108,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1108,
+								1108
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_indent": false,
+							"default_dir": "/home/rafapinzon/Documents/Python/Django/djangoTut",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "/home/rafapinzon/MEGA/U/HPC/Constante.c.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3766,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1216,
-								1216
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"syntax": "Packages/C++/C.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2110.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"default_dir": "/home/rafapinzon/Documents/GitHub/HPC",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "/home/rafapinzon/MEGA/U/Progra/Python/ChangeNameFiles.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 625,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								516,
-								516
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"auto_name": "import os",
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2727,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2231,
-								2231
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"default_dir": "/home/rafapinzon/Documents/GitHub/HPC",
-							"syntax": "Packages/C++/C.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
 					"type": "text"
 				}
 			]
@@ -2073,7 +1486,7 @@
 	"project": "HPC.sublime-project",
 	"replace":
 	{
-		"height": 114.0
+		"height": 58.0
 	},
 	"save_all_on_build": true,
 	"select_file":
