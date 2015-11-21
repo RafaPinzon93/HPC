@@ -1,8 +1,3 @@
-//  Author: Jose F. Martinez Rivera
-//  Course: ICOM4036 - 040
-//  Professor: Wilson Rivera Gallego
-//  Assignment 2 - OpenMP Implementation
-
 #include <stdio.h>
 #include <time.h>
 #include <math.h>

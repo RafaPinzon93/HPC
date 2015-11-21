@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"si",
+				"iSize"
+			],
+			[
+				"V",
+				"Vertex"
+			],
+			[
+				"_",
+				"__constant__"
+			],
+			[
 				"theme",
 				"Material-Theme-Darker"
 			],
@@ -502,18 +514,6 @@
 			[
 				"lis",
 				"listarArchivos"
-			],
-			[
-				"lista",
-				"listaArchivo"
-			],
-			[
-				"para",
-				"parametros"
-			],
-			[
-				"wri",
-				"write"
 			]
 		]
 	},
@@ -526,6 +526,64 @@
 				"buffer_size": 89,
 				"line_ending": "Unix",
 				"name": "35319 comprobante debito"
+			}
+		},
+		{
+			"file": "DijkstraThreads.c",
+			"settings":
+			{
+				"buffer_size": 7855,
+				"line_ending": "Unix",
+				"name": "#include <stdio.h>"
+			}
+		},
+		{
+			"file": "DijkstraIntento.c",
+			"settings":
+			{
+				"buffer_size": 8976,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "DijkstraSecuencial.c",
+			"settings":
+			{
+				"buffer_size": 5431,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "DijkstraOpenMp.c",
+			"settings":
+			{
+				"buffer_size": 5053,
+				"line_ending": "Unix",
+				"name": "//  Author: Jose F. Martinez Rivera"
+			}
+		},
+		{
+			"file": "/home/rafapinzon/Downloads/Constante.cu.txt",
+			"settings":
+			{
+				"buffer_size": 5932,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "0   4     0   6     2   6     7   0     7   7     3   3     1   5     2   1     3\n1   5   1   7   3   7   8   1   8   8   4   4   2   6   3   2   4\n7-8,8-9,9-10,10-11,11-12,12-13,13-14,14-15,15-16,16-17,17-18,18-19,19-20,20-21,21-22,22-23\n1-5,1-7,1-3,5-7,5-8,1-8,8-4,4-2,3-6,3-2,6-4,2-6,7-8,8-9,9-10,10-11,11-12,12-13,13-14,14-15,15-16,16-17,17-18,18-19,19-20,20-21,21-22,22-23",
+			"settings":
+			{
+				"buffer_size": 377,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ImageFilterSobel.c",
+			"settings":
+			{
+				"buffer_size": 11200,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -561,14 +619,11 @@
 			}
 		},
 		{
-			"contents": "Package Control Messages\n========================\n\nLaTeXTools\n----------\n\n  LaTeXTools Plugin version 2015-11-14 changelog:\n  \n  This release improves the Fill Helper feature, and adds other user-contributed functionality.\n  \n  New features (Ian Bacher, Richard Stein, Dan Schrage):\n  \n  - Fill Helper now injects completions into ST's autocomplete features\n  - Auto-hide build panel; see README for settings\n  - Jump to included tex files (see README for details)\n  - Support \\nobibliography{} command\n  \n  Bugs fixed:\n  \n  - Fill Helper now handles backslashes correctly on Windows.\n  - Other Fill Helper fixes\n  - Fixed PDF forward search issues with long builds\n\n\nMaterial Theme\n--------------\n\n  Material Theme for Sublime Text 3\n  https://github.com/equinusocio/material-theme\n  \n  \n  Version 1.9.1\n  ********************************************************************************\n  \n  #### COLOR SCHEME\n  \n    - New Oceanic Next based color schemes ( Material-Theme-OceanicNext.tmTheme, Material-Theme-Darker-OceanicNext.tmTheme )\n    - BABEL JS color scheme improvements\n    - Fix JSON color scheme\n",
+			"contents": "0-4,0-6,2,6,7,0-7,7-3,3-1,5,2-1,3\n0, 4, 0, 6, 0,2, 4,6, 4,7, 0, 7, 7, 3, 3, 1, 2,5, 2, 1, 5,3\n1-5,1-7,3-7,8-1,8-8-4-4-2-6-3-2-4\n1-5,1-7,1-3,5-7,5-8,1-8,8-4,4-2,3-6,3-2,6-4\n",
 			"settings":
 			{
-				"buffer_size": 1108,
-				"line_ending": "Unix",
-				"name": "Package Control Messages",
-				"read_only": true,
-				"scratch": true
+				"buffer_size": 172,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -860,10 +915,13 @@
 	},
 	"expanded_folders":
 	[
+		"/home/rafapinzon/Downloads/workspace",
 		"/home/rafapinzon/LabSoft/vast-escarpment-5565"
 	],
 	"file_history":
 	[
+		"/home/rafapinzon/Documents/GitHub/HPC/DijkstraSecuencial.c",
+		"/home/rafapinzon/Documents/GitHub/HPC/DijkstraOpenMp.c",
 		"/home/rafapinzon/.config/sublime-text-3/Packages/User/Python Django.sublime-settings",
 		"/home/rafapinzon/.config/sublime-text-3/Packages/User/JSON.sublime-settings",
 		"/home/rafapinzon/.config/sublime-text-3/Packages/User/Distraction Free.sublime-settings",
@@ -989,9 +1047,7 @@
 		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto1/proyectoRuleta-Server.c",
 		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/proyectoRuleta-Cliente4.c",
 		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/juego4.h",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/proyectoRuleta-Server4.c",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto-Archivos/comando.txt",
-		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/juego2.h"
+		"/home/rafapinzon/MEGA/U/Cliente Servidor/Proyecto/proyectoRuleta-Server4.c"
 	],
 	"find":
 	{
@@ -1012,6 +1068,34 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"^[\\n]{2,}",
+			",",
+			"{",
+			"{7",
+			"\\{[0-9]*,[0-9]*",
+			",",
+			"-",
+			"  ",
+			"   ",
+			"rand()%SIZES[iSize]",
+			"E",
+			"INT_MAX",
+			"^\\n\\n",
+			"E",
+			"   ",
+			"}",
+			"{",
+			"   ",
+			" ",
+			",",
+			"-",
+			" ",
+			"6",
+			"4",
+			"0",
+			"{",
+			"Unions",
+			"Edge",
 			"color_scheme",
 			"editar",
 			"usuario",
@@ -1111,42 +1195,18 @@
 			"Width",
 			"ty",
 			"lPx",
-			"by",
-			"SIZEy",
-			"tx",
-			"bx",
-			"Col",
-			"Row",
-			"SIZES",
-			"j",
-			"matrixMulGPU",
-			"generate_website_thumbnail",
-			"\\n\\n",
-			"\\r",
-			"*",
-			"\\r",
-			"all",
-			"\\n\\n",
-			"\\n",
-			"estructura",
-			"};\n",
-			"el turno pasa",
-			"salir",
-			"turno",
-			"print(",
-			"siguiente",
-			"i",
-			"printf(\"-",
-			"freeMemory",
-			"el turno pasa",
-			"SALAS[*idPartida]"
+			"by"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"SIZES[iSize]",
+			"MAXINT",
+			"unions",
+			"Union",
 			"SALAS[idPartidaLocal]",
 			"*idPartida",
 			"SALAS[idPartidaLocal]->current",
@@ -1244,7 +1304,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -1259,8 +1319,8 @@
 						"selection":
 						[
 							[
-								56,
-								56
+								89,
+								89
 							]
 						],
 						"settings":
@@ -1275,11 +1335,227 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "DijkstraThreads.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7855,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4411,
+								4411
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_name": "#include <stdio.h>",
+							"syntax": "Packages/C Improved/C Improved.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1964.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "DijkstraIntento.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8976,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8976,
+								8976
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/C Improved/C Improved.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3044.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "DijkstraSecuencial.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								274,
+								274
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/C Improved/C Improved.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "DijkstraOpenMp.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5053,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5053,
+								5053
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"auto_name": "//  Author: Jose F. Martinez Rivera",
+							"syntax": "Packages/C Improved/C Improved.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1656.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/rafapinzon/Downloads/Constante.cu.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5932,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5932,
+								5932
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 288.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								377,
+								377
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"default_dir": "/home/rafapinzon/Documents/Python/Django/djangoTut",
+							"syntax": "Packages/C Improved/C Improved.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "ImageFilterSobel.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11200,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								213,
+								213
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/C Improved/C Improved.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 144.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
 					"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/static/templates/base.html",
 					"semi_transient": false,
 					"settings":
@@ -1308,11 +1584,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 9,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1338,11 +1614,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 10,
 					"file": "/home/rafapinzon/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 					"semi_transient": false,
 					"settings":
@@ -1369,11 +1645,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 11,
 					"file": "/home/rafapinzon/Documents/Python/Django/djangoTut/src/mvp_landing/settings.py",
 					"semi_transient": false,
 					"settings":
@@ -1401,39 +1677,36 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 12,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1108,
+						"buffer_size": 172,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1108,
-								1108
+								128,
+								128
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
-							"auto_indent": false,
 							"default_dir": "/home/rafapinzon/Documents/Python/Django/djangoTut",
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_width": 2,
-							"word_wrap": true
+							"syntax": "Packages/C Improved/C Improved.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -1486,7 +1759,7 @@
 	"project": "HPC.sublime-project",
 	"replace":
 	{
-		"height": 58.0
+		"height": 114.0
 	},
 	"save_all_on_build": true,
 	"select_file":
