@@ -6,13 +6,21 @@
 #include <stdio.h>
 #include <time.h>
 #include <math.h>
-#include <omp.h>
+#include <time.h>
+#include <sys/time.h>
+#include <cuda.h>
+#include <stdlib.h>
+#include <sys/time.h>
+#include <iostream>
+#include <highgui.h>
+#include <cv.h>
 
 #define MAXINT 100000
 #define TRUE    1
 #define FALSE   0
 #define V 24
 #define E 36
+#define USECPSEC 1000000ULL
 
 //boolean type
 typedef int bool;
@@ -33,6 +41,13 @@ typedef struct
 
 } Vertex;
 
+
+unsigned long long dtime_usec(unsigned long long prev){
+  timeval tv1;
+  gettimeofday(&tv1,0);
+  return ((tv1.tv_sec * USECPSEC)+tv1.tv_usec) - prev;
+  // return ((tv1.tv_sec *1000)+tv1.tv_usec/1000) - prev;
+}
 //Prints the array
 void printArray(int *array)
 {
@@ -48,7 +63,7 @@ void DijkstraOMP(Vertex *vertices, Edge *edges, int *weights, Vertex *root)
 {   
 
     double start, end;
-
+    unsigned long long cpu_time = dtime_usec(0);
     root->visited = TRUE;
     
     int len[V];
@@ -73,7 +88,6 @@ void DijkstraOMP(Vertex *vertices, Edge *edges, int *weights, Vertex *root)
     }
 
     
-    start = omp_get_wtime();
     for(j = 0; j < V; j++){
 
         
@@ -82,8 +96,6 @@ void DijkstraOMP(Vertex *vertices, Edge *edges, int *weights, Vertex *root)
         u = vertices[h];
         
         
-        //OpenMP Parallelization Starts here!!!
-        #pragma omp parallel for schedule(runtime) private(i)
             for(i = 0; i < V; i++)
             {
                 if(vertices[i].visited == FALSE)
@@ -94,9 +106,10 @@ void DijkstraOMP(Vertex *vertices, Edge *edges, int *weights, Vertex *root)
                 }
             }
     }
-    end = omp_get_wtime();
     printArray(len);
-    printf("Running time: %f ms\n", (end - start)*1000);
+    cpu_time = dtime_usec(cpu_time);
+    printf("Finished 1. Basic.  Results match. gpu time: %lld\n", cpu_time);
+    // printf("Running time: %f ms\n", (end - start)*1000);
     
     
     
