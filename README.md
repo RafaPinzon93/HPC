@@ -6,8 +6,3 @@ En los resultados2.txt se pueden observer los diferentes tiempos otorgados con d
 Archivos:
 - SumaVectoresCuda : tiene lo que se hizo ultimamente.
 - SumaVectores: Solo suma CPU.
-
-```Python
-def hola():
-  print "que hace"
-```
